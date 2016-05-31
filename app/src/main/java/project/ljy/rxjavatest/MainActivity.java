@@ -2,6 +2,7 @@ package project.ljy.rxjavatest;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -11,11 +12,7 @@ import java.util.List;
 import bean.DaliyBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
-import rx.subscriptions.CompositeSubscription;
-import utils.RetrofitManager;
+import data.DaliyData;
 
 
 /**
@@ -28,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
     IMain.Presenter mPresenter;
     @BindView(R.id.image)
     ImageView image;
+    @BindView(R.id.list)
+    RecyclerView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,15 +50,9 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
     }
 
     @Override
-    public void showData(DaliyBean bean) {
-        if (bean != null) {
-            DaliyBean.ResultsEntity entity = bean.getResults();
-            if (entity.get福利() != null) {
-                List<DaliyBean.ResultsEntity.福利Entity> fuliEntity = entity.get福利();
-                if (fuliEntity.size() > 0) {
-                    Glide.with(MainActivity.this).load(fuliEntity.get(0).getUrl()).into(image);
-                }
-            }
+    public void showData(List<DaliyData> list) {
+        if (list != null) {
+
         }
     }
 

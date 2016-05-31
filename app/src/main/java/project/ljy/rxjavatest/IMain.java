@@ -1,7 +1,8 @@
 package project.ljy.rxjavatest;
 
-import bean.DaliyBean;
-import bean.GankBean;
+import java.util.List;
+
+import data.DaliyData;
 
 /**
  * Created by Administrator on 2016/5/25.
@@ -9,7 +10,7 @@ import bean.GankBean;
 public interface IMain {
 
     interface View extends BaseView<Presenter>{
-        void showData(DaliyBean bean);
+        void showData(List<DaliyData> list);
     }
 
     interface Presenter extends BasePresenter{
