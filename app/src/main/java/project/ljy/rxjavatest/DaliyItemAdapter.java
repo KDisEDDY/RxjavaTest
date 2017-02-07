@@ -12,16 +12,16 @@ import bean.DaliyBean;
 import bean.GankBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import data.DaliyData;
 
 /**
  * Created by Administrator on 2016/5/30.
  */
 public class DaliyItemAdapter extends RecyclerView.Adapter<DaliyItemAdapter.ViewHolder>{
 
-    DaliyBean list;
-    public DaliyItemAdapter(DaliyBean list) {
+    List<DaliyData> list;
+    public DaliyItemAdapter(List<DaliyData> list) {
         this.list = list;
-
     }
 
     @Override
@@ -31,12 +31,13 @@ public class DaliyItemAdapter extends RecyclerView.Adapter<DaliyItemAdapter.View
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        DaliyData item = list.get(position);
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{

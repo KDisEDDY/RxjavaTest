@@ -1,15 +1,11 @@
 package utils;
 
-import org.json.JSONObject;
-
-import java.util.List;
-
 import bean.DaliyBean;
 import bean.GankBean;
-import retrofit2.Call;
+import bean.TypeItemBean;
+import io.reactivex.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
-import rx.Observable;
 
 /**
  * Created by Administrator on 2016/5/25.
@@ -27,5 +23,12 @@ public interface API {
         Observable<DaliyBean> getDaliyData(@Path("year") String year,
                                            @Path("month") String month,
                                            @Path("day") String day);
+    }
+
+    interface TypeDaliyApi{
+        @GET("/data/{type}/{month}/{day}")
+        Observable<TypeItemBean> getTypeDaliyApi(@Path("type") String type,
+                                                 @Path("month") String month,
+                                                 @Path("day") String day);
     }
 }

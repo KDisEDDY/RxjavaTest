@@ -1,8 +1,8 @@
 package utils;
 
 
+import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
@@ -15,7 +15,7 @@ public class RetrofitManager {
     public static Retrofit getRetrofitInstance() {
         if(retrofit == null){
             retrofit = new Retrofit.Builder().baseUrl("http://gank.io/api/")
-                    .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
@@ -23,11 +23,14 @@ public class RetrofitManager {
     }
 
     static public API.GankApi getGankApi(){
-        API.GankApi gankApi = getRetrofitInstance().create(API.GankApi.class);
-        return gankApi;
+        return getRetrofitInstance().create(API.GankApi.class);
     }
 
     static public API.DaliyApi getDaliyApi(){
         return getRetrofitInstance().create(API.DaliyApi.class);
+    }
+
+    static public API.TypeDaliyApi getTypeDaliyApi(){
+        return getRetrofitInstance().create(API.TypeDaliyApi.class);
     }
 }
