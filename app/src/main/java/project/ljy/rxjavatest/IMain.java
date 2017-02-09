@@ -2,6 +2,7 @@ package project.ljy.rxjavatest;
 
 import java.util.List;
 
+import bean.TypeItemBean;
 import data.DaliyData;
 
 /**
@@ -10,7 +11,7 @@ import data.DaliyData;
 public interface IMain {
 
     interface View extends BaseView<Presenter>{
-        void showData(List<DaliyData> list);
+        void showData(TypeItemBean list);
     }
 
     interface Presenter extends BasePresenter{

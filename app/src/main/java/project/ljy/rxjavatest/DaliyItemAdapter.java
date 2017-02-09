@@ -10,6 +10,8 @@ import java.util.List;
 
 import bean.DaliyBean;
 import bean.GankBean;
+import bean.TypeItemBean;
+import bean.TypeItemBean.ResultsBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import data.DaliyData;
@@ -19,8 +21,8 @@ import data.DaliyData;
  */
 public class DaliyItemAdapter extends RecyclerView.Adapter<DaliyItemAdapter.ViewHolder>{
 
-    List<DaliyData> list;
-    public DaliyItemAdapter(List<DaliyData> list) {
+    List<ResultsBean> list;
+    public DaliyItemAdapter(List<ResultsBean> list) {
         this.list = list;
     }
 
@@ -31,8 +33,8 @@ public class DaliyItemAdapter extends RecyclerView.Adapter<DaliyItemAdapter.View
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        DaliyData item = list.get(position);
-
+        ResultsBean item = list.get(position);
+        holder.tv_item.setText(item.getDesc());
     }
 
     @Override
