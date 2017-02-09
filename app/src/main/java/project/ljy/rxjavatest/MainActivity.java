@@ -2,14 +2,13 @@ package project.ljy.rxjavatest;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import java.util.List;
 
+import bean.TypeItemBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import data.DaliyData;
-import io.reactivex.subjects.Subject;
 
 
 /**
@@ -17,10 +16,9 @@ import io.reactivex.subjects.Subject;
  */
 public class MainActivity extends AppCompatActivity implements IMain.View {
 
-    //    Observable<String> observable;
     IMain.Presenter mPresenter;
     @BindView(R.id.list)
-    RecyclerView list;
+    RecyclerView mRecycleList;
 
     private DaliyItemAdapter mAdapter = null;
 
@@ -30,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         ButterKnife.setDebug(true);
+        LinearLayoutManager manager = new LinearLayoutManager(this);
+        manager.setOrientation(LinearLayoutManager.VERTICAL);
+        mRecycleList.setLayoutManager(manager);
         new MainPresenter(this).loadData();
     }
 
@@ -40,11 +41,13 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
     }
 
     @Override
-    public void showData(List<DaliyData> list) {
+    public void showData(TypeItemBean list) {
         if (list != null) {
-            if(mAdapter != null){
-                mAdapter = new DaliyItemAdapter(list);
+            if(mAdapter == null){
+                mAdapter = new DaliyItemAdapter(list.getResults());
+                mRecycleList.setAdapter(mAdapter);
             }
+            mAdapter.notifyDataSetChanged();
         }
     }
 
