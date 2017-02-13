@@ -8,13 +8,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import bean.DaliyBean;
-import bean.GankBean;
-import bean.TypeItemBean;
 import bean.TypeItemBean.ResultsBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import data.DaliyData;
 
 /**
  * Created by Administrator on 2016/5/30.

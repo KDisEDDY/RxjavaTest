@@ -8,7 +8,6 @@ import java.util.List;
 import bean.DaliyBean;
 import bean.DaliyBean.ResultsEntity;
 import bean.DaliyBean.ResultsEntity.AndroidEntity;
-import bean.GankBean;
 import bean.TypeItemBean;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -22,7 +21,7 @@ import utils.RetrofitManager;
  */
 public class MainPresenter implements IMain.Presenter{
     IMain.View view;
-    List<GankBean.ResultsEntity> list;
+    List<TypeItemBean.ResultsBean> list;
     public MainPresenter(IMain.View view) {
         this.view = view;
         list = new LinkedList<>();
@@ -39,50 +38,17 @@ public class MainPresenter implements IMain.Presenter{
                 .getDaliyData(year + "", month + "", day + "")
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
-                .flatMap(new Function<DaliyBean, Observable<TypeItemBean>>(){
+                .map(new Function<DaliyBean, List<TypeItemBean>>() {
                     @Override
-                    public Observable<TypeItemBean> apply(DaliyBean daliyBean) throws Exception {
-                        TypeItemBean androidList = new TypeItemBean();
-                        List<TypeItemBean.ResultsBean> androidBean = new ArrayList<>();
-                        for (int i = 0; i < daliyBean.getResults().getAndroid().size(); i++) {
-                            AndroidEntity entity = daliyBean.getResults().getAndroid().get(i);
-                            TypeItemBean.ResultsBean item = new TypeItemBean.ResultsBean();
-                            item.setWho(entity.getWho());
-                            item.set_id(entity.get_id());
-                            item.setCreatedAt(entity.getCreatedAt());
-                            item.setDesc(entity.getDesc());
-                            item.setPublishedAt(entity.getPublishedAt());
-                            item.setType(entity.getType());
-                            item.setUrl(entity.getUrl());
-                            androidBean.add(item);
-                        }
-                        androidList.setResults(androidBean);
-
-                        TypeItemBean iOSList = new TypeItemBean();
-                        List<TypeItemBean.ResultsBean> iOSBean = new ArrayList<>();
-                        for (int i = 0; i < daliyBean.getResults().getIOS().size(); i++) {
-                            ResultsEntity.IOSEntity entity = daliyBean.getResults().getIOS().get(i);
-                            TypeItemBean.ResultsBean item = new TypeItemBean.ResultsBean();
-                            item.setWho(entity.getWho());
-                            item.set_id(entity.get_id());
-                            item.setCreatedAt(entity.getCreatedAt());
-                            item.setDesc(entity.getDesc());
-                            item.setPublishedAt(entity.getPublishedAt());
-                            item.setType(entity.getType());
-                            item.setUrl(entity.getUrl());
-                            iOSBean.add(item);
-                        }
-                        iOSList.setResults(iOSBean);
-                        TypeItemBean[] amountList = {
-                                androidList,iOSList
-                        };
-                        return Observable.fromArray(amountList);
+                    public List<TypeItemBean> apply(DaliyBean daliyBean) throws Exception {
+                        return null;
                     }
                 })
-                .subscribe(new DefaultObserver<TypeItemBean>() {
+
+                .subscribe(new DefaultObserver<List<TypeItemBean>>() {
                     @Override
-                    public void onNext(TypeItemBean typeItemBean) {
-                        view.showData(typeItemBean);
+                    public void onNext(List<TypeItemBean> list) {
+                        view.showData(list);
                     }
 
                     @Override
@@ -100,5 +66,10 @@ public class MainPresenter implements IMain.Presenter{
 
     @Override
     public void unsubscribe() {
+    }
+
+    @Override
+    public void requestData() {
+
     }
 }

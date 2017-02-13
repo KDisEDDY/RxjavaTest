@@ -4,16 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="project.ljy.rxjavatest.MainActivity">
-
+ <android.support.v4.widget.SwipeRefreshLayout
+     android:id="@+id/swl_refresh"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
  <android.support.v7.widget.RecyclerView
      android:id="@+id/list"
      android:layout_width="match_parent"
      android:layout_height="match_parent"
      />
- <android.support.design.widget.BottomNavigationView
-     android:id="@+id/bottom_view"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:layout_alignParentBottom="true"
-     />
+ </android.support.v4.widget.SwipeRefreshLayout>
+ <!--<android.support.design.widget.BottomNavigationView-->
+     <!--android:id="@+id/bottom_view"-->
+     <!--android:layout_width="match_parent"-->
+     <!--android:layout_height="wrap_content"-->
+     <!--android:layout_alignParentBottom="true"-->
+     <!--/>-->
 </RelativeLayout>

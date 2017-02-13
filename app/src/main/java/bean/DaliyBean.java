@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2016/5/28.
  */
-public class DaliyBean {
+public class DaliyBean extends BaseBean{
 
     /**
      * category : ["iOS","Android","瞎推荐","拓展资源","福利","休息视频"]

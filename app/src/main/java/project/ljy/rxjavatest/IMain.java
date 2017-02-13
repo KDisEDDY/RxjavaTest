@@ -11,12 +11,16 @@ import data.DaliyData;
 public interface IMain {
 
     interface View extends BaseView<Presenter>{
-        void showData(TypeItemBean list);
+        void showData(List<TypeItemBean> list);
+
+        void showTypeData();
     }
 
     interface Presenter extends BasePresenter{
         void loadData();
 
         void unsubscribe();
+
+        void requestData();
     }
 }
