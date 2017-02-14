@@ -10,7 +10,9 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import bean.DaliyBean;
 import bean.TypeItemBean;
+import bean.TypeItemBean.ResultsBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -40,24 +42,14 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
         setContentView(R.layout.activity_main);
         initView();
         mPresenter = new MainPresenter(this);
-        mPresenter.loadData();
+        mPresenter.loadData(BaseConstant.TYPE_ANDROID);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mPresenter.unsubscribe();
     }
 
-    @Override
-    public void showData(List<TypeItemBean> list) {
-
-    }
-
-    @Override
-    public void showTypeData() {
-
-    }
 
     @Override
     public void setPresenter(IMain.Presenter mPresenter) {
@@ -71,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
         ButterKnife.bind(this);
         ButterKnife.setDebug(true);
         if(mAdapter == null){
-            mAdapter = new DaliyItemAdapter(new ArrayList<TypeItemBean.ResultsBean>());
+            mAdapter = new DaliyItemAdapter(new ArrayList<ResultsBean>());
             mRecycleList.setAdapter(mAdapter);
         }
         LinearLayoutManager manager = new LinearLayoutManager(this);
@@ -86,5 +78,21 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
 
         mSwipeRefreshLayout.setOnRefreshListener(mOnRefreshListener);
         mSwipeRefreshLayout.setRefreshing(false);
+    }
+
+    @Override
+    public void loadTypeData(boolean isChangeType, List<ResultsBean> list) {
+        if(isChangeType){
+            mAdapter.list.clear();
+            mAdapter.addList(list);
+        } else {
+            mAdapter.addList(list);
+        }
+        mAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void requestTypeData(List<ResultsBean> list) {
+
     }
 }

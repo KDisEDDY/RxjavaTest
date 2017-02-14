@@ -22,10 +22,6 @@ public class RetrofitManager {
         return retrofit;
     }
 
-    static public API.GankApi getGankApi(){
-        return getRetrofitInstance().create(API.GankApi.class);
-    }
-
     static public API.DaliyApi getDaliyApi(){
         return getRetrofitInstance().create(API.DaliyApi.class);
     }

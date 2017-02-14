@@ -1,5 +1,6 @@
 package project.ljy.rxjavatest;
 
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,5 +47,18 @@ public class DaliyItemAdapter extends RecyclerView.Adapter<DaliyItemAdapter.View
              super(view);
              ButterKnife.bind(this,view);
          }
+    }
+
+    public void addList(@NonNull List<ResultsBean> newList){
+        if(newList.size() > 0){
+            list.addAll(newList);
+        }
+    }
+
+    public void requestList(@NonNull List<ResultsBean> firstList){
+        if (firstList.size() > 0){
+            list.clear();
+            list.addAll(firstList);
+        }
     }
 }
