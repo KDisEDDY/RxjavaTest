@@ -55,16 +55,6 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
         public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
             switch (newState){
                 case SCROLL_STATE_IDLE:
-                    LayoutManager layoutManager = recyclerView.getLayoutManager();
-                    if(layoutManager instanceof LinearLayoutManager){
-                        LinearLayoutManager llmanager = (LinearLayoutManager) layoutManager;
-                        if(llmanager.findLastCompletelyVisibleItemPosition() == recyclerView.getAdapter().getItemCount() - 1){
-                            swipeRefreshLayout.setRefreshing(true);
-                            mPresenter.loadData(mCurrentType);
-                        } else {
-                            swipeRefreshLayout.setRefreshing(false);
-                        }
-                    }
                     nowState = SCROLL_STATE_IDLE;
                     break;
                 case SCROLL_STATE_SETTLING:
@@ -73,7 +63,19 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
                     break;
                 case SCROLL_STATE_DRAGGING:
                     nowState = SCROLL_STATE_DRAGGING;
-                    swipeRefreshLayout.setRefreshing(false);
+                    LayoutManager layoutManager = recyclerView.getLayoutManager();
+                    if (layoutManager instanceof LinearLayoutManager){
+                        View lastChildView = recyclerView.getChildAt(recyclerView.getAdapter().getItemCount() - 1);
+                        int bottom = lastChildView.getBottom();
+                        //recycleView显示itemView的有效区域的bottom坐标Y
+                        int bottomEdge = recyclerView.getHeight() - recyclerView.getPaddingBottom();
+                        //recycleView显示itemView的有效区域的top坐标Y
+                        //最后一个view的底部小于bottom边界值,说明最后一个view已经完全显示在界面
+                        if (bottom <= bottomEdge) {
+                            mPresenter.loadData(mCurrentType);
+                            swipeRefreshLayout.setRefreshing(true);
+                        }
+                    }
                 default:
                     break;
             }
