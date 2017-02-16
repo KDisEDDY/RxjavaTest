@@ -12,15 +12,16 @@ import java.util.List;
 import bean.TypeItemBean.ResultsBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import project.ljy.rxjavatest.RecycleViewItemClickListener.ItemClickListener;
+import project.ljy.rxjavatest.RecycleViewItemClickListener.LongItemClickListener;
 
 /**
  * Created by Administrator on 2016/5/30.
  */
-public class DaliyItemAdapter extends RecyclerView.Adapter<DaliyItemAdapter.ViewHolder>{
+public class DaliyItemAdapter extends BaseRecyclerViewAdapter<DaliyItemAdapter.ViewHolder,ResultsBean> {
 
-    List<ResultsBean> list;
     public DaliyItemAdapter(List<ResultsBean> list) {
-        this.list = list;
+        super(list);
     }
 
     @Override
@@ -29,14 +30,10 @@ public class DaliyItemAdapter extends RecyclerView.Adapter<DaliyItemAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        ResultsBean item = list.get(position);
+    public void onBindViewHolder(final ViewHolder holder, int position) {
+        super.onBindViewHolder(holder,position);
+        ResultsBean item = getItem(position);
         holder.tv_item.setText(item.getDesc());
-    }
-
-    @Override
-    public int getItemCount() {
-        return list.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{
@@ -47,18 +44,5 @@ public class DaliyItemAdapter extends RecyclerView.Adapter<DaliyItemAdapter.View
              super(view);
              ButterKnife.bind(this,view);
          }
-    }
-
-    public void addList(@NonNull List<ResultsBean> newList){
-        if(newList.size() > 0){
-            list.addAll(newList);
-        }
-    }
-
-    public void requestList(@NonNull List<ResultsBean> firstList){
-        if (firstList.size() > 0){
-            list.clear();
-            list.addAll(firstList);
-        }
     }
 }

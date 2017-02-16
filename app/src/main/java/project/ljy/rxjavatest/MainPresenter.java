@@ -47,7 +47,7 @@ public class MainPresenter implements IMain.Presenter{
     /**
      * 用于获取单个类型的分页条件
      */
-    static int pageSize = 8;
+    static int pageSize = 10;
     int currentType = BaseConstant.TYPE_ANDROID;
 
     public MainPresenter(IMain.View view) {

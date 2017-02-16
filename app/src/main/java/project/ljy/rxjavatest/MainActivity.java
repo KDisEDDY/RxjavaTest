@@ -5,27 +5,28 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 
-import com.getbase.floatingactionbutton.FloatingActionButton;
-import com.getbase.floatingactionbutton.FloatingActionsMenu;
+import com.taro.headerrecycle.helper.RecycleViewScrollHelper;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import bean.DaliyBean;
-import bean.TypeItemBean;
 import bean.TypeItemBean.ResultsBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import project.ljy.rxjavatest.RecycleViewItemClickListener.ItemClickListener;
 
 import static android.support.v7.widget.RecyclerView.*;
+import static project.ljy.rxjavatest.RecycleViewItemClickListener.*;
 
 /**
  * 测试rxjava结合retrofit的效果，使用mvp模式构建
  */
-public class MainActivity extends AppCompatActivity implements IMain.View {
+public class MainActivity extends AppCompatActivity implements IMain.View{
 
     IMain.Presenter mPresenter;
     @BindView(R.id.list)
@@ -65,7 +66,8 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
                     nowState = SCROLL_STATE_DRAGGING;
                     LayoutManager layoutManager = recyclerView.getLayoutManager();
                     if (layoutManager instanceof LinearLayoutManager){
-                        View lastChildView = recyclerView.getChildAt(recyclerView.getAdapter().getItemCount() - 1);
+                        Log.i("itemCount","adapterItemCount:" + recyclerView.getAdapter().getItemCount() + " recycleViewItemCount:" + recyclerView.getChildCount());
+                        View lastChildView = recyclerView.getChildAt(recyclerView.getChildCount() - 1);
                         int bottom = lastChildView.getBottom();
                         //recycleView显示itemView的有效区域的bottom坐标Y
                         int bottomEdge = recyclerView.getHeight() - recyclerView.getPaddingBottom();
@@ -141,11 +143,22 @@ public class MainActivity extends AppCompatActivity implements IMain.View {
         }
         mAdapter.notifyDataSetChanged();
         mSwipeRefreshLayout.setRefreshing(false);
+        mAdapter.setOnItemClickListener(new ItemClickListener(){
+            @Override
+            public void onItemClickListener(View v, int position) {
+                Toast.makeText(MainActivity.this, "itemClick on position " + position, Toast.LENGTH_SHORT).show();
+            }
+        });
+        mAdapter.setOnLongItemClickListener(new LongItemClickListener() {
+            @Override
+            public void onLongItemClickListener(View v, int position) {
+                Toast.makeText(MainActivity.this, "LongItemClick on position " + position, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
     public void requestTypeData(List<ResultsBean> list) {
-
         mSwipeRefreshLayout.setRefreshing(false);
     }
 
