@@ -41,6 +41,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.1.0'
     compile 'com.android.support:design:25.1.0'
     compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
     compile 'com.getbase:floatingactionbutton:1.10.1'
     compile 'com.taro:headerrecycle:2.6.0'
 }

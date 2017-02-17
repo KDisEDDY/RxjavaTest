@@ -1,6 +1,5 @@
 package project.ljy.rxjavatest;
 
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +11,6 @@ import java.util.List;
 import bean.TypeItemBean.ResultsBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import project.ljy.rxjavatest.RecycleViewItemClickListener.ItemClickListener;
-import project.ljy.rxjavatest.RecycleViewItemClickListener.LongItemClickListener;
 
 /**
  * Created by Administrator on 2016/5/30.
