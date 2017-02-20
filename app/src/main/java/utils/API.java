@@ -4,8 +4,13 @@ import bean.DaliyBean;
 import bean.TypeItemBean;
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
+import okhttp3.Call;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
+import retrofit2.http.Streaming;
+import retrofit2.http.Url;
 
 /**
  * Created by Administrator on 2016/5/25.
@@ -26,4 +31,9 @@ public interface API {
                                                  @Path("page") String page);
     }
 
+    interface DownLoadApi{
+        @Streaming
+        @GET()
+        retrofit2.Call<ResponseBody> downLoadFile(@Url String url);
+    }
 }

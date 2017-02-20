@@ -27,5 +27,7 @@ public interface IMain {
 
         //上拉获取数据
         void requestData(int type);
+
+        void downLoadFile(String url, DownLoadCallBack callBack);
     }
 }

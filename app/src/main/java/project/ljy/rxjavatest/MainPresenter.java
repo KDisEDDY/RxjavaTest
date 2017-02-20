@@ -223,6 +223,5 @@ public class MainPresenter implements IMain.Presenter{
 
     @Override
     public void requestData(int type) {
-
     }
 }

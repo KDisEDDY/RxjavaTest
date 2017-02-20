@@ -46,4 +46,8 @@ public class RetrofitManager {
     static public API.TypeDaliyApi getTypeDaliyApi(){
         return getRetrofitInstance().create(API.TypeDaliyApi.class);
     }
+
+    static public API.DownLoadApi getDownLoadApi(){
+        return getRetrofitInstance().create(API.DownLoadApi.class);
+    }
 }
