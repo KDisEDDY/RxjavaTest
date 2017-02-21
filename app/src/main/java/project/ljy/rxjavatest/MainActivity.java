@@ -146,7 +146,18 @@ public class MainActivity extends AppCompatActivity implements IMain.View{
         mAdapter.setOnItemClickListener(new ItemClickListener(){
             @Override
             public void onItemClickListener(View v, int position) {
-                Toast.makeText(MainActivity.this, "itemClick on position " + position, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "itemClick on position " + position, Toast.LENGTH_SHORT).show();
+                mPresenter.downLoadFile("http://dldir1.qq.com/weixin/android/weixin6330android920.apk", new DownLoadCallBack() {
+                    @Override
+                    public void onSuccess() {
+                        Toast.makeText(MainActivity.this, "success", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onFailure() {
+                        Toast.makeText(MainActivity.this, "failure", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
         mAdapter.setOnLongItemClickListener(new LongItemClickListener() {

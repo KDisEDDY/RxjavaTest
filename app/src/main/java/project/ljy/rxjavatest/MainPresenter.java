@@ -24,6 +24,7 @@ import io.reactivex.functions.Function;
 import io.reactivex.observers.DefaultObserver;
 import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
+import utils.DownLoadUtil;
 import utils.RetrofitManager;
 
 /**
@@ -223,5 +224,10 @@ public class MainPresenter implements IMain.Presenter{
 
     @Override
     public void requestData(int type) {
+    }
+
+    @Override
+    public void downLoadFile(String url, DownLoadCallBack callBack) {
+        DownLoadUtil.downloadFile(url,callBack);
     }
 }
