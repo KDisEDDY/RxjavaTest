@@ -2,10 +2,9 @@ package utils;
 
 import android.os.Environment;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
-
-import org.reactivestreams.Subscription;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -14,15 +13,13 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.functions.Function;
-import io.reactivex.observers.DefaultObserver;
 import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
+import listener.ProgressResponseListener;
+import listener.UIProgressResponseListener;
 import okhttp3.ResponseBody;
-import project.ljy.rxjavatest.DownLoadCallBack;
+import callback.DownLoadCallBack;
+import project.ljy.rxjavatest.ProgressResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -42,20 +39,22 @@ public class DownLoadUtil {
 
     final static int FAILURE = 2;
 
-    static Handler handler = new Handler(){
+    static Handler handler = new Handler(Looper.getMainLooper()){
         @Override
         public void handleMessage(Message msg) {
-            DownLoadCallBack callBack = (DownLoadCallBack) msg.obj;
+            DownLoadCallBack callback = (DownLoadCallBack) msg.obj;
             switch (msg.what){
                 case SUCCESS:
-                    callBack.onSuccess();
+                    callback.onSuccess();
                     break;
                 case FAILURE:
-                    callBack.onFailure();
+                    callback.onFailure();
                     break;
             }
         }
     };
+
+    private ProgressResponseListener listener ;
 
     public static void downloadFile(final String url , final DownLoadCallBack callBack){
         Call<ResponseBody> call =  RetrofitManager.getDownLoadApi().downLoadFile(url);
@@ -63,7 +62,6 @@ public class DownLoadUtil {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 if(response.isSuccessful()){
-                    // TODO: 2017/2/20 实现下载到sd卡
                     Observable.just(response.body())
                             .observeOn(Schedulers.io())
                             .subscribeOn(Schedulers.newThread())
@@ -78,7 +76,6 @@ public class DownLoadUtil {
                                             if(!fileDir.exists()){
                                                 fileDir.mkdirs();
                                             }
-                                            // todo change the file location/name according to your needs
                                             File futureStudioIconFile = new File(rootDir + File.separator + strArray[strArray.length -1] );
                                             if(futureStudioIconFile.exists()){
                                                 futureStudioIconFile.delete();
@@ -149,6 +146,15 @@ public class DownLoadUtil {
                 handler.sendMessage(obtainMessage(FAILURE,callBack));
             }
         });
+    }
+
+    public static void downloadProgressFile(final String url, final UIProgressResponseListener listener){
+        Call<ProgressResponseBody> call = RetrofitManager.getDownLoadApi(listener).downloadProgressFile(url);
+        try {
+            call.execute();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static Message obtainMessage(int what , Object obj){

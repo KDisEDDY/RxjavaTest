@@ -1,4 +1,4 @@
-package project.ljy.rxjavatest;
+package callback;
 
 /**
  * Title: DownLoadCallBack

@@ -1,5 +1,6 @@
 package project.ljy.rxjavatest;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,18 +11,18 @@ import android.view.View;
 import android.widget.Toast;
 
 
-import com.taro.headerrecycle.helper.RecycleViewScrollHelper;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import bean.TypeItemBean.ResultsBean;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import project.ljy.rxjavatest.RecycleViewItemClickListener.ItemClickListener;
+import callback.DownLoadCallBack;
+import listener.RecycleViewItemClickListener.ItemClickListener;
+import listener.UIProgressResponseListener;
 
 import static android.support.v7.widget.RecyclerView.*;
-import static project.ljy.rxjavatest.RecycleViewItemClickListener.*;
+import static listener.RecycleViewItemClickListener.*;
 
 /**
  * 测试rxjava结合retrofit的效果，使用mvp模式构建
@@ -147,15 +148,23 @@ public class MainActivity extends AppCompatActivity implements IMain.View{
             @Override
             public void onItemClickListener(View v, int position) {
 //                Toast.makeText(MainActivity.this, "itemClick on position " + position, Toast.LENGTH_SHORT).show();
-                mPresenter.downLoadFile("http://dldir1.qq.com/weixin/android/weixin6330android920.apk", new DownLoadCallBack() {
-                    @Override
-                    public void onSuccess() {
-                        Toast.makeText(MainActivity.this, "success", Toast.LENGTH_SHORT).show();
-                    }
+//                mPresenter.downLoadFile("http://dldir1.qq.com/weixin/android/weixin6330android920.apk", new DownLoadCallBack() {
+//                    @Override
+//                    public void onSuccess() {
+//                        Toast.makeText(MainActivity.this, "success", Toast.LENGTH_SHORT).show();
+//                    }
+//
+//                    @Override
+//                    public void onFailure() {
+//                        Toast.makeText(MainActivity.this, "failure", Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+
+                mPresenter.downloadProgressFile("http://dldir1.qq.com/weixin/android/weixin6330android920.apk", new UIProgressResponseListener(){
 
                     @Override
-                    public void onFailure() {
-                        Toast.makeText(MainActivity.this, "failure", Toast.LENGTH_SHORT).show();
+                    public void onUIResponseProgress(long bytesRead, long contentLength, boolean done) {
+
                     }
                 });
             }

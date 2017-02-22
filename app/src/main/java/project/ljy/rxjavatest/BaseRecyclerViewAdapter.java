@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import bean.TypeItemBean;
+import listener.RecycleViewItemClickListener;
 
 /**
  * Title: BaseRecyclerViewAdapter

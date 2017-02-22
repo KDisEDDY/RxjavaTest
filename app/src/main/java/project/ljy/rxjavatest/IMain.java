@@ -2,9 +2,8 @@ package project.ljy.rxjavatest;
 
 import java.util.List;
 
-import bean.DaliyBean;
-import bean.TypeItemBean;
-import data.DaliyData;
+import callback.DownLoadCallBack;
+import listener.UIProgressResponseListener;
 
 import static bean.TypeItemBean.*;
 
@@ -29,5 +28,7 @@ public interface IMain {
         void requestData(int type);
 
         void downLoadFile(String url, DownLoadCallBack callBack);
+
+        void downloadProgressFile(String url , UIProgressResponseListener listener);
     }
 }

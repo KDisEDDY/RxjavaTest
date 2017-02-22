@@ -3,27 +3,19 @@ package project.ljy.rxjavatest;
 import android.support.annotation.NonNull;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import bean.BaseBean;
-import bean.DaliyBean;
-import bean.DaliyBean.ResultsEntity;
-import bean.DaliyBean.ResultsEntity.AndroidEntity;
 import bean.TypeItemBean;
 import bean.TypeItemBean.ResultsBean;
+import callback.DownLoadCallBack;
 import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
-import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
 import io.reactivex.observers.DefaultObserver;
-import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
+import listener.UIProgressResponseListener;
 import utils.DownLoadUtil;
 import utils.RetrofitManager;
 
@@ -229,5 +221,10 @@ public class MainPresenter implements IMain.Presenter{
     @Override
     public void downLoadFile(String url, DownLoadCallBack callBack) {
         DownLoadUtil.downloadFile(url,callBack);
+    }
+
+    @Override
+    public void downloadProgressFile(String url, UIProgressResponseListener listener) {
+        DownLoadUtil.downloadProgressFile(url, listener);
     }
 }
