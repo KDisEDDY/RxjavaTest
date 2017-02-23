@@ -13,13 +13,13 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import io.reactivex.Observable;
+import io.reactivex.functions.Function;
 import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 import listener.ProgressResponseListener;
 import listener.UIProgressResponseListener;
 import okhttp3.ResponseBody;
 import callback.DownLoadCallBack;
-import project.ljy.rxjavatest.ProgressResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -149,12 +149,69 @@ public class DownLoadUtil {
     }
 
     public static void downloadProgressFile(final String url, final UIProgressResponseListener listener){
-        Call<ProgressResponseBody> call = RetrofitManager.getDownLoadApi(listener).downloadProgressFile(url);
-        try {
-            call.execute();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        RetrofitManager.getDownLoadApi().downloadProgressFile(url)
+                .observeOn(Schedulers.io())
+                .subscribeOn(Schedulers.io())
+                .map(new Function<ResponseBody, File>() {
+                    @Override
+                    public File apply(ResponseBody body) throws Exception {
+                        String[] strArray = url.split("/");
+                        if(strArray[strArray.length -1] != null){
+                            try {
+                                String rootDir = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "RxjavaTest";
+                                File fileDir = new File(rootDir);
+                                if(!fileDir.exists()){
+                                    fileDir.mkdirs();
+                                }
+                                File futureStudioIconFile = new File(rootDir + File.separator + strArray[strArray.length -1] );
+                                if(futureStudioIconFile.exists()){
+                                    futureStudioIconFile.delete();
+                                }
+                                InputStream inputStream = null;
+                                OutputStream outputStream = null;
+
+                                try {
+                                    byte[] fileReader = new byte[4096];
+
+                                    long fileSize = body.contentLength();
+                                    long fileSizeDownloaded = 0;
+
+                                    inputStream = body.byteStream();
+                                    outputStream = new FileOutputStream(futureStudioIconFile);
+
+                                    while (true) {
+                                        int read = inputStream.read(fileReader);
+                                        if (read == -1) {
+                                            break;
+                                        }
+                                        //使用了handler回调到主线程
+                                        listener.onResponseProgress(fileSizeDownloaded,fileSize,false);
+                                        outputStream.write(fileReader, 0, read);
+
+                                        fileSizeDownloaded += read;
+
+                                        Log.d("DOWNLOAD", "file download: " + fileSizeDownloaded + " of " + fileSize);
+                                    }
+
+                                    outputStream.flush();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                } finally {
+                                    if (inputStream != null) {
+                                        inputStream.close();
+                                    }
+
+                                    if (outputStream != null) {
+                                        outputStream.close();
+                                    }
+                                }
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        return null;
+                    }
+                }).subscribe();
     }
 
     public static Message obtainMessage(int what , Object obj){

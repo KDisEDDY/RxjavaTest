@@ -1,13 +1,20 @@
 package project.ljy.rxjavatest;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.RemoteViews;
 import android.widget.Toast;
 
 
@@ -159,12 +166,24 @@ public class MainActivity extends AppCompatActivity implements IMain.View{
 //                        Toast.makeText(MainActivity.this, "failure", Toast.LENGTH_SHORT).show();
 //                    }
 //                });
-
+                final RemoteViews views = new RemoteViews(MainActivity.this.getPackageName(),R.layout.layout_dl_notification);
+                views.setImageViewResource(R.id.iv_notify_icon,R.mipmap.ic_launcher);
+                views.setTextViewText(R.id.tv_notify_msg,"apk downLoad");
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this);
+                builder.setContent(views)
+//                        .setContentIntent(pendingIntent)//设置通知栏点击意图
+                        .setWhen(System.currentTimeMillis())//通知产生的时间，会在通知信息里显示，一般是系统获取到的时间
+                        .setPriority(Notification.PRIORITY_DEFAULT) //设置该通知优先级
+                        .setAutoCancel(false)//设置这个标志当用户单击面板就可以让通知将自动取消
+                        .setOngoing(true)//ture，设置他为一个正在进行的通知。他们通常是用来表示一个后台任务,用户积极参与(如播放音乐)或以某种方式正在等待,因此占用设备(如一个文件下载,同步操作,主动网络连接)
+                        //.setDefaults(Notification.DEFAULT_VIBRATE | Notification.DEFAULT_SOUND)//向通知添加声音、闪灯和振动效果的最简单、最一致的方式是使用当前的用户默认设置，使用defaults属性，可以组合
+                        .setSmallIcon(R.mipmap.ic_launcher);//设置通知小ICON
                 mPresenter.downloadProgressFile("http://dldir1.qq.com/weixin/android/weixin6330android920.apk", new UIProgressResponseListener(){
-
                     @Override
                     public void onUIResponseProgress(long bytesRead, long contentLength, boolean done) {
-
+                        if(!done){
+                            views.setProgressBar(R.id.pb_progress,(int)contentLength,(int)bytesRead,false);
+                        }
                     }
                 });
             }

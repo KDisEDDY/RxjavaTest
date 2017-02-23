@@ -3,11 +3,7 @@ package utils;
 import bean.DaliyBean;
 import bean.TypeItemBean;
 import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
-import okhttp3.Call;
-import okhttp3.Response;
 import okhttp3.ResponseBody;
-import project.ljy.rxjavatest.ProgressResponseBody;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Streaming;
@@ -39,6 +35,6 @@ public interface API {
 
         @Streaming
         @GET()
-        retrofit2.Call<ProgressResponseBody> downloadProgressFile(@Url String url);
+        Observable<ResponseBody> downloadProgressFile(@Url String url);
     }
 }
