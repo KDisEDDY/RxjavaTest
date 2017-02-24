@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -18,6 +19,7 @@ import android.widget.RemoteViews;
 import android.widget.Toast;
 
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -154,19 +156,9 @@ public class MainActivity extends AppCompatActivity implements IMain.View{
         mAdapter.setOnItemClickListener(new ItemClickListener(){
             @Override
             public void onItemClickListener(View v, int position) {
-//                Toast.makeText(MainActivity.this, "itemClick on position " + position, Toast.LENGTH_SHORT).show();
-//                mPresenter.downLoadFile("http://dldir1.qq.com/weixin/android/weixin6330android920.apk", new DownLoadCallBack() {
-//                    @Override
-//                    public void onSuccess() {
-//                        Toast.makeText(MainActivity.this, "success", Toast.LENGTH_SHORT).show();
-//                    }
-//
-//                    @Override
-//                    public void onFailure() {
-//                        Toast.makeText(MainActivity.this, "failure", Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-                final RemoteViews views = new RemoteViews(MainActivity.this.getPackageName(),R.layout.layout_dl_notification);
+                Context context = MainActivity.this;
+                final NotificationManager manager = (NotificationManager) context.getSystemService(MainActivity.this.NOTIFICATION_SERVICE);
+                final RemoteViews views = new RemoteViews(context.getPackageName(),R.layout.layout_dl_notification);
                 views.setImageViewResource(R.id.iv_notify_icon,R.mipmap.ic_launcher);
                 views.setTextViewText(R.id.tv_notify_msg,"apk downLoad");
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this);
@@ -178,12 +170,21 @@ public class MainActivity extends AppCompatActivity implements IMain.View{
                         .setOngoing(true)//ture，设置他为一个正在进行的通知。他们通常是用来表示一个后台任务,用户积极参与(如播放音乐)或以某种方式正在等待,因此占用设备(如一个文件下载,同步操作,主动网络连接)
                         //.setDefaults(Notification.DEFAULT_VIBRATE | Notification.DEFAULT_SOUND)//向通知添加声音、闪灯和振动效果的最简单、最一致的方式是使用当前的用户默认设置，使用defaults属性，可以组合
                         .setSmallIcon(R.mipmap.ic_launcher);//设置通知小ICON
+                final Notification notification = builder.build();
+                manager.notify(0x123, notification);
                 mPresenter.downloadProgressFile("http://dldir1.qq.com/weixin/android/weixin6330android920.apk", new UIProgressResponseListener(){
                     @Override
                     public void onUIResponseProgress(long bytesRead, long contentLength, boolean done) {
                         if(!done){
                             views.setProgressBar(R.id.pb_progress,(int)contentLength,(int)bytesRead,false);
+                            manager.notify(0x123, notification);
                         }
+                    }
+
+                    @Override
+                    public void onUIProgressFinish(File file) {
+                        installAPK(file);
+                        manager.cancel(0x123);
                     }
                 });
             }
@@ -222,5 +223,19 @@ public class MainActivity extends AppCompatActivity implements IMain.View{
                 break;
         }
         mPresenter.loadData(mCurrentType);
+    }
+
+    public void installAPK(File file){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        intent.setAction(android.content.Intent.ACTION_VIEW);
+
+        intent.setDataAndType(Uri.fromFile(file),
+
+                "application/vnd.android.package-archive");
+
+        this.startActivity(intent);
     }
 }

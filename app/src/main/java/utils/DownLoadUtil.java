@@ -86,9 +86,6 @@ public class DownLoadUtil {
                                             try {
                                                 byte[] fileReader = new byte[4096];
 
-                                                long fileSize = body.contentLength();
-                                                long fileSizeDownloaded = 0;
-
                                                 inputStream = body.byteStream();
                                                 outputStream = new FileOutputStream(futureStudioIconFile);
 
@@ -98,12 +95,7 @@ public class DownLoadUtil {
                                                     if (read == -1) {
                                                         break;
                                                     }
-
                                                     outputStream.write(fileReader, 0, read);
-
-                                                    fileSizeDownloaded += read;
-
-                                                    Log.d("DOWNLOAD", "file download: " + fileSizeDownloaded + " of " + fileSize);
                                                 }
 
                                                 outputStream.flush();
@@ -156,6 +148,7 @@ public class DownLoadUtil {
                     @Override
                     public File apply(ResponseBody body) throws Exception {
                         String[] strArray = url.split("/");
+                        File futureStudioIconFile = null;
                         if(strArray[strArray.length -1] != null){
                             try {
                                 String rootDir = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "RxjavaTest";
@@ -163,7 +156,7 @@ public class DownLoadUtil {
                                 if(!fileDir.exists()){
                                     fileDir.mkdirs();
                                 }
-                                File futureStudioIconFile = new File(rootDir + File.separator + strArray[strArray.length -1] );
+                                futureStudioIconFile = new File(rootDir + File.separator + strArray[strArray.length -1] );
                                 if(futureStudioIconFile.exists()){
                                     futureStudioIconFile.delete();
                                 }
@@ -171,26 +164,30 @@ public class DownLoadUtil {
                                 OutputStream outputStream = null;
 
                                 try {
-                                    byte[] fileReader = new byte[4096];
+                                    byte[] fileReader = new byte[10*1024];
 
-                                    long fileSize = body.contentLength();
-                                    long fileSizeDownloaded = 0;
+                                    float fileSize = body.contentLength();
+                                    float fileSizeDownloaded = 0;
 
                                     inputStream = body.byteStream();
                                     outputStream = new FileOutputStream(futureStudioIconFile);
-
+                                    long currentProgress = 0;
                                     while (true) {
                                         int read = inputStream.read(fileReader);
                                         if (read == -1) {
+                                            listener.onResponseProgress(100,100,false);
                                             break;
                                         }
                                         //使用了handler回调到主线程
-                                        listener.onResponseProgress(fileSizeDownloaded,fileSize,false);
+                                        //把进度条转成100份，避免过度更新进度
+                                        int progress = (int)((fileSizeDownloaded / fileSize) * 100) ;
+                                        if(progress - currentProgress >= 1){
+                                            listener.onResponseProgress(progress,100,false);
+                                            currentProgress = progress;
+                                        }
                                         outputStream.write(fileReader, 0, read);
 
                                         fileSizeDownloaded += read;
-
-                                        Log.d("DOWNLOAD", "file download: " + fileSizeDownloaded + " of " + fileSize);
                                     }
 
                                     outputStream.flush();
@@ -209,9 +206,24 @@ public class DownLoadUtil {
                                 e.printStackTrace();
                             }
                         }
-                        return null;
+                        return futureStudioIconFile;
                     }
-                }).subscribe();
+                }).subscribe(new DisposableObserver<File>() {
+            @Override
+            public void onNext(File file) {
+                listener.onProgressFinish(file);
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                e.printStackTrace();
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
     }
 
     public static Message obtainMessage(int what , Object obj){

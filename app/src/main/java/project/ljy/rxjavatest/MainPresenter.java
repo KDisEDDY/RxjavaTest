@@ -83,68 +83,6 @@ public class MainPresenter implements IMain.Presenter{
                     public void onNext(Integer integer) {
                         String typeStr = null;
                         switch (integer){
-//                            case BaseConstant.TYPE_ALL:
-//                                RetrofitManager.getDaliyApi()
-//                                        .getDaliyData(localYear + "", localMonth + "", localDay + "")
-//                                        .observeOn(AndroidSchedulers.mainThread())
-//                                        .subscribeOn(Schedulers.newThread())
-//                                        .flatMap(new Function<DaliyBean, Observable<TypeItemBean>>(){
-//                                            @Override
-//                                            public Observable<TypeItemBean> apply(DaliyBean daliyBean) throws Exception {
-//                                                TypeItemBean androidList = new TypeItemBean();
-//                                                List<TypeItemBean.ResultsBean> androidBean = new ArrayList<>();
-//                                                for (int i = 0; i < daliyBean.getResults().getAndroid().size(); i++) {
-//                                                    AndroidEntity entity = daliyBean.getResults().getAndroid().get(i);
-//                                                    TypeItemBean.ResultsBean item = new TypeItemBean.ResultsBean();
-//                                                    item.setWho(entity.getWho());
-//                                                    item.set_id(entity.get_id());
-//                                                    item.setCreatedAt(entity.getCreatedAt());
-//                                                    item.setDesc(entity.getDesc());
-//                                                    item.setPublishedAt(entity.getPublishedAt());
-//                                                    item.setType(entity.getType());
-//                                                    item.setUrl(entity.getUrl());
-//                                                    androidBean.add(item);
-//                                                }
-//                                                androidList.setResults(androidBean);
-//
-//                                                TypeItemBean iOSList = new TypeItemBean();
-//                                                List<TypeItemBean.ResultsBean> iOSBean = new ArrayList<>();
-//                                                for (int i = 0; i < daliyBean.getResults().getIOS().size(); i++) {
-//                                                    ResultsEntity.IOSEntity entity = daliyBean.getResults().getIOS().get(i);
-//                                                    TypeItemBean.ResultsBean item = new TypeItemBean.ResultsBean();
-//                                                    item.setWho(entity.getWho());
-//                                                    item.set_id(entity.get_id());
-//                                                    item.setCreatedAt(entity.getCreatedAt());
-//                                                    item.setDesc(entity.getDesc());
-//                                                    item.setPublishedAt(entity.getPublishedAt());
-//                                                    item.setType(entity.getType());
-//                                                    item.setUrl(entity.getUrl());
-//                                                    iOSBean.add(item);
-//                                                }
-//                                                iOSList.setResults(iOSBean);
-//                                                TypeItemBean[] amountList = {
-//                                                        androidList,iOSList
-//                                                };
-//                                                return Observable.fromArray(amountList);
-//                                            }
-//                                        })
-//                                        .subscribe(new DefaultObserver<TypeItemBean>() {
-//                                            @Override
-//                                            public void onNext(TypeItemBean typeItemBean) {
-//                                                view.loadTypeData(type,typeItemBean);
-//                                            }
-//
-//                                            @Override
-//                                            public void onError(Throwable e) {
-//                                                e.printStackTrace();
-//                                            }
-//
-//                                            @Override
-//                                            public void onComplete() {
-//
-//                                            }
-//                                        });
-//                                break;
                             case BaseConstant.TYPE_ANDROID:
                                 typeStr = "Android";
                                 break;
