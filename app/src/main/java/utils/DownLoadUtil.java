@@ -26,7 +26,7 @@ import retrofit2.Response;
 
 /**
  * Title: DownLoadUtil
- * Description:下载文件工具类
+ * Description:下载文件工具类(RxJava)
  * Copyright: Copyright (c) 2014-2016 gjfax.com
  * Company: 广金所
  * Author: 刘加彦
@@ -53,8 +53,6 @@ public class DownLoadUtil {
             }
         }
     };
-
-    private ProgressResponseListener listener ;
 
     public static void downloadFile(final String url , final DownLoadCallBack callBack){
         Call<ResponseBody> call =  RetrofitManager.getDownLoadApi().downLoadFile(url);

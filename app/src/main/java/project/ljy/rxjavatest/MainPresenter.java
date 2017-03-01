@@ -24,13 +24,6 @@ import utils.RetrofitManager;
  */
 public class MainPresenter implements IMain.Presenter{
     IMain.View view;
-//    /**
-//     * 用于获取全部数据的时间条件
-//     */
-//    static Calendar localCalendar ;
-//    static int year = 0;
-//    static int month = 0;
-//    static int day = 0;
 
     /**
      * 当前的model数据
@@ -63,20 +56,6 @@ public class MainPresenter implements IMain.Presenter{
 
     @Override
     public void loadData(@NonNull final int type) {
-//        if(localCalendar == null){
-//            localCalendar = Calendar.getInstance();
-//            year = localCalendar.get(Calendar.YEAR);
-//            month = localCalendar.get(Calendar.MONTH);
-//            day = localCalendar.get(Calendar.DAY_OF_MONTH);
-//        } else {
-//            localCalendar.add(Calendar.DAY_OF_MONTH,-1);
-//            year = localCalendar.get(Calendar.YEAR);
-//            month = localCalendar.get(Calendar.MONTH);
-//            day = localCalendar.get(Calendar.DAY_OF_MONTH);
-//        }
-//        final int localYear = year;
-//        final int localMonth = month;
-//        final int localDay = day;
         Observable.just(type)
                 .subscribe(new DefaultObserver<Integer>() {
                     @Override
@@ -102,40 +81,14 @@ public class MainPresenter implements IMain.Presenter{
                                 break;
                         }
                         int page = pageMap.get(type);
-                        if(currentType == type){
-                            RetrofitManager.getTypeDaliyApi()
-                                    .getTypeDaliyApi(typeStr,pageSize + "" , page +"")
-                                    .observeOn(AndroidSchedulers.mainThread())
-                                    .subscribeOn(Schedulers.newThread())
-                                    .map(new Function<TypeItemBean,  List<ResultsBean>>() {
-                                        @Override
-                                        public  List<ResultsBean> apply(TypeItemBean typeItemBean) throws Exception {
-                                            List<ResultsBean> list = typeItemBean.getResults();
-                                                    List<ResultsBean> itemList = itemListMap.get(type);
-                                                    itemList.addAll(list);
-                                                    itemListMap.put(type,itemList);
-                                            return list;
-                                        }
-                                    })
-                                    .subscribe(new DefaultObserver<List<ResultsBean>>() {
-                                        @Override
-                                        public void onNext( List<ResultsBean> list) {
-                                            view.loadTypeData(false,list);
-                                        }
-
-                                        @Override
-                                        public void onError(Throwable e) {
-                                            e.printStackTrace();
-                                        }
-
-                                        @Override
-                                        public void onComplete() {
-
-                                        }
-                                    });
-                            pageMap.put(type,++ page);
+                        if(currentType == type ){
+                            requestList(typeStr,type,page,pageSize);
                         } else {
                             view.loadTypeData(true,itemListMap.get(type));
+                            if(page == 1){
+                                //为每个类型列表的第一页加载数据
+                                requestList(typeStr,type,page,pageSize);
+                            }
                             currentType = type;
                         }
                     }
@@ -164,5 +117,39 @@ public class MainPresenter implements IMain.Presenter{
     @Override
     public void downloadProgressFile(String url, UIProgressResponseListener listener) {
         DownLoadUtil.downloadProgressFile(url, listener);
+    }
+
+    public void requestList(final String typeStr, final int type , int page , int pageSize){
+        RetrofitManager.getTypeDaliyApi()
+                .getTypeDaliyApi(typeStr,pageSize + "" , page +"")
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.newThread())
+                .map(new Function<TypeItemBean,  List<ResultsBean>>() {
+                    @Override
+                    public  List<ResultsBean> apply(TypeItemBean typeItemBean) throws Exception {
+                        List<ResultsBean> list = typeItemBean.getResults();
+                        List<ResultsBean> itemList = itemListMap.get(type);
+                        itemList.addAll(list);
+                        itemListMap.put(type,itemList);
+                        return list;
+                    }
+                })
+                .subscribe(new DefaultObserver<List<ResultsBean>>() {
+                    @Override
+                    public void onNext( List<ResultsBean> list) {
+                        view.loadTypeData(false,list);
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        e.printStackTrace();
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+        pageMap.put(type,++ page);
     }
 }

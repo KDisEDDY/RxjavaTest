@@ -29,6 +29,7 @@ import butterknife.ButterKnife;
 import callback.DownLoadCallBack;
 import listener.RecycleViewItemClickListener.ItemClickListener;
 import listener.UIProgressResponseListener;
+import project.ljy.utils.CommonUtils;
 
 import static android.support.v7.widget.RecyclerView.*;
 import static listener.RecycleViewItemClickListener.*;
@@ -125,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements IMain.View{
         ButterKnife.bind(this);
         ButterKnife.setDebug(true);
         if(mAdapter == null){
-            mAdapter = new DaliyItemAdapter(new ArrayList<ResultsBean>());
+            mAdapter = new DaliyItemAdapter(this,new ArrayList<ResultsBean>());
             mRecycleList.setAdapter(mAdapter);
         }
         manager = new LinearLayoutManager(this);
@@ -183,7 +184,7 @@ public class MainActivity extends AppCompatActivity implements IMain.View{
 
                     @Override
                     public void onUIProgressFinish(File file) {
-                        installAPK(file);
+                        CommonUtils.installAPK(MainActivity.this,file);
                         manager.cancel(0x123);
                     }
                 });
@@ -225,17 +226,5 @@ public class MainActivity extends AppCompatActivity implements IMain.View{
         mPresenter.loadData(mCurrentType);
     }
 
-    public void installAPK(File file){
-        Intent intent = new Intent(Intent.ACTION_VIEW);
 
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
-        intent.setAction(android.content.Intent.ACTION_VIEW);
-
-        intent.setDataAndType(Uri.fromFile(file),
-
-                "application/vnd.android.package-archive");
-
-        this.startActivity(intent);
-    }
 }

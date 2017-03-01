@@ -1,5 +1,6 @@
 package project.ljy.rxjavatest;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -21,12 +22,14 @@ import listener.RecycleViewItemClickListener;
 public abstract class BaseRecyclerViewAdapter<T extends RecyclerView.ViewHolder , S> extends RecyclerView.Adapter<T> {
 
     public List<S> list = null;
+    public Context context = null;
 
     private RecycleViewItemClickListener.ItemClickListener onItemClickListener  = null;
 
     private RecycleViewItemClickListener.LongItemClickListener onLongItemClickListener = null;
 
-    public BaseRecyclerViewAdapter(List<S> list){
+    public BaseRecyclerViewAdapter(Context context , List<S> list){
+        this.context = context;
         this.list  = list;
     }
 
