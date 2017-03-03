@@ -2,6 +2,8 @@ package utils;
 
 import bean.DaliyBean;
 import bean.TypeItemBean;
+import io.reactivex.Flowable;
+import io.reactivex.FlowableOnSubscribe;
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;
 import retrofit2.http.GET;
@@ -21,11 +23,14 @@ public interface API {
                                                  @Path("day") String day);
     }
 
+    /**
+     * 使用了Rxjava2新特性的Flowable
+     */
     interface TypeDaliyApi{
         @GET("data/{type}/{pageSize}/{page}")
-        Observable<TypeItemBean> getTypeDaliyApi(@Path("type") String type,
-                                                 @Path("pageSize") String pageSize,
-                                                 @Path("page") String page);
+        Flowable<TypeItemBean> getTypeDaliyApi(@Path("type") String type,
+                                               @Path("pageSize") String pageSize,
+                                               @Path("page") String page);
     }
 
     interface DownLoadApi{

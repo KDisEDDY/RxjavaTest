@@ -15,6 +15,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Function;
 import io.reactivex.observers.DefaultObserver;
 import io.reactivex.schedulers.Schedulers;
+import io.reactivex.subscribers.DisposableSubscriber;
 import listener.UIProgressResponseListener;
 import utils.DownLoadUtil;
 import utils.RetrofitManager;
@@ -120,9 +121,9 @@ public class MainPresenter implements IMain.Presenter{
     }
 
     public void requestList(final String typeStr, final int type , int page , int pageSize){
-        RetrofitManager.getTypeDaliyApi()
-                .getTypeDaliyApi(typeStr,pageSize + "" , page +"")
+       RetrofitManager.getTypeDaliyApi().getTypeDaliyApi(typeStr,pageSize + "" , page +"")
                 .observeOn(AndroidSchedulers.mainThread())
+                .onBackpressureBuffer()
                 .subscribeOn(Schedulers.newThread())
                 .map(new Function<TypeItemBean,  List<ResultsBean>>() {
                     @Override
@@ -134,10 +135,10 @@ public class MainPresenter implements IMain.Presenter{
                         return list;
                     }
                 })
-                .subscribe(new DefaultObserver<List<ResultsBean>>() {
+                .subscribe(new DisposableSubscriber<List<ResultsBean>>() {
                     @Override
-                    public void onNext( List<ResultsBean> list) {
-                        view.loadTypeData(false,list);
+                    public void onNext(List<ResultsBean> list) {
+                        view.loadTypeData(false, list);
                     }
 
                     @Override

@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  * Title: DataBaseOpenHelper
- * Description:
+ * Description:数据库管理工具类
  * Copyright: Copyright (c) 2014-2016 gjfax.com
  * Company: 广金所
  * Author: 刘加彦
