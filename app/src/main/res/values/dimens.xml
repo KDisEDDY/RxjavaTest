@@ -1,5 +1,16 @@
 <resources>
+    <!-- app中使用的字体大小 -->
+    <dimen name="common_text_min_small">10sp</dimen><!-- 特小号字体 -->
+    <dimen name="common_text_small">12sp</dimen><!-- 小号字体(二级说明文字、提示说明文字) -->
+    <dimen name="common_text_small_medium">14sp</dimen><!-- 中二号字体(输入框内文字、List多选标题文字、正文文字) -->
+    <dimen name="common_text_medium">16sp</dimen><!-- 中号字体(Tab,MiniTab、空页面文字说明等) -->
+    <dimen name="common_text_big">18sp</dimen><!-- 大号字体(列表一级文字、弹出框Title、顶部Actionbar标题) -->
+
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="bottom_navigation_view_height">50dp</dimen>
 </resources>

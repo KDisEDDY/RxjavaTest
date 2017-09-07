@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_record_list"
+        android:icon="@mipmap/ic_launcher"
+        android:title="列表" />
+    <item
+        android:id="@+id/item_calendar"
+        android:icon="@mipmap/ic_launcher"
+        android:title="日历" />
+    <item
+        android:id="@+id/item_finish_record"
+        android:icon="@mipmap/ic_launcher"
+        android:title="完成事项" />
+</menu>

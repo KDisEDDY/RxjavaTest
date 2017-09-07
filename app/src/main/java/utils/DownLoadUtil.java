@@ -11,6 +11,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.UUID;
 
 import io.reactivex.Observable;
 import io.reactivex.functions.Function;
@@ -20,6 +21,9 @@ import listener.ProgressResponseListener;
 import listener.UIProgressResponseListener;
 import okhttp3.ResponseBody;
 import callback.DownLoadCallBack;
+import okio.BufferedSink;
+import okio.BufferedSource;
+import okio.Okio;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -74,39 +78,39 @@ public class DownLoadUtil {
                                             if(!fileDir.exists()){
                                                 fileDir.mkdirs();
                                             }
-                                            File futureStudioIconFile = new File(rootDir + File.separator + strArray[strArray.length -1] );
-                                            if(futureStudioIconFile.exists()){
-                                                futureStudioIconFile.delete();
+                                            File downloadedFile = new File(rootDir + File.separator + strArray[strArray.length -1] + UUID.randomUUID());
+                                            if(downloadedFile.exists()){
+                                                downloadedFile.delete();
                                             }
-                                            InputStream inputStream = null;
-                                            OutputStream outputStream = null;
-
+                                            //尝试用Okio来做io流
+                                            BufferedSource readSource = null;
+                                            BufferedSink writeSink = null;
                                             try {
                                                 byte[] fileReader = new byte[4096];
 
-                                                inputStream = body.byteStream();
-                                                outputStream = new FileOutputStream(futureStudioIconFile);
+                                                readSource = Okio.buffer(Okio.source(body.byteStream()));
+                                                writeSink = Okio.buffer(Okio.sink(downloadedFile));
 
                                                 while (true) {
-                                                    int read = inputStream.read(fileReader);
+                                                    int read = readSource.read(fileReader);
 
                                                     if (read == -1) {
                                                         break;
                                                     }
-                                                    outputStream.write(fileReader, 0, read);
+                                                    writeSink.write(fileReader, 0, read);
                                                 }
 
-                                                outputStream.flush();
+                                                writeSink.flush();
                                                 handler.sendMessage(obtainMessage(SUCCESS,callBack));
                                             } catch (IOException e) {
                                                 handler.sendMessage(obtainMessage(FAILURE,callBack));
                                             } finally {
-                                                if (inputStream != null) {
-                                                    inputStream.close();
+                                                if (readSource != null) {
+                                                    readSource.close();
                                                 }
 
-                                                if (outputStream != null) {
-                                                    outputStream.close();
+                                                if (writeSink != null) {
+                                                    writeSink.close();
                                                 }
                                             }
                                         } catch (IOException e) {
@@ -158,8 +162,8 @@ public class DownLoadUtil {
                                 if(futureStudioIconFile.exists()){
                                     futureStudioIconFile.delete();
                                 }
-                                InputStream inputStream = null;
-                                OutputStream outputStream = null;
+                                BufferedSource readSource = null;
+                                BufferedSink writeSink = null;
 
                                 try {
                                     byte[] fileReader = new byte[10*1024];
@@ -167,11 +171,11 @@ public class DownLoadUtil {
                                     float fileSize = body.contentLength();
                                     float fileSizeDownloaded = 0;
 
-                                    inputStream = body.byteStream();
-                                    outputStream = new FileOutputStream(futureStudioIconFile);
+                                    readSource = Okio.buffer(Okio.source(body.byteStream()));
+                                    writeSink = Okio.buffer(Okio.sink(futureStudioIconFile));
                                     long currentProgress = 0;
                                     while (true) {
-                                        int read = inputStream.read(fileReader);
+                                        int read = readSource.read(fileReader);
                                         if (read == -1) {
                                             listener.onResponseProgress(100,100,false);
                                             break;
@@ -183,21 +187,21 @@ public class DownLoadUtil {
                                             listener.onResponseProgress(progress,100,false);
                                             currentProgress = progress;
                                         }
-                                        outputStream.write(fileReader, 0, read);
+                                        writeSink.write(fileReader, 0, read);
 
                                         fileSizeDownloaded += read;
                                     }
 
-                                    outputStream.flush();
+                                    writeSink.flush();
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 } finally {
-                                    if (inputStream != null) {
-                                        inputStream.close();
+                                    if (readSource != null) {
+                                        readSource.close();
                                     }
 
-                                    if (outputStream != null) {
-                                        outputStream.close();
+                                    if (writeSink != null) {
+                                        writeSink.close();
                                     }
                                 }
                             } catch (IOException e) {

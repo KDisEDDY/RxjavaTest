@@ -16,4 +16,8 @@ public class BaseConstant {
     public final static int TYPE_WEBFRONT = 4;
     public final static int TYPE_EXTENDEDRESOURCE = 5;
     public final static int TYPE_ALL = 6;
+
+    /*toolbar样式*/
+    public final static int STYLE_DRAWERLAYOUT = 1;
+    public final static int STYLE_RETURN_BACK = 2;
 }

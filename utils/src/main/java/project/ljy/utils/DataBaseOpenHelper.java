@@ -234,8 +234,7 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
 
     /**
      * onUpgrade()方法在数据库版本每次发生变化时都会把用户手机上的数据库表删除，然后再重新创建。<br/>
-     * 一般在实际项目中是不能这样做的，正确的做法是在更新数据库表结构时，还要考虑用户存放于数据库中的数据不会丢失,从版本几更新到版本几。(非
-     * Javadoc)
+     * 一般在实际项目中是不能这样做的，正确的做法是在更新数据库表结构时，还要考虑用户存放于数据库中的数据不会丢失,从版本几更新到版本几。
      */
     @Override
     public void onUpgrade(SQLiteDatabase db, int arg1, int arg2) {
