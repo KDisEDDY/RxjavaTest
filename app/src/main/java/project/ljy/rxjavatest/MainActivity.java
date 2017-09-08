@@ -45,11 +45,11 @@ public class MainActivity extends BaseActivity
         } else if (id == R.id.nav_send) {
 
         } else if (id == R.id.item_record_list) {
-            initTitle(item.getTitle().toString(),BaseConstant.STYLE_DRAWERLAYOUT);
+            setWindowTitle(item.getTitle().toString());
         } else if (id == R.id.item_calendar) {
-            initTitle(item.getTitle().toString(),BaseConstant.STYLE_DRAWERLAYOUT);
+            setWindowTitle(item.getTitle().toString());
         } else if (id == R.id.item_finish_record) {
-            initTitle(item.getTitle().toString(),BaseConstant.STYLE_DRAWERLAYOUT);
+            setWindowTitle(item.getTitle().toString());
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

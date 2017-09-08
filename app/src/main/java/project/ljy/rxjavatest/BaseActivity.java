@@ -60,8 +60,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param toolbarStyle
      */
     public void initTitle(String title,int toolbarStyle){
-        TextView titleTxt = (TextView) findViewById(R.id.tv_title);
-        titleTxt.setText(title);
+        setWindowTitle(title);
         if(toolbarStyle == BaseConstant.STYLE_DRAWERLAYOUT){
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             StatusBarUtil.setColorForDrawerLayout(this,drawer,getResources().getColor(R.color.colorPrimary));
@@ -80,6 +79,18 @@ public abstract class BaseActivity extends AppCompatActivity {
         } else if(toolbarStyle == BaseConstant.STYLE_RETURN_BACK){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             StatusBarUtil.setColor(this, getResources().getColor(R.color.colorPrimary));
+        }
+    }
+
+    public void setWindowTitle(String title){
+        TextView titleTxt = (TextView) findViewById(R.id.tv_title);
+        titleTxt.setText(title);
+    }
+
+    public void setWindowTitle(int titleId){
+        if(titleId != 0){
+            TextView titleTxt = (TextView) findViewById(R.id.tv_title);
+            titleTxt.setText(titleId);
         }
     }
 

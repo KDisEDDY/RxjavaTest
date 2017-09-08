@@ -10,12 +10,6 @@ package project.ljy.rxjavatest;
  * Version: 1.0
  */
 public class BaseConstant {
-    public final static int TYPE_ANDROID = 1;
-    public final static int TYPE_IOS = 2;
-    public final static int TYPE_FULI = 3;
-    public final static int TYPE_WEBFRONT = 4;
-    public final static int TYPE_EXTENDEDRESOURCE = 5;
-    public final static int TYPE_ALL = 6;
 
     /*toolbar样式*/
     public final static int STYLE_DRAWERLAYOUT = 1;
