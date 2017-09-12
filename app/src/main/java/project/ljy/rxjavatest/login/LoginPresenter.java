@@ -20,6 +20,7 @@ public class LoginPresenter implements ILogin.Presenter {
 
     @Override
     public void login(String name, String password) {
-
+        mView.loginSuc();
+        mView.loginError(1);
     }
 }

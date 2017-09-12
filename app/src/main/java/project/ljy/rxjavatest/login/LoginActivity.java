@@ -1,6 +1,7 @@
 package project.ljy.rxjavatest.login;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -36,11 +37,12 @@ public class LoginActivity extends BaseActivity implements View {
 
     @Override
     public void loginError(int type) {
+        Log.i("login",type + "");
     }
 
     @Override
     public void loginSuc() {
-
+        Log.i("login","success");
     }
 
     private void initView() {

@@ -61,9 +61,10 @@ public abstract class BaseActivity extends AppCompatActivity {
      */
     public void initTitle(String title,int toolbarStyle){
         setWindowTitle(title);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if(toolbarStyle == BaseConstant.STYLE_DRAWERLAYOUT){
-            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             StatusBarUtil.setColorForDrawerLayout(this,drawer,getResources().getColor(R.color.colorPrimary));
+            drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                     this, drawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
             drawer.addDrawerListener(toggle);
@@ -78,6 +79,9 @@ public abstract class BaseActivity extends AppCompatActivity {
             });
         } else if(toolbarStyle == BaseConstant.STYLE_RETURN_BACK){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            if(drawer != null){
+                drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+            }
             StatusBarUtil.setColor(this, getResources().getColor(R.color.colorPrimary));
         }
     }

@@ -20,7 +20,7 @@ public class MainActivity extends BaseActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initTitle("日程", BaseConstant.STYLE_DRAWERLAYOUT);
+        initTitle("日程", BaseConstant.STYLE_RETURN_BACK);
         addNavigationItemSelectedListener(this);
 
         initView();
