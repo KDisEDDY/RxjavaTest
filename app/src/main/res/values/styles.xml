@@ -15,8 +15,8 @@
     </style>
 
     <style name="menu_labels_style">
-        <item name="android:background">@color/textbackground</item>
-        <item name="android:textColor">@color/normaltext</item>
+        <item name="android:background">@color/commonTxtBackground</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

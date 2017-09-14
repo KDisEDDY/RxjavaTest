@@ -2,15 +2,19 @@ package project.ljy.rxjavatest;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends BaseActivity
         implements BaseActivity.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
 
     private BottomNavigationView mBnvNavigation;
+    private boolean mIsLogin = false;
 
     @Override
     public int setSubContentView() {
@@ -20,7 +24,7 @@ public class MainActivity extends BaseActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initTitle("日程", BaseConstant.STYLE_RETURN_BACK);
+        initTitle("日程", BaseConstant.STYLE_DRAWERLAYOUT);
         addNavigationItemSelectedListener(this);
 
         initView();

@@ -1,9 +1,10 @@
 package project.ljy.rxjavatest.login;
 
 import android.os.Bundle;
+import android.support.design.widget.TextInputEditText;
+import android.support.v7.widget.AppCompatButton;
 import android.util.Log;
 import android.widget.Button;
-import android.widget.EditText;
 
 import project.ljy.rxjavatest.BaseActivity;
 import project.ljy.rxjavatest.BaseConstant;
@@ -13,8 +14,10 @@ import project.ljy.rxjavatest.login.ILogin.View;
 public class LoginActivity extends BaseActivity implements View {
 
     protected ILogin.Presenter mPresenter;
-    protected EditText etText;
-    protected Button btnTxt;
+    protected TextInputEditText mNameEdt;
+    protected Button mLoginBtn;
+    protected TextInputEditText mPasswordEdt;
+    protected AppCompatButton mRegisterBtn;
 
     @Override
     public int setSubContentView() {
@@ -37,22 +40,24 @@ public class LoginActivity extends BaseActivity implements View {
 
     @Override
     public void loginError(int type) {
-        Log.i("login",type + "");
+        Log.i("login", type + "");
     }
 
     @Override
     public void loginSuc() {
-        Log.i("login","success");
+        Log.i("login", "success");
     }
 
     private void initView() {
-        etText = (EditText) findViewById(R.id.et_text);
-        btnTxt = (Button) findViewById(R.id.btn_txt);
-        btnTxt.setOnClickListener(new android.view.View.OnClickListener() {
+        mNameEdt = (TextInputEditText) findViewById(R.id.edt_name);
+        mLoginBtn = (Button) findViewById(R.id.btn_login);
+        mLoginBtn.setOnClickListener(new android.view.View.OnClickListener() {
             @Override
             public void onClick(android.view.View v) {
-                mPresenter.login(etText.getText().toString(),etText.getText().toString());
+                mPresenter.login(mNameEdt.getText().toString(), mPasswordEdt.getText().toString());
             }
         });
+        mPasswordEdt = (TextInputEditText) findViewById(R.id.edt_password);
+        mRegisterBtn = (AppCompatButton) findViewById(R.id.btn_register);
     }
 }

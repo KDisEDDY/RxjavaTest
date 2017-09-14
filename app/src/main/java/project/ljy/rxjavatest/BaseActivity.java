@@ -64,7 +64,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if(toolbarStyle == BaseConstant.STYLE_DRAWERLAYOUT){
             StatusBarUtil.setColorForDrawerLayout(this,drawer,getResources().getColor(R.color.colorPrimary));
-            drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                     this, drawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
             drawer.addDrawerListener(toggle);
