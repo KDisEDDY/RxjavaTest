@@ -1,4 +1,4 @@
-package project.ljy.utils;
+package db;
 
 /**
  * Title: DataBaseContant
@@ -12,7 +12,7 @@ package project.ljy.utils;
 
 public class DataBaseContant {
 
-    public static final String CREATETABLESQL = "create table Book ("
+    public static final String CREATE_TABLE_RECORDLIST = "create table record ("
             + "id integer primary key autoincrement, "
             + "title VARCHAR NOT NULL, "
             + "time VARCHAR, "
@@ -20,7 +20,19 @@ public class DataBaseContant {
             + "lockTime VARCHAR"
             + "content VARCHAR"
             + "isFinish INTEGER)";
+
+    /**登录个人信息*/
+    public static final String CREATE_TABLE_USER =  "create table user ("
+            + "id integer primary key autoincrement, "
+            + "username VARCHAR NOT NULL, "
+            + "phone VARCHAR, "
+            + "password VARCHAR, "
+            + "token VARCHAR)";
+
     public static final String DBNAME = "LazyKiller.db";
+
+    public static final String TABLE_USER = "user";
+    public static final String TABLE_RECORDLIST = "record";
 
     public static final int VERSION = 1;
 }

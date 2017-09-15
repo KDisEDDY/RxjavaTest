@@ -1,9 +1,14 @@
 package project.ljy.rxjavatest;
 
 import android.app.Application;
+import android.database.sqlite.SQLiteDatabase;
 
-import db.DatabaseHelper;
+import java.util.ArrayList;
+import java.util.List;
+
+import db.DataBaseContant;
 import project.ljy.utils.DataBaseOpenHelper;
+import project.ljy.utils.OnSqliteUpdateListener;
 
 /**
  * Title: BaseApplication
@@ -17,9 +22,29 @@ import project.ljy.utils.DataBaseOpenHelper;
 
 public class BaseApplication extends Application {
 
+    SQLiteDatabase mSqlite;
+    public static DataBaseOpenHelper mDataBaseHelper ;
     @Override
     public void onCreate() {
         super.onCreate();
 
+        initDataBase();
+    }
+
+    /** 初始化数据库 */
+    private void initDataBase(){
+        if(mSqlite == null){
+            List<String> tableList = new ArrayList<>();
+            tableList.add(DataBaseContant.CREATE_TABLE_RECORDLIST);
+            tableList.add(DataBaseContant.CREATE_TABLE_USER);
+            mDataBaseHelper = DataBaseOpenHelper.getInstance(this,DataBaseContant.DBNAME,DataBaseContant.VERSION,tableList);
+            mSqlite = mDataBaseHelper.getWritableDatabase();
+            mDataBaseHelper.setOnSqliteUpdateListener(new OnSqliteUpdateListener() {
+                @Override
+                public void onSqliteUpdateListener(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+                }
+            });
+        }
     }
 }
