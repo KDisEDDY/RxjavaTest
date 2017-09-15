@@ -2,16 +2,19 @@ package project.ljy.rxjavatest;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class MainActivity extends BaseActivity
         implements BaseActivity.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
 
     private BottomNavigationView mBnvNavigation;
-
+    private RelativeLayout mContainLayout;
+    private Fragment[] mTabFragments ;
     @Override
     public int setSubContentView() {
         return R.layout.activity_main;
@@ -20,7 +23,7 @@ public class MainActivity extends BaseActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initTitle("日程", BaseConstant.STYLE_DRAWERLAYOUT);
+        initTitle("列表", BaseConstant.STYLE_DRAWERLAYOUT);
         addNavigationItemSelectedListener(this);
 
         initView();
@@ -60,5 +63,7 @@ public class MainActivity extends BaseActivity
     private void initView() {
         mBnvNavigation = (BottomNavigationView) findViewById(R.id.bnv_navigation);
         mBnvNavigation.setOnNavigationItemSelectedListener(this);
+        mContainLayout = (RelativeLayout) findViewById(R.id.frag_container);
+        mTabFragments = new Fragment[mBnvNavigation.getMenu().size()];
     }
 }
