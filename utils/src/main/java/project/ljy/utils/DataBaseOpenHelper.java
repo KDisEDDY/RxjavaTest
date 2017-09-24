@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,11 +33,11 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
     private List<String> createTableList;
     private String nowDbName ;
 
-    private DataBaseOpenHelper(Context context) {
-        super(context, DataBaseContant.DBNAME, null, DataBaseContant.VERSION);
-        nowDbName = DataBaseContant.DBNAME;
+    private DataBaseOpenHelper(Context context,String dbName, int dbVersion, List<String> tableSqls) {
+        super(context, dbName, null, dbVersion);
+        nowDbName = dbName;
         createTableList = new ArrayList<>();
-       createTableList.add(DataBaseContant.CREATETABLESQL);
+        createTableList.addAll(tableSqls);
     }
 
     /**
@@ -52,7 +53,7 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
     public static DataBaseOpenHelper getInstance(Context context, String dbName, int dbVersion, List<String> tableSqls) {
         DataBaseOpenHelper dataBaseOpenHelper = dbMaps.get(dbName);
         if (dataBaseOpenHelper == null) {
-            dataBaseOpenHelper = new DataBaseOpenHelper(context);
+            dataBaseOpenHelper = new DataBaseOpenHelper(context,dbName,dbVersion,tableSqls);
         }
         dbMaps.put(dbName, dataBaseOpenHelper);
         return dataBaseOpenHelper;
@@ -60,6 +61,7 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        Log.i("SqliteFunction","---------------------------onCreate success");
         for (String sqlString : createTableList) {
             db.execSQL(sqlString);
         }

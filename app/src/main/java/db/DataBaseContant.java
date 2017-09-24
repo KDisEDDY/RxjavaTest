@@ -17,8 +17,8 @@ public class DataBaseContant {
             + "title VARCHAR NOT NULL, "
             + "time VARCHAR, "
             + "level INTEGER, "
-            + "lockTime VARCHAR"
-            + "content VARCHAR"
+            + "lockTime VARCHAR, "
+            + "content VARCHAR, "
             + "isFinish INTEGER)";
 
     /**登录个人信息*/
