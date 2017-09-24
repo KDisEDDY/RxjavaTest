@@ -3,9 +3,12 @@ package project.ljy.rxjavatest;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
+import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -13,6 +16,8 @@ public class MainActivity extends BaseActivity
         implements BaseActivity.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
 
     private BottomNavigationView mBnvNavigation;
+    private boolean mIsLogin = false;
+
     private RelativeLayout mContainLayout;
     private Fragment[] mTabFragments ;
     @Override

@@ -21,19 +21,22 @@ import java.util.Map;
  * Version: 1.0
  */
 public class DataBaseOpenHelper extends SQLiteOpenHelper {
+    private int dbVersion = 1;
+
+
     private static Map<String, DataBaseOpenHelper> dbMaps = new HashMap<String, DataBaseOpenHelper>();
     private OnSqliteUpdateListener onSqliteUpdateListener;
     /**
      * 建表语句列表
      */
     private List<String> createTableList;
-    private String nowDbName;
+    private String nowDbName ;
 
-    private DataBaseOpenHelper(Context context, String dbName, int dbVersion, List<String> tableSqls) {
-        super(context, dbName, null, dbVersion);
-        nowDbName = dbName;
-        createTableList = new ArrayList<String>();
-        createTableList.addAll(tableSqls);
+    private DataBaseOpenHelper(Context context) {
+        super(context, DataBaseContant.DBNAME, null, DataBaseContant.VERSION);
+        nowDbName = DataBaseContant.DBNAME;
+        createTableList = new ArrayList<>();
+       createTableList.add(DataBaseContant.CREATETABLESQL);
     }
 
     /**
@@ -49,7 +52,7 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
     public static DataBaseOpenHelper getInstance(Context context, String dbName, int dbVersion, List<String> tableSqls) {
         DataBaseOpenHelper dataBaseOpenHelper = dbMaps.get(dbName);
         if (dataBaseOpenHelper == null) {
-            dataBaseOpenHelper = new DataBaseOpenHelper(context, dbName, dbVersion, tableSqls);
+            dataBaseOpenHelper = new DataBaseOpenHelper(context);
         }
         dbMaps.put(dbName, dataBaseOpenHelper);
         return dataBaseOpenHelper;
