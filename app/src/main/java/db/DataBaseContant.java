@@ -24,6 +24,7 @@ public class DataBaseContant {
     /**登录个人信息*/
     public static final String CREATE_TABLE_USER =  "create table user ("
             + "id integer primary key autoincrement, "
+            + "userid VARCHAR NOT NULL, "
             + "username VARCHAR NOT NULL, "
             + "phone VARCHAR, "
             + "password VARCHAR, "
