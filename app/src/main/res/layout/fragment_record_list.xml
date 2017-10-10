@@ -9,7 +9,12 @@
         android:gravity="center"
         android:padding="8dp"
         android:layout_margin="8dp"
-        android:background="@drawable/btn_background_normal"
+        android:background="@drawable/btn_selector"
         android:text="+"
+        />
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         />
 </LinearLayout>

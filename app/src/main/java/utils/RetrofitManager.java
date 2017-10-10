@@ -17,7 +17,7 @@ public class RetrofitManager {
 
     static Retrofit retrofit;
 
-    public static Retrofit getRetrofitInstance(OkHttpClient ...client) {
+    public static Retrofit getRetrofitInstance(String baseUrl , OkHttpClient ...client) {
         OkHttpClient okHttpClient ;
         if(client.length == 0){
             okHttpClient = getDefaultClient();
@@ -25,7 +25,7 @@ public class RetrofitManager {
             okHttpClient = client[0];
         }
         if(retrofit == null){
-            retrofit = new Retrofit.Builder().baseUrl("http://gank.io/api/")
+            retrofit = new Retrofit.Builder().baseUrl(baseUrl)
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(okHttpClient)
@@ -45,6 +45,6 @@ public class RetrofitManager {
     }
 
     static public API.DownLoadApi getDownLoadApi(){
-            return getRetrofitInstance().create(API.DownLoadApi.class);
+            return getRetrofitInstance("dddd").create(API.DownLoadApi.class);
     }
 }
