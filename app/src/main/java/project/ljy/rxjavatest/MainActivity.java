@@ -14,6 +14,12 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import event.CommonEvent;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
+import utils.RxBus;
+
 public class MainActivity extends BaseActivity
         implements BaseActivity.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -40,7 +46,7 @@ public class MainActivity extends BaseActivity
 
         initView();
         initFragment();
-
+        registerRxbus();
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -111,5 +117,16 @@ public class MainActivity extends BaseActivity
             }
         }
         transaction.commit();
+    }
+
+    private void registerRxbus(){
+        RxBus.getDefault().toObservable(CommonEvent.class).subscribe(new Consumer<CommonEvent>() {
+            @Override
+            public void accept(CommonEvent commonEvent) throws Exception {
+                if(commonEvent == CommonEvent.UPDATE_LIST){
+
+                }
+            }
+        });
     }
 }
