@@ -9,7 +9,10 @@ package event;
 public enum  CommonEvent {
 
 
-    UPDATE_LIST (2);
+    UPDATE_LIST (1),
+    UPDATE_COMMENT(2),
+    UPDATE_ARGMENT(3);
+
 
     private int value ;
 
