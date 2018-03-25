@@ -1,7 +1,7 @@
-package project.ljy.rxjavatest.login;
+package project.ljy.rxjavatest.presenter;
 
-import project.ljy.rxjavatest.BasePresenter;
-import project.ljy.rxjavatest.BaseView;
+import project.ljy.rxjavatest.base.BasePresenter;
+import project.ljy.rxjavatest.base.BaseView;
 
 /**
  * Title: ILogin

@@ -1,4 +1,4 @@
-package project.ljy.rxjavatest;
+package project.ljy.rxjavatest.base;
 
 /**
  * Title: BaseConstant

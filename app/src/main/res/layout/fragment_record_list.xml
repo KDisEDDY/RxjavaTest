@@ -2,17 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/btn_add_record"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="8dp"
-        android:layout_margin="8dp"
-        android:background="@drawable/btn_selector"
-        android:text="+"
-        />
-
     <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

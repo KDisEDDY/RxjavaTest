@@ -7,7 +7,7 @@ import android.os.Message;
 import java.io.File;
 import java.lang.ref.WeakReference;
 
-import data.ProgressModel;
+import project.ljy.rxjavatest.data.ProgressModel;
 
 /**
  * Title: UIProgressResponseListener

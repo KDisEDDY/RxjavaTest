@@ -1,4 +1,4 @@
-package data;
+package project.ljy.rxjavatest.data;
 
 import java.io.Serializable;
 

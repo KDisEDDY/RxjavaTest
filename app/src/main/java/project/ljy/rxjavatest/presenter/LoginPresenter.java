@@ -1,4 +1,4 @@
-package project.ljy.rxjavatest.login;
+package project.ljy.rxjavatest.presenter;
 
 /**
  * Title: LoginPresenter

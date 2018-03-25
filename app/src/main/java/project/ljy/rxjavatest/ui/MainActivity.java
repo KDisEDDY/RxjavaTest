@@ -1,27 +1,27 @@
-package project.ljy.rxjavatest;
+package project.ljy.rxjavatest.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import event.CommonEvent;
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
+import project.ljy.rxjavatest.base.BaseActivity;
+import project.ljy.rxjavatest.base.BaseConstant;
+import project.ljy.rxjavatest.R;
+import project.ljy.rxjavatest.presenter.IMain;
+import project.ljy.rxjavatest.presenter.MainPresenter;
 import utils.RxBus;
 
 public class MainActivity extends BaseActivity
-        implements BaseActivity.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
+        implements BaseActivity.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener , IMain.View ,MoveListFragment.Action {
 
     private static final int TAB_RECORD_LIST = 0;
     private static final int TAB_CALENDAR = 1;
@@ -33,6 +33,8 @@ public class MainActivity extends BaseActivity
 
     private RelativeLayout mContainLayout;
     private Fragment[] mTabFragments ;
+
+    private IMain.Presenter mPresenter;
     @Override
     public int setSubContentView() {
         return R.layout.activity_main;
@@ -43,7 +45,7 @@ public class MainActivity extends BaseActivity
         super.onCreate(savedInstanceState);
         initTitle("列表", BaseConstant.STYLE_DRAWERLAYOUT);
         addNavigationItemSelectedListener(this);
-
+        mPresenter = new MainPresenter(this);
         initView();
         initFragment();
         registerRxbus();
@@ -56,7 +58,7 @@ public class MainActivity extends BaseActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            // Handle the camera Action
         } else if (id == R.id.nav_gallery) {
             Toast.makeText(this, "nav_gallery", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_slideshow) {
@@ -94,15 +96,15 @@ public class MainActivity extends BaseActivity
         mManager = getSupportFragmentManager();
         FragmentTransaction transaction = mManager.beginTransaction();
         mTabFragments = new Fragment[3];
-        RecordListFragment listFragment = RecordListFragment.newInstance(new Bundle());
+        MoveListFragment listFragment = MoveListFragment.newInstance(new Bundle());
         mTabFragments[TAB_RECORD_LIST] = listFragment;
         transaction.add(R.id.frag_container,listFragment);
         CalendarFragment calendarFragment = CalendarFragment.newInstance(new Bundle());
         mTabFragments[TAB_CALENDAR] = calendarFragment;
         transaction.add(R.id.frag_container,calendarFragment);
-        FinishRecordListFragment finishRecordListFragment = FinishRecordListFragment.newInstance(new Bundle());
-        mTabFragments[TAB_FINISH_RECORD_LIST] = finishRecordListFragment;
-        transaction.add(R.id.frag_container,finishRecordListFragment);
+        HavenSeenListFragment havenSeenListFragment = HavenSeenListFragment.newInstance(new Bundle());
+        mTabFragments[TAB_FINISH_RECORD_LIST] = havenSeenListFragment;
+        transaction.add(R.id.frag_container, havenSeenListFragment);
         transaction.commitAllowingStateLoss();
         showFragment(TAB_RECORD_LIST);
     }
@@ -128,5 +130,16 @@ public class MainActivity extends BaseActivity
                 }
             }
         });
+    }
+
+    @Override
+    public void setPresenter(IMain.Presenter mPresenter) {
+        this.mPresenter = mPresenter;
+    }
+
+
+    @Override
+    public void sendData(String str) {
+        Toast.makeText(this, "the movie you seen is " + str, Toast.LENGTH_SHORT).show();
     }
 }

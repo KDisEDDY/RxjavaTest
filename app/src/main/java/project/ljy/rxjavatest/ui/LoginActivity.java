@@ -1,4 +1,4 @@
-package project.ljy.rxjavatest.login;
+package project.ljy.rxjavatest.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
@@ -6,10 +6,12 @@ import android.support.v7.widget.AppCompatButton;
 import android.util.Log;
 import android.widget.Button;
 
-import project.ljy.rxjavatest.BaseActivity;
-import project.ljy.rxjavatest.BaseConstant;
+import project.ljy.rxjavatest.base.BaseActivity;
+import project.ljy.rxjavatest.base.BaseConstant;
 import project.ljy.rxjavatest.R;
-import project.ljy.rxjavatest.login.ILogin.View;
+import project.ljy.rxjavatest.presenter.ILogin;
+import project.ljy.rxjavatest.presenter.ILogin.View;
+import project.ljy.rxjavatest.presenter.LoginPresenter;
 
 public class LoginActivity extends BaseActivity implements View {
 

@@ -1,4 +1,4 @@
-package project.ljy.rxjavatest;
+package project.ljy.rxjavatest.base;
 
 import android.app.Application;
 import android.content.ContentValues;

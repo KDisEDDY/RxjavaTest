@@ -1,4 +1,4 @@
-package project.ljy.rxjavatest;
+package project.ljy.rxjavatest.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,17 +7,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import project.ljy.rxjavatest.R;
+
 /**
  * Created by EDDY on 2017/9/24.
  */
 
-public class CalendarFragment extends Fragment {
+public class HavenSeenListFragment extends Fragment {
 
-    public CalendarFragment(){
+    public HavenSeenListFragment(){
 
     }
-    public static CalendarFragment newInstance(Bundle bundle) {
-        CalendarFragment fragment = new CalendarFragment();
+
+    public static HavenSeenListFragment newInstance(Bundle bundle) {
+        HavenSeenListFragment fragment = new HavenSeenListFragment();
         fragment.setArguments(bundle);
         return fragment;
     }
@@ -30,6 +33,6 @@ public class CalendarFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_calendar , container,false);
+        return inflater.inflate(R.layout.fragment_finish_record_list,container,false);
     }
 }
