@@ -21,7 +21,7 @@ import project.ljy.rxjavatest.presenter.MainPresenter;
 import utils.RxBus;
 
 public class MainActivity extends BaseActivity
-        implements BaseActivity.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener , IMain.View ,MoveListFragment.Action {
+        implements BaseActivity.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener , IMain.View ,VideoListFragment.Action {
 
     private static final int TAB_RECORD_LIST = 0;
     private static final int TAB_CALENDAR = 1;
@@ -96,7 +96,7 @@ public class MainActivity extends BaseActivity
         mManager = getSupportFragmentManager();
         FragmentTransaction transaction = mManager.beginTransaction();
         mTabFragments = new Fragment[3];
-        MoveListFragment listFragment = MoveListFragment.newInstance(new Bundle());
+        VideoListFragment listFragment = VideoListFragment.newInstance(new Bundle());
         mTabFragments[TAB_RECORD_LIST] = listFragment;
         transaction.add(R.id.frag_container,listFragment);
         CalendarFragment calendarFragment = CalendarFragment.newInstance(new Bundle());

@@ -23,4 +23,8 @@ public interface API {
         @GET()
         Observable<ResponseBody> downloadProgressFile(@Url String url);
     }
+
+    interface MoveListApi{
+        ResponseBody getMovieList(String url);
+    }
 }

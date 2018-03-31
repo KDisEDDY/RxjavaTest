@@ -4,13 +4,13 @@ import project.ljy.rxjavatest.base.BasePresenter;
 import project.ljy.rxjavatest.base.BaseView;
 
 /**
- * ClassName: IMoveList
+ * ClassName: IVideoList
  * function:
  * Created by EDDY
  * CreateTime:2018/3/25
  */
-public interface IMoveList {
-    interface View extends BaseView<IMoveList.Presenter> {
+public interface IVideoList {
+    interface View extends BaseView<IVideoList.Presenter> {
 
     }
 

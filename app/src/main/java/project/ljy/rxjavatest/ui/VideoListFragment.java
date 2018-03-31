@@ -12,27 +12,27 @@ import project.ljy.rxjavatest.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MoveListFragment#newInstance} factory method to
+ * Use the {@link VideoListFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MoveListFragment extends Fragment {
+public class VideoListFragment extends Fragment {
     //相当于intent传送的标志变量
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
     private Action mAction;
-    public MoveListFragment() {
+    public VideoListFragment() {
         // Required empty public constructor
     }
 
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
-     * @return A new instance of fragment MoveListFragment.
+     * @return A new instance of fragment VideoListFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MoveListFragment newInstance(Bundle bundle) {
-        MoveListFragment fragment = new MoveListFragment();
+    public static VideoListFragment newInstance(Bundle bundle) {
+        VideoListFragment fragment = new VideoListFragment();
         fragment.setArguments(bundle);
         return fragment;
     }
