@@ -4,21 +4,35 @@ package project.ljy.rxjavatest.ui;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.io.IOException;
+import java.util.List;
+
+import okhttp3.Call;
 import project.ljy.rxjavatest.R;
+import project.ljy.rxjavatest.data.VideoList;
+import project.ljy.rxjavatest.network.Callable;
+import project.ljy.rxjavatest.network.VideoListModel;
+import project.ljy.rxjavatest.presenter.IVideoList;
+import project.ljy.rxjavatest.presenter.VideoListPresenter;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link VideoListFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class VideoListFragment extends Fragment {
+public class VideoListFragment extends Fragment implements IVideoList.View{
     //相当于intent传送的标志变量
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    IVideoList.Presenter mPresenter;
+
+
 
     private Action mAction;
     public VideoListFragment() {
@@ -44,6 +58,7 @@ public class VideoListFragment extends Fragment {
             getArguments().getString(ARG_PARAM1);
             getArguments().getString(ARG_PARAM2);
         }
+        mPresenter = new VideoListPresenter(this);
     }
 
     @Override
@@ -58,6 +73,16 @@ public class VideoListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        return inflater.inflate(R.layout.fragment_record_list,container,false);
+    }
+
+    @Override
+    public void setPresenter(IVideoList.Presenter mPresenter) {
+        this.mPresenter = mPresenter;
+    }
+
+    @Override
+    public void loadCurItemList(List<VideoList.ItemListBeanX> itemList) {
+
     }
 
     public interface Action {

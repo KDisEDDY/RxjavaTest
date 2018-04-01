@@ -1,8 +1,13 @@
 package project.ljy.rxjavatest;
 
+import android.test.UiThreadTest;
 import android.util.Log;
 
 import org.junit.Test;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import event.CommonEvent;
 import io.reactivex.functions.Consumer;
@@ -11,6 +16,10 @@ import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.PublishSubject;
 import io.reactivex.subjects.ReplaySubject;
 import io.reactivex.subjects.Subject;
+import okhttp3.Call;
+import project.ljy.rxjavatest.data.VideoList;
+import project.ljy.rxjavatest.network.Callable;
+import project.ljy.rxjavatest.network.VideoListModel;
 
 import static org.junit.Assert.*;
 
@@ -122,5 +131,16 @@ public class ExampleUnitTest {
                 }
             }
         });
+    }
+
+    @Test
+    public void testLongTime() throws Exception{
+        Date date = new Date(1521853200000L);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd:HH-mm-ss");
+        System.out.print("time is " + dateFormat.format(date));
+    }
+
+    public void testKaiyanUrl() throws Exception{
+
     }
 }

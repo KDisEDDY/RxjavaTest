@@ -29,7 +29,6 @@ public class BaseRequest {
 
     private static OkHttpClient mClient ;
 
-
     private static synchronized  OkHttpClient getDefaultClient(){
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BASIC);
@@ -40,7 +39,7 @@ public class BaseRequest {
         return client;
     }
 
-    public void request(String url, RequestBody requestBody, final Callable callable){
+    <T extends BaseBO> void request(String url, RequestBody requestBody, final Callable<T> callable){
         if(mClient == null){
             synchronized (RequestUtil.class) {
                 if(mClient == null){
@@ -71,7 +70,10 @@ public class BaseRequest {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-//                callable.onResponse(call , new Gson().fromJson(response.body().string(), callable.getRspClass()));
+                if(callable != null){
+                    T rsp = new Gson().fromJson(response.body().string(),callable.getRspClass());
+                    callable.onResponse(call , rsp);
+                }
             }
         });
     }

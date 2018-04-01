@@ -29,7 +29,7 @@ public abstract class Callable<T extends BaseBO> {
         return rspClass;
     }
 
-    abstract void onFailure(Call call, IOException e);
+    public abstract void onFailure(Call call, IOException e);
 
-    abstract void onResponse(Call call, T data) throws IOException;
+    public abstract void onResponse(Call call, T data) throws IOException;
 }
