@@ -15,7 +15,7 @@ import project.ljy.rxjavatest.data.VideoList;
 public interface IVideoList {
 
     interface View extends BaseView<IVideoList.Presenter> {
-        public void loadCurItemList(List<VideoList.ItemListBeanX> itemList);
+        public void loadCurItemList(List<VideoList.ItemList> itemList);
     }
 
     interface Presenter extends BasePresenter {

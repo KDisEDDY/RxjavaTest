@@ -19,7 +19,7 @@ import project.ljy.rxjavatest.data.VideoList;
  */
 public class VideoListAdapter extends UltimateViewAdapter<VideoListAdapter.ViewHolder>{
 
-    List<VideoList.ItemListBeanX> itemList;
+    List<VideoList.ItemList> itemList;
     @Override
     public ViewHolder newFooterHolder(View view) {
         return null;

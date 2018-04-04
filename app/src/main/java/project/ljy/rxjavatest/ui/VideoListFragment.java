@@ -81,7 +81,7 @@ public class VideoListFragment extends Fragment implements IVideoList.View{
     }
 
     @Override
-    public void loadCurItemList(List<VideoList.ItemListBeanX> itemList) {
+    public void loadCurItemList(List<VideoList.ItemList> itemList) {
 
     }
 

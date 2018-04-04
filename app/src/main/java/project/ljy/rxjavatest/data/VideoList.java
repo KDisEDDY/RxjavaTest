@@ -14,20 +14,6 @@ import java.util.List;
 
 public class VideoList extends BaseBO {
 
-    /**
-     * itemList : [{"type":"horizontalScrollCard","data":{"dataType":"HorizontalScrollCard","itemList":[{"type":"banner2","data":{"dataType":"Banner","id":791,"title":"","description":"","image":"http://img.kaiyanapp.com/4bed8a5bdc2ece387b72bb1bfe37b6dc.jpeg?imageMogr2/quality/60/format/jpg","actionUrl":"eyepetizer://webview/?title=%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E6%84%9A%E4%BA%BA%E8%8A%82%E9%81%BF%E5%9D%91%E6%8C%87%E6%95%B0&url=http%3A%2F%2Fwww.kaiyanapp.com%2Fcampaign%2Fapril_fools_day%2Fapril_fools_day.html%3Futm_source%3Dinapp%26shareable%3Dtrue","adTrack":null,"shade":false,"label":{"text":"","card":"","detail":null},"labelList":[],"header":{"id":0,"title":null,"font":null,"subTitle":null,"subTitleFont":null,"textAlign":"left","cover":null,"label":null,"actionUrl":null,"labelList":null,"icon":null,"description":null}},"tag":null,"id":0,"adIndex":-1}],"count":1},"tag":"0","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94060,"title":"愚人节特辑：戏精广场！按下按钮你就是主角","description":"想体验一把主角的滋味吗？来广场按下这个按钮吧~ 我们为你精心准备了一段专属剧情，打斗、飙车、枪战，你想要的我们都有，刺激不刺激、惊喜不惊喜、意外不意外？橘子我们自己买了，就等你来。From Turner Benelux","library":"DAILY","tags":[{"id":748,"name":"广告精选","actionUrl":"eyepetizer://tag/748/?title=%E5%B9%BF%E5%91%8A%E7%B2%BE%E9%80%89","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/431177a6b2177788aa4d8eff8073d9a7.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/431177a6b2177788aa4d8eff8073d9a7.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"IMPORTANT"},{"id":134,"name":"反转","actionUrl":"eyepetizer://tag/134/?title=%E5%8F%8D%E8%BD%AC","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/c4daeee307e8efca77e095faaf5a5ab9.png?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/c4daeee307e8efca77e095faaf5a5ab9.png?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":146,"name":"666","actionUrl":"eyepetizer://tag/146/?title=666","adTrack":null,"desc":null,"bgPicture":"https://i.ytimg.com/vi/MKWWhf8RAV8/maxresdefault.jpg","headerImage":"http://img.kaiyanapp.com/522f7e51abb07a4a4438b82ee54174a4.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/e41e74fe73882b552de00d95d56748d2.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/3054658dbd559ac42c4c282e9cab7a32.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":609,"shareCount":892,"replyCount":31},"resourceType":"video","slogan":"就是要骗你啊！","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":{"id":2162,"icon":"http://img.kaiyanapp.com/98beab66d3885a139b54f21e91817c4f.jpeg","name":"开眼广告精选","description":"为广告人的精彩创意点赞","link":"","latestReleaseTime":1522544406000,"videoNum":901,"adTrack":null,"follow":{"itemType":"author","itemId":2162,"followed":false},"shield":{"itemType":"author","itemId":2162,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/7ca10330998e7ea54254ad27d2946231.png?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/7ca10330998e7ea54254ad27d2946231.png?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/376e0ce635a901a89f7383b2a08d38bb.png?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/7ca10330998e7ea54254ad27d2946231.png?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94060&editionType=default&source=aliyun","thumbPlayUrl":"","duration":215,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94060","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94060"},"releaseTime":1522544400000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94060&editionType=normal&source=aliyun","size":19742645},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94060&editionType=normal&source=qcloud","size":19742645},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94060&editionType=normal&source=ucloud","size":19742645}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94060&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94060&editionType=high&source=aliyun","size":32937118},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94060&editionType=high&source=qcloud","size":32937118},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94060&editionType=high&source=ucloud","size":32937118}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94060&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"","descriptionPgc":"","remark":"https://www.youtube.com/watch?v=ZIkPeZKP-d4\nhttps://weibo.com/tv/v/G9l2L88h9?fid=1034:e54e55c84ff8c19755cc797a4b81eacf","ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522544400000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"想体验一把主角的滋味吗？来广场按下这个按钮吧~ 我们为你精心准备了一段专属剧情，打斗、飙车、枪战，你想要的我们都有，刺激不刺激、惊喜不惊喜、意外不意外？橘子我们自己买了，就等你来。From Turner Benelux","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"0","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94565,"title":"最好的北京","description":"8KRAW 签约摄影师李子韬@iDavidLee 的作品。作者历时两年时间，拍摄 20TB 素材，33 万张照片，476 段北京延时素材，取其精华制作成这部「最好的北京」 。","library":"DAILY","tags":[{"id":52,"name":"风光摄影","actionUrl":"eyepetizer://tag/52/?title=%E9%A3%8E%E5%85%89%E6%91%84%E5%BD%B1","adTrack":null,"desc":"","bgPicture":"http://img.kaiyanapp.com/1d8a845e9def7b9af2e947afc858ee18.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/1d8a845e9def7b9af2e947afc858ee18.jpeg?imageMogr2/quality/100","tagRecType":"IMPORTANT"},{"id":696,"name":"北京","actionUrl":"eyepetizer://tag/696/?title=%E5%8C%97%E4%BA%AC","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/3789122fc978cd1a15011b43fdba18a5.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/3789122fc978cd1a15011b43fdba18a5.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":90,"name":"航拍","actionUrl":"eyepetizer://tag/90/?title=%E8%88%AA%E6%8B%8D","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/1ce841d0a9aa7e0ae48e5675a077e8b0.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/355eaae8f2436b01202f0cf289b25624.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":78,"name":"延时","actionUrl":"eyepetizer://tag/78/?title=%E5%BB%B6%E6%97%B6","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/9722d85d4703c35aa6383e04e5908751.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/8469265bc4b026850d31037e2778b9a5.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":10,"name":"旅行","actionUrl":"eyepetizer://tag/10/?title=%E6%97%85%E8%A1%8C","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/c1e1357770cc194272e735f3b1469868.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/8ff732f275759b2cb3a0b7fc9ba1715f.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":461,"shareCount":603,"replyCount":10},"resourceType":"video","slogan":"愿你留下这里的美好，而不是匆忙与庸碌","provider":{"name":"PGC","alias":"PGC","icon":""},"category":"旅行","author":{"id":2458,"icon":"http://img.kaiyanapp.com/2256ad07523b44f0c704e7ba5a3c2fa7.png?imageMogr2/quality/60/format/jpg","name":"8KRAW","description":"一个专注高质量动态影像的摄影师组织。","link":"","latestReleaseTime":1522392012000,"videoNum":17,"adTrack":null,"follow":{"itemType":"author","itemId":2458,"followed":false},"shield":{"itemType":"author","itemId":2458,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/9ecc34a42332cf31175a085ad1069e40.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/9ecc34a42332cf31175a085ad1069e40.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/3698c9444f9814afbb2da28b83d4fbc4.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/9ecc34a42332cf31175a085ad1069e40.jpeg?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94565&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":435,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94565","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94565"},"releaseTime":1522392012000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94565&editionType=normal&source=aliyun","size":71248148},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94565&editionType=normal&source=qcloud","size":71248148},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94565&editionType=normal&source=ucloud","size":71248148}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94565&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94565&editionType=high&source=aliyun","size":144883826},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94565&editionType=high&source=qcloud","size":144883826},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94565&editionType=high&source=ucloud","size":144883826}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94565&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"最好的北京","descriptionPgc":"8KRAW签约摄影师李子韬@iDavidLee的作品。作者历时两年时间，拍摄20TB素材，33万张照片，476段北京延时素材，取其精华制作成这部《最好的北京》 。","remark":"","ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522544400000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"8KRAW 签约摄影师李子韬@iDavidLee 的作品。作者历时两年时间，拍摄 20TB 素材，33 万张照片，476 段北京延时素材，取其精华制作成这部「最好的北京」 。","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"0","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":30275,"title":"超萌挑战：当猫咪遇上硬汉","description":"这次我们选了四只迷人猫咪和四名钢铁硬汉来进行这场「恶战」，和这些小可爱对视，谁会先败下阵来？糟糕，它走过来了，还晃了晃毛茸茸的小脑袋。哎哟，真是被你们打败了呀~From The Kitty","library":"DAILY","tags":[{"id":751,"name":"超萌动物在哪里","actionUrl":"eyepetizer://tag/751/?title=%E8%B6%85%E8%90%8C%E5%8A%A8%E7%89%A9%E5%9C%A8%E5%93%AA%E9%87%8C","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/9b3846ea47ba8916b19e4cf2b9c17e78.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/9b3846ea47ba8916b19e4cf2b9c17e78.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"IMPORTANT"},{"id":538,"name":"喵星人","actionUrl":"eyepetizer://tag/538/?title=%E5%96%B5%E6%98%9F%E4%BA%BA","adTrack":null,"desc":"","bgPicture":"http://img.kaiyanapp.com/e2b82549f60051d85ffb552d2efe8c07.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/e2b82549f60051d85ffb552d2efe8c07.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":498,"name":"萌","actionUrl":"eyepetizer://tag/498/?title=%E8%90%8C","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/d716039f4a93c75bb975a9aeed071342.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/efb2d3f26118e06bb88be3976cfb5831.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":32,"name":"萌宠","actionUrl":"eyepetizer://tag/32/?title=%E8%90%8C%E5%AE%A0","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/9eb744f260986b0eb5608595596425c5.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/27f9f96a319acacb32daed7b694ccb59.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":101,"shareCount":78,"replyCount":8},"resourceType":"video","slogan":"危险的不是恶霸拳头，而是超萌预警～","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"萌宠","author":{"id":2169,"icon":"http://img.kaiyanapp.com/ac6971c1b9fc942c7547d25fc6c60ad2.jpeg","name":"开眼萌宠精选","description":"来自汪星、喵星、蠢萌星的你","link":"","latestReleaseTime":1522544403000,"videoNum":141,"adTrack":null,"follow":{"itemType":"author","itemId":2169,"followed":false},"shield":{"itemType":"author","itemId":2169,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/0a4c2e49c71876085bf1552adbb48223.png?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/0a4c2e49c71876085bf1552adbb48223.png?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/4f1e97a3c0852883b0038f8dcb0d614d.png?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/0a4c2e49c71876085bf1552adbb48223.png?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=30275&editionType=default&source=aliyun","thumbPlayUrl":"","duration":100,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=30275","forWeibo":"http://wandou.im/3npd9w"},"releaseTime":1522544403000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=30275&editionType=normal&source=aliyun","size":5616636},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=30275&editionType=normal&source=qcloud","size":5616636},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=30275&editionType=normal&source=ucloud","size":5616636}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=30275&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=30275&editionType=high&source=aliyun","size":10321300},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=30275&editionType=high&source=qcloud","size":10321300},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=30275&editionType=high&source=ucloud","size":10321300}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=30275&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"","descriptionPgc":"","remark":"KEY & PEELE - Kittens Vs Thugs","ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522544400000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"这次我们选了四只迷人猫咪和四名钢铁硬汉来进行这场「恶战」，和这些小可爱对视，谁会先败下阵来？糟糕，它走过来了，还晃了晃毛茸茸的小脑袋。哎哟，真是被你们打败了呀~From The Kitty","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"0","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":20073,"title":"优秀学生动画作品：脚步","description":"这部动画短片用倒放的方式演绎了一场杀人案件，作者 Alex 是来自加州艺术学院的大二学生，该作品曾入围多个短片电影节。From Alex Avagimian","library":"DAILY","tags":[{"id":744,"name":"创意灵感","actionUrl":"eyepetizer://tag/744/?title=%E5%88%9B%E6%84%8F%E7%81%B5%E6%84%9F","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/bc2479c09cd15cb93b69d82e5f21c3fc.png?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/bc2479c09cd15cb93b69d82e5f21c3fc.png?imageMogr2/quality/60/format/jpg","tagRecType":"IMPORTANT"},{"id":130,"name":"悬疑","actionUrl":"eyepetizer://tag/130/?title=%E6%82%AC%E7%96%91","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/d486babd4c69bfd4de45462d1341b64b.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/d486babd4c69bfd4de45462d1341b64b.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":14,"name":"动画","actionUrl":"eyepetizer://tag/14/?title=%E5%8A%A8%E7%94%BB","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/c4e5c0f76d21abbd23c9626af3c9f481.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/88da8548d31005032c37df4889d2104c.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":149,"shareCount":32,"replyCount":8},"resourceType":"video","slogan":"用倒放的方式演绎杀人案件","provider":{"name":"Vimeo","alias":"vimeo","icon":"http://img.kaiyanapp.com/c3ad630be461cbb081649c9e21d6cbe3.png"},"category":"动画","author":{"id":2170,"icon":"http://img.kaiyanapp.com/482c741c06644f5566c7218096dbaf26.jpeg","name":"开眼动画精选","description":"有趣的人永远不缺童心","link":"","latestReleaseTime":1522544405000,"videoNum":580,"adTrack":null,"follow":{"itemType":"author","itemId":2170,"followed":false},"shield":{"itemType":"author","itemId":2170,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/f6a59117a533d36275e23e39ddf0e34b.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/f6a59117a533d36275e23e39ddf0e34b.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/2fa661ff9183647b1ec55003128f6e39.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/f6a59117a533d36275e23e39ddf0e34b.jpeg?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=20073&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":143,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=20073","forWeibo":"http://wandou.im/3mzbpg"},"releaseTime":1522544405000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=20073&editionType=normal&source=aliyun","size":4884932},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=20073&editionType=normal&source=qcloud","size":4884932},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=20073&editionType=normal&source=ucloud","size":4884932}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=20073&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=20073&editionType=high&source=aliyun","size":6791967},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=20073&editionType=high&source=qcloud","size":6791967},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=20073&editionType=high&source=ucloud","size":6791967}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=20073&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":null,"descriptionPgc":null,"remark":"","ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522544400000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"这部动画短片用倒放的方式演绎了一场杀人案件，作者 Alex 是来自加州艺术学院的大二学生，该作品曾入围多个短片电影节。From Alex Avagimian","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"0","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":18741,"title":"4 月 1 日限定！会抓鱼的机器人？","description":"愚人节发布各式「玩笑广告」成为各大科技公司惯例，由日本软银集团和法国 Aldebaran Robotics 研发的机器人 Pepper 最近就「被」新增了能在水中自由游泳的「鱼模式」。然而在下水前一刻\u2026\u2026From ソフトバンク（SoftBank）","library":"DAILY","tags":[{"id":556,"name":"科技","actionUrl":"eyepetizer://tag/556/?title=%E7%A7%91%E6%8A%80","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/27c3e861a02ced6069dd64c977746a61.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/b8a3443f9ff392b22201b74e47995e3c.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":568,"name":"机器人","actionUrl":"eyepetizer://tag/568/?title=%E6%9C%BA%E5%99%A8%E4%BA%BA","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/4e3a815321c1788840ee13809cf95d52.png?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/4e3a815321c1788840ee13809cf95d52.png?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":384,"name":"日本广告","actionUrl":"eyepetizer://tag/384/?title=%E6%97%A5%E6%9C%AC%E5%B9%BF%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/1bff9414303805e74affe1954f95d4af.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/40036ba884aed65c07a5ed1525e6cb2a.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/e41e74fe73882b552de00d95d56748d2.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/3054658dbd559ac42c4c282e9cab7a32.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":20,"shareCount":13,"replyCount":1},"resourceType":"video","slogan":"期待已久的 Pepper 新功能上线啦！","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":{"id":2162,"icon":"http://img.kaiyanapp.com/98beab66d3885a139b54f21e91817c4f.jpeg","name":"开眼广告精选","description":"为广告人的精彩创意点赞","link":"","latestReleaseTime":1522544406000,"videoNum":901,"adTrack":null,"follow":{"itemType":"author","itemId":2162,"followed":false},"shield":{"itemType":"author","itemId":2162,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/0ca7b08c08c748a29cb754c633efaf30.png?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/0ca7b08c08c748a29cb754c633efaf30.png?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/36da179fcd059d69a93edc33597217a3.png?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/0ca7b08c08c748a29cb754c633efaf30.png?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18741&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":131,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=18741","forWeibo":"http://wandou.im/3mndju"},"releaseTime":1522544406000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18741&editionType=normal&source=aliyun","size":10692236},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18741&editionType=normal&source=qcloud","size":10692236},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18741&editionType=normal&source=ucloud","size":10692236}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18741&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18741&editionType=high&source=aliyun","size":21439512},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18741&editionType=high&source=qcloud","size":21439512},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18741&editionType=high&source=ucloud","size":21439512}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18741&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":null,"descriptionPgc":null,"remark":"","ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522544400000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"愚人节发布各式「玩笑广告」成为各大科技公司惯例，由日本软银集团和法国 Aldebaran Robotics 研发的机器人 Pepper 最近就「被」新增了能在水中自由游泳的「鱼模式」。然而在下水前一刻\u2026\u2026From ソフトバンク（SoftBank）","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"0","id":0,"adIndex":-1},{"type":"textFooter","data":{"dataType":"TextFooter","text":"查看往期编辑精选","font":"normal","actionUrl":"eyepetizer://feed?issueIndex=1","adTrack":null},"tag":null,"id":0,"adIndex":-1},{"type":"videoCollectionWithCover","data":{"dataType":"ItemCollection","header":{"id":285,"title":null,"font":"normal","subTitle":null,"subTitleFont":null,"textAlign":"middle","cover":"http://img.kaiyanapp.com/0b039ac52722585240e624df415e1b09.jpeg?imageMogr2/quality/60/format/jpg","label":{"text":"","card":"","detail":null},"actionUrl":"eyepetizer://webview/?title=%E8%B0%B7%E6%AD%8C%E9%BB%91%E7%A7%91%E6%8A%80%EF%BC%8C%E6%84%9A%E4%BA%BA%E8%8A%82%E9%99%90%E9%87%8F%E5%8F%91%E5%94%AE&url=http%3A%2F%2Fwww.eyepetizer.net%2Fvideos_article.html%3Fnid%3D285%26shareable%3Dtrue","labelList":[{"text":"","actionUrl":null}]},"itemList":[{"type":"video","data":{"dataType":"VideoBeanForClient","id":94308,"title":"现实云平台，带给你更快更真实的体验","description":"Google 用现代最先进的技术，制造出了一块具有「现实意义」的与平台，这是全球首个在大气对流层上运营服务器的公共云平台。","library":"DEFAULT","tags":[{"id":556,"name":"科技","actionUrl":"eyepetizer://tag/556/?title=%E7%A7%91%E6%8A%80","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/27c3e861a02ced6069dd64c977746a61.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/b8a3443f9ff392b22201b74e47995e3c.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":516,"name":"恶搞","actionUrl":"eyepetizer://tag/516/?title=%E6%81%B6%E6%90%9E","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/e41e74fe73882b552de00d95d56748d2.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/3054658dbd559ac42c4c282e9cab7a32.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":121,"shareCount":206,"replyCount":5},"resourceType":"video","slogan":null,"provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":{"id":938,"icon":"http://img.kaiyanapp.com/e44ed5fcfa424ba35761ce5f1339bc16.jpeg?imageMogr2/quality/60/format/jpg","name":"欧美广告精选","description":"持续推送新奇、有趣、大开眼界的欧美创意广告","link":"","latestReleaseTime":1522471528000,"videoNum":323,"adTrack":null,"follow":{"itemType":"author","itemId":938,"followed":false},"shield":{"itemType":"author","itemId":938,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/467cd847658229dc30a4fddb347e83d9.png?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/467cd847658229dc30a4fddb347e83d9.png?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/e8ac1ef9ba1a1d25e5fa5766e8d4d1eb.png?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/467cd847658229dc30a4fddb347e83d9.png?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94308&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":127,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94308","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94308"},"releaseTime":1522471528000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94308&editionType=normal&source=aliyun","size":8975596},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94308&editionType=normal&source=qcloud","size":8975596},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94308&editionType=normal&source=ucloud","size":8975596}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94308&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94308&editionType=high&source=aliyun","size":16845214},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94308&editionType=high&source=qcloud","size":16845214},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94308&editionType=high&source=ucloud","size":16845214}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94308&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":null,"descriptionPgc":null,"remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522471528000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"Google 用现代最先进的技术，制造出了一块具有「现实意义」的与平台，这是全球首个在大气对流层上运营服务器的公共云平台。","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":18806,"title":"谷歌为萧敬腾提供了解决方案！","description":"荷兰是最伟大的国家之一，但最大的缺点是，一年 145 天下雨。谷歌风力技术可以吹走乌云，让多雨的地区不再令人烦恼，萧龙王的粉丝们仿佛看到了生命的曙光！From Google Nederland","library":"DAILY","tags":[{"id":748,"name":"广告精选","actionUrl":"eyepetizer://tag/748/?title=%E5%B9%BF%E5%91%8A%E7%B2%BE%E9%80%89","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/431177a6b2177788aa4d8eff8073d9a7.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/431177a6b2177788aa4d8eff8073d9a7.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"IMPORTANT"},{"id":504,"name":"笑cry","actionUrl":"eyepetizer://tag/504/?title=%E7%AC%91cry","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/3d3cb19d13cc16e8c3c2eddb12284fa3.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/177986653f12273f6d55edafe856ffe3.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":140,"name":"搞笑","actionUrl":"eyepetizer://tag/140/?title=%E6%90%9E%E7%AC%91","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/f787d5053443499e8d787911cd8b3876.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/f2b803d3c383bba5a3888b2709160b6e.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/e41e74fe73882b552de00d95d56748d2.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/3054658dbd559ac42c4c282e9cab7a32.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":516,"name":"恶搞","actionUrl":"eyepetizer://tag/516/?title=%E6%81%B6%E6%90%9E","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":438,"name":"谷歌","actionUrl":"eyepetizer://tag/438/?title=%E8%B0%B7%E6%AD%8C","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/d2927cd06cb14ff36e5ba232f81e486f.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/d2927cd06cb14ff36e5ba232f81e486f.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"}],"consumption":{"collectionCount":1321,"shareCount":1709,"replyCount":76},"resourceType":"video","slogan":null,"provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":{"id":2162,"icon":"http://img.kaiyanapp.com/98beab66d3885a139b54f21e91817c4f.jpeg","name":"开眼广告精选","description":"为广告人的精彩创意点赞","link":"","latestReleaseTime":1522544406000,"videoNum":901,"adTrack":null,"follow":{"itemType":"author","itemId":2162,"followed":false},"shield":{"itemType":"author","itemId":2162,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/a594a8da69bf358c32c56ba7d8130e48.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/a594a8da69bf358c32c56ba7d8130e48.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/6e2596d3c47e62e6bf7174910adf8ebd.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18806&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":110,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=18806","forWeibo":"http://wandou.im/3mpu8c"},"releaseTime":1491613200000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18806&editionType=normal&source=aliyun","size":10223334},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18806&editionType=normal&source=qcloud","size":10223334},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18806&editionType=normal&source=ucloud","size":10223334}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18806&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18806&editionType=high&source=aliyun","size":15462312},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18806&editionType=high&source=qcloud","size":15462312},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18806&editionType=high&source=ucloud","size":15462312}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=18806&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"","descriptionPgc":"","remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1491613200000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"荷兰是最伟大的国家之一，但最大的缺点是，一年 145 天下雨。谷歌风力技术可以吹走乌云，让多雨的地区不再令人烦恼，萧龙王的粉丝们仿佛看到了生命的曙光！From Google Nederland","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94307,"title":"陌生的味道？闻一闻就能搜到！","description":"Google 新增全球领先气味搜索功能，现已支持笔记本、手机和平板电脑等智能设备。只要打开 Google Nose 闻一闻，立刻搜出你想要的。","library":"DEFAULT","tags":[{"id":516,"name":"恶搞","actionUrl":"eyepetizer://tag/516/?title=%E6%81%B6%E6%90%9E","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":556,"name":"科技","actionUrl":"eyepetizer://tag/556/?title=%E7%A7%91%E6%8A%80","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/27c3e861a02ced6069dd64c977746a61.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/b8a3443f9ff392b22201b74e47995e3c.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/e41e74fe73882b552de00d95d56748d2.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/3054658dbd559ac42c4c282e9cab7a32.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":31,"shareCount":43,"replyCount":2},"resourceType":"video","slogan":null,"provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":{"id":938,"icon":"http://img.kaiyanapp.com/e44ed5fcfa424ba35761ce5f1339bc16.jpeg?imageMogr2/quality/60/format/jpg","name":"欧美广告精选","description":"持续推送新奇、有趣、大开眼界的欧美创意广告","link":"","latestReleaseTime":1522471528000,"videoNum":323,"adTrack":null,"follow":{"itemType":"author","itemId":938,"followed":false},"shield":{"itemType":"author","itemId":938,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/55f3d5c2cdacbbd6edb1bccadb301417.png?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/55f3d5c2cdacbbd6edb1bccadb301417.png?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/397f995d90e9dd02e8f73aca2757c0fa.png?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/55f3d5c2cdacbbd6edb1bccadb301417.png?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94307&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":122,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94307","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94307"},"releaseTime":1522468807000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94307&editionType=normal&source=aliyun","size":9412900},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94307&editionType=normal&source=qcloud","size":9412900},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94307&editionType=normal&source=ucloud","size":9412900}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94307&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94307&editionType=high&source=aliyun","size":16615140},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94307&editionType=high&source=qcloud","size":16615140},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94307&editionType=high&source=ucloud","size":16615140}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94307&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":null,"descriptionPgc":null,"remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522468807000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"Google 新增全球领先气味搜索功能，现已支持笔记本、手机和平板电脑等智能设备。只要打开 Google Nose 闻一闻，立刻搜出你想要的。","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94310,"title":"共享单车已经过气了，全自动驾驶单车才是未来","description":"有个 Google 全自动驾驶单车，妈妈不仅不用担心你学自行车这件事，再也不用担心你会走丢了。","library":"DEFAULT","tags":[{"id":516,"name":"恶搞","actionUrl":"eyepetizer://tag/516/?title=%E6%81%B6%E6%90%9E","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":556,"name":"科技","actionUrl":"eyepetizer://tag/556/?title=%E7%A7%91%E6%8A%80","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/27c3e861a02ced6069dd64c977746a61.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/b8a3443f9ff392b22201b74e47995e3c.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/e41e74fe73882b552de00d95d56748d2.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/3054658dbd559ac42c4c282e9cab7a32.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":89,"shareCount":178,"replyCount":4},"resourceType":"video","slogan":null,"provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":{"id":938,"icon":"http://img.kaiyanapp.com/e44ed5fcfa424ba35761ce5f1339bc16.jpeg?imageMogr2/quality/60/format/jpg","name":"欧美广告精选","description":"持续推送新奇、有趣、大开眼界的欧美创意广告","link":"","latestReleaseTime":1522471528000,"videoNum":323,"adTrack":null,"follow":{"itemType":"author","itemId":938,"followed":false},"shield":{"itemType":"author","itemId":938,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/4d64afbcbbf565bbf32f23846187e2f7.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/4d64afbcbbf565bbf32f23846187e2f7.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/d1f5f683bf6631bc30f3a5ec05e6b424.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/4d64afbcbbf565bbf32f23846187e2f7.jpeg?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94310&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":114,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94310","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94310"},"releaseTime":1522468808000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94310&editionType=normal&source=aliyun","size":10437051},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94310&editionType=normal&source=qcloud","size":10437051},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94310&editionType=normal&source=ucloud","size":10437051}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94310&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94310&editionType=high&source=aliyun","size":19472744},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94310&editionType=high&source=qcloud","size":19472744},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94310&editionType=high&source=ucloud","size":19472744}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94310&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":null,"descriptionPgc":null,"remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522468808000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"有个 Google 全自动驾驶单车，妈妈不仅不用担心你学自行车这件事，再也不用担心你会走丢了。","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94306,"title":"未来式的体验，一个更懂你的信箱","description":"虽然在信息网络发达的今天我们已经很少使用信件这种复古而又落后的形式来传递信息，但是有一个超级智能的信箱放在你家门口，多一个和别人装相的理由，有何尝不行呢？","library":"DEFAULT","tags":[{"id":516,"name":"恶搞","actionUrl":"eyepetizer://tag/516/?title=%E6%81%B6%E6%90%9E","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/f884134104430c3fe511147e93ea914f.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":556,"name":"科技","actionUrl":"eyepetizer://tag/556/?title=%E7%A7%91%E6%8A%80","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/27c3e861a02ced6069dd64c977746a61.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/b8a3443f9ff392b22201b74e47995e3c.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/e41e74fe73882b552de00d95d56748d2.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/3054658dbd559ac42c4c282e9cab7a32.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":17,"shareCount":20,"replyCount":0},"resourceType":"video","slogan":null,"provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":{"id":938,"icon":"http://img.kaiyanapp.com/e44ed5fcfa424ba35761ce5f1339bc16.jpeg?imageMogr2/quality/60/format/jpg","name":"欧美广告精选","description":"持续推送新奇、有趣、大开眼界的欧美创意广告","link":"","latestReleaseTime":1522471528000,"videoNum":323,"adTrack":null,"follow":{"itemType":"author","itemId":938,"followed":false},"shield":{"itemType":"author","itemId":938,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/d2072968837b1e1cab0f697b2b5ca1a9.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/d2072968837b1e1cab0f697b2b5ca1a9.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/13d0578ff553c0b12e1e8a2d61ef9469.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/d2072968837b1e1cab0f697b2b5ca1a9.jpeg?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94306&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":102,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94306","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94306"},"releaseTime":1522468806000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94306&editionType=normal&source=aliyun","size":6765591},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94306&editionType=normal&source=qcloud","size":6765591},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94306&editionType=normal&source=ucloud","size":6765591}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94306&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94306&editionType=high&source=aliyun","size":12320772},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94306&editionType=high&source=qcloud","size":12320772},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94306&editionType=high&source=ucloud","size":12320772}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94306&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":null,"descriptionPgc":null,"remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522468806000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"虽然在信息网络发达的今天我们已经很少使用信件这种复古而又落后的形式来传递信息，但是有一个超级智能的信箱放在你家门口，多一个和别人装相的理由，有何尝不行呢？","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1}],"count":5,"adTrack":null},"tag":null,"id":0,"adIndex":-1},{"type":"textHeader","data":{"dataType":"TextHeader","text":"- Mar. 31, Brunch -","font":"lobster","adTrack":null},"tag":"1","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94569,"title":"威尔·史密斯约会机器人索菲亚","description":"Will Smith 最近和「网红」机器人 Sophia 进行了一次浪漫的海岛约会。 Sophia 是最先进的人工智能的代表，她能够展示超过 60 种不同的人类表情，同时还能够解读人类的语言和情感。在约会结束时 Will Smith 试图吻 Sophia ，她却说：我想我们可以先做朋友。未来，你想拥有一个智能女友吗？From Will Smith","library":"DAILY","tags":[{"id":556,"name":"科技","actionUrl":"eyepetizer://tag/556/?title=%E7%A7%91%E6%8A%80","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/27c3e861a02ced6069dd64c977746a61.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/b8a3443f9ff392b22201b74e47995e3c.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":702,"name":"人物","actionUrl":"eyepetizer://tag/702/?title=%E4%BA%BA%E7%89%A9","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/9101692746a60cd7360838bf394703c1.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/9101692746a60cd7360838bf394703c1.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":678,"name":"明星","actionUrl":"eyepetizer://tag/678/?title=%E6%98%8E%E6%98%9F","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/1ba2b63b0e51c55c0a488f2c206c7770.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/45f5ee90bc22990d5bab85b9287b7c09.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":28,"name":"综艺","actionUrl":"eyepetizer://tag/28/?title=%E7%BB%BC%E8%89%BA","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/d67f739fba330099b515c3b92fccfd91.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/d67f739fba330099b515c3b92fccfd91.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":684,"shareCount":1062,"replyCount":49},"resourceType":"video","slogan":"人类与机器人爱情的「第一步」！","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"综艺","author":{"id":2174,"icon":"http://img.kaiyanapp.com/9f4c1559d54d4274e5463fba4262b284.jpeg","name":"开眼综艺精选","description":"全球网红在表演什么","link":"","latestReleaseTime":1522458000000,"videoNum":136,"adTrack":null,"follow":{"itemType":"author","itemId":2174,"followed":false},"shield":{"itemType":"author","itemId":2174,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/a21d3c8fee779ac865838dc1050ffc61.png?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/a21d3c8fee779ac865838dc1050ffc61.png?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/82535c6121d690b73390cf417de73c64.png?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/a21d3c8fee779ac865838dc1050ffc61.png?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94569&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":271,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94569","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94569"},"releaseTime":1522458000000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94569&editionType=normal&source=aliyun","size":13736819},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94569&editionType=normal&source=qcloud","size":13736819},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94569&editionType=normal&source=ucloud","size":13736819}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94569&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94569&editionType=high&source=aliyun","size":26024127},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94569&editionType=high&source=qcloud","size":26024127},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94569&editionType=high&source=ucloud","size":26024127}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94569&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":null,"descriptionPgc":null,"remark":"http://people.com/movies/will-smith-friend-zoned-date-robot/","ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522458000000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"Will Smith 最近和「网红」机器人 Sophia 进行了一次浪漫的海岛约会。 Sophia 是最先进的人工智能的代表，她能够展示超过 60 种不同的人类表情，同时还能够解读人类的语言和情感。在约会结束时 Will Smith 试图吻 Sophia ，她却说：我想我们可以先做朋友。未来，你想拥有一个智能女友吗？From Will Smith","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"1","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":92338,"title":"办公神器：你的台灯为什么那么大","description":"工作多，时间紧，肚子疼，洗手间遥不可及怎么办？台灯虽好，可不要贪多哦~From Troll Trump","library":"DAILY","tags":[{"id":750,"name":"搞笑短片","actionUrl":"eyepetizer://tag/750/?title=%E6%90%9E%E7%AC%91%E7%9F%AD%E7%89%87","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/9f3c1d7ff7e62119d6f7a21e2c367571.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/9f3c1d7ff7e62119d6f7a21e2c367571.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"IMPORTANT"},{"id":504,"name":"笑cry","actionUrl":"eyepetizer://tag/504/?title=%E7%AC%91cry","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/3d3cb19d13cc16e8c3c2eddb12284fa3.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/177986653f12273f6d55edafe856ffe3.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":172,"name":"什么鬼","actionUrl":"eyepetizer://tag/172/?title=%E4%BB%80%E4%B9%88%E9%AC%BC","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/e6b5568e865b26f3f84270e613955e59.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/e6b5568e865b26f3f84270e613955e59.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":140,"name":"搞笑","actionUrl":"eyepetizer://tag/140/?title=%E6%90%9E%E7%AC%91","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/f787d5053443499e8d787911cd8b3876.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/f2b803d3c383bba5a3888b2709160b6e.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"}],"consumption":{"collectionCount":163,"shareCount":247,"replyCount":15},"resourceType":"video","slogan":"慎点！这是一个有味道的视频","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"搞笑","author":{"id":2007,"icon":"http://img.kaiyanapp.com/8bf284aed36f12ea874defb29c790af9.png?imageMogr2/quality/60/format/jpg","name":"开眼搞笑精选","description":"开眼搞笑精选","link":"","latestReleaseTime":1522458001000,"videoNum":297,"adTrack":null,"follow":{"itemType":"author","itemId":2007,"followed":false},"shield":{"itemType":"author","itemId":2007,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/bea60013006349e8f570815f88125e8f.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/bea60013006349e8f570815f88125e8f.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/69f3af75c5790420f638b27fbf3bc38a.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/bea60013006349e8f570815f88125e8f.jpeg?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92338&editionType=default&source=aliyun","thumbPlayUrl":"","duration":181,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=92338","forWeibo":"http://www.eyepetizer.net/detail.html?vid=92338"},"releaseTime":1522458001000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92338&editionType=normal&source=aliyun","size":12561745},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92338&editionType=normal&source=qcloud","size":12561745},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92338&editionType=normal&source=ucloud","size":12561745}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92338&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92338&editionType=high&source=aliyun","size":21232022},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92338&editionType=high&source=qcloud","size":21232022},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92338&editionType=high&source=ucloud","size":21232022}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92338&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"","descriptionPgc":"","remark":"https://weibo.com/tv/v/G887Y18k2?fid=1034:8dceea743c899877b8aaed9f7e45ff3c","ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522458000000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"工作多，时间紧，肚子疼，洗手间遥不可及怎么办？台灯虽好，可不要贪多哦~From Troll Trump","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"1","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94516,"title":"超刺激！无人之地的跑车漂移大战","description":"Ryan Tuerck, Matt Powers 和 Kristaps Bluss 驾驶三辆漂移车前往拉脱维亚的一个废弃导弹基地，在这个无人问津的「绝佳」拍摄地点带来了一场漂移表演。戴上耳机，调高音量，一起来感受吧！ From Donut Media","library":"DAILY","tags":[{"id":562,"name":"汽车","actionUrl":"eyepetizer://tag/562/?title=%E6%B1%BD%E8%BD%A6","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/4dbb473e06bcadcb7414ad128cf09101.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/4dbb473e06bcadcb7414ad128cf09101.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":296,"name":"赛车","actionUrl":"eyepetizer://tag/296/?title=%E8%B5%9B%E8%BD%A6","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/0d9e9159aed0bfd51b114ccb2eef1615.png?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/0d9e9159aed0bfd51b114ccb2eef1615.png?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":200,"name":"酷炫","actionUrl":"eyepetizer://tag/200/?title=%E9%85%B7%E7%82%AB","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/71f39f985df512d0d9fb52b82737bcf5.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/71f39f985df512d0d9fb52b82737bcf5.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":4,"name":"运动","actionUrl":"eyepetizer://tag/4/?title=%E8%BF%90%E5%8A%A8","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/522d2216b5f8aca639c296d71ac78753.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/522d2216b5f8aca639c296d71ac78753.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":231,"shareCount":144,"replyCount":11},"resourceType":"video","slogan":"最佳漂移，不止是炫技","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"运动","author":{"id":2003,"icon":"http://img.kaiyanapp.com/f2449da39a584c982866b0636bd30c58.png?imageMogr2/quality/60/format/jpg","name":"开眼运动精选","description":"开眼运动精选","link":"","latestReleaseTime":1522458003000,"videoNum":340,"adTrack":null,"follow":{"itemType":"author","itemId":2003,"followed":false},"shield":{"itemType":"author","itemId":2003,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/04b4f8373255470946bebaea9bcd2ce4.png?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/04b4f8373255470946bebaea9bcd2ce4.png?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/7f5bf8fd8b4f6994c2cac296c12ef001.png?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/04b4f8373255470946bebaea9bcd2ce4.png?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94516&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":192,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94516","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94516"},"releaseTime":1522458003000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94516&editionType=normal&source=aliyun","size":31594193},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94516&editionType=normal&source=qcloud","size":31594193},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94516&editionType=normal&source=ucloud","size":31594193}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94516&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94516&editionType=high&source=aliyun","size":51359290},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94516&editionType=high&source=qcloud","size":51359290},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94516&editionType=high&source=ucloud","size":51359290}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94516&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":null,"descriptionPgc":null,"remark":"Tripped Out: Latvia - Drifting in a Soviet Missile Base | Donut Media\nhttps://www.roadandtrack.com/car-culture/entertainment/videos/a31826/drifting-through-an-abandoned-soviet-missile-base/","ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522458000000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"Ryan Tuerck, Matt Powers 和 Kristaps Bluss 驾驶三辆漂移车前往拉脱维亚的一个废弃导弹基地，在这个无人问津的「绝佳」拍摄地点带来了一场漂移表演。戴上耳机，调高音量，一起来感受吧！ From Donut Media","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"1","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":43736,"title":"丢了条纹的斑马","description":"一只撞到树上的斑马丢掉了原来的花纹，却获得了一种神奇的「超能力」\u2026\u2026有时命运的蜿蜒转折，或许就是新的机遇。","library":"DAILY","tags":[{"id":140,"name":"搞笑","actionUrl":"eyepetizer://tag/140/?title=%E6%90%9E%E7%AC%91","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/f787d5053443499e8d787911cd8b3876.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/f2b803d3c383bba5a3888b2709160b6e.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":170,"name":"幽默","actionUrl":"eyepetizer://tag/170/?title=%E5%B9%BD%E9%BB%98","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/8164ded95cfde8c5f42acf243c6ca3e6.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/8164ded95cfde8c5f42acf243c6ca3e6.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null,"desc":"","bgPicture":"http://img.kaiyanapp.com/e6eee049dd13fe8ce0712a6f2648d7e2.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/fdefdb34cbe3d2ac9964d306febe9025.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":490,"name":"脑洞","actionUrl":"eyepetizer://tag/490/?title=%E8%84%91%E6%B4%9E","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/c8ac7bb1fa9276ce647d4687d93dea34.png?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/c8ac7bb1fa9276ce647d4687d93dea34.png?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":14,"name":"动画","actionUrl":"eyepetizer://tag/14/?title=%E5%8A%A8%E7%94%BB","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/c4e5c0f76d21abbd23c9626af3c9f481.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/88da8548d31005032c37df4889d2104c.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":612,"shareCount":558,"replyCount":16},"resourceType":"video","slogan":"只要跑得够快，花纹就追不上我","provider":{"name":"定制来源","alias":"CustomSrc","icon":""},"category":"动画","author":{"id":1148,"icon":"http://img.kaiyanapp.com/cc2121985a10c9958636c011db3b0f50.jpeg?imageMogr2/quality/60/format/jpg","name":"Filmbilder","description":"来自德国的动画工作室，推广动画、做到最好是我们不变的追求。","link":"","latestReleaseTime":1521376822000,"videoNum":46,"adTrack":null,"follow":{"itemType":"author","itemId":1148,"followed":false},"shield":{"itemType":"author","itemId":1148,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/392ba60987bbe70fa95a7fae6858826d.png?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/392ba60987bbe70fa95a7fae6858826d.png?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/54e475a06d5d845bb21d858b63d1aff8.png?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/392ba60987bbe70fa95a7fae6858826d.png?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=43736&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":165,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=43736","forWeibo":"http://wandou.im/3o43no"},"releaseTime":1502770075000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=43736&editionType=normal&source=aliyun","size":5911630},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=43736&editionType=normal&source=qcloud","size":5911630},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=43736&editionType=normal&source=ucloud","size":5911630}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=43736&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=43736&editionType=high&source=aliyun","size":8140197},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=43736&editionType=high&source=qcloud","size":8140197},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=43736&editionType=high&source=ucloud","size":8140197}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=43736&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"","descriptionPgc":"","remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522458000000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"一只撞到树上的斑马丢掉了原来的花纹，却获得了一种神奇的「超能力」\u2026\u2026有时命运的蜿蜒转折，或许就是新的机遇。","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"1","id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":92528,"title":"爱情是什么模样？","description":"是病了吗，为什么会有心悸和奇怪的感觉？像蝴蝶在心中煽动翅膀，像生病，像书里写的那样：「我想和你一起生活，在某个小镇，共享无尽的黄昏，和绵绵不绝的钟声。」爱是情人之间的一层面纱，等你掀开，然后去尽情拥抱 TA~From Les Parasites","library":"DAILY","tags":[{"id":737,"name":"获奖作品","actionUrl":"eyepetizer://tag/737/?title=%E8%8E%B7%E5%A5%96%E4%BD%9C%E5%93%81","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/ce225210636a1d9ee4804bed55437698.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/ce225210636a1d9ee4804bed55437698.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"IMPORTANT"},{"id":174,"name":"治愈","actionUrl":"eyepetizer://tag/174/?title=%E6%B2%BB%E6%84%88","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/5417e0d8f72d7bb3f1cd69eb75b0759e.jpeg?imageMogr2/quality/60","headerImage":"http://img.kaiyanapp.com/5417e0d8f72d7bb3f1cd69eb75b0759e.jpeg?imageMogr2/quality/60","tagRecType":"NORMAL"},{"id":170,"name":"幽默","actionUrl":"eyepetizer://tag/170/?title=%E5%B9%BD%E9%BB%98","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/8164ded95cfde8c5f42acf243c6ca3e6.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/8164ded95cfde8c5f42acf243c6ca3e6.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":108,"name":"爱情","actionUrl":"eyepetizer://tag/108/?title=%E7%88%B1%E6%83%85","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/67025fb5bf4f8ff4ccd63cdcfd0cd6c6.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/67025fb5bf4f8ff4ccd63cdcfd0cd6c6.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":12,"name":"剧情","actionUrl":"eyepetizer://tag/12/?title=%E5%89%A7%E6%83%85","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/945fa937f0955b31224314a4eeef59b8.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/945fa937f0955b31224314a4eeef59b8.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":524,"shareCount":282,"replyCount":12},"resourceType":"video","slogan":"我想和你一起生活，共享无尽的黄昏","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"剧情","author":{"id":2172,"icon":"http://img.kaiyanapp.com/8581b06aa17c7dbe8970e4c27bbdbd98.png?imageMogr2/quality/60/format/jpg","name":"开眼剧情精选","description":"用一个好故事，描绘生活的不可思议","link":"","latestReleaseTime":1522458005000,"videoNum":418,"adTrack":null,"follow":{"itemType":"author","itemId":2172,"followed":false},"shield":{"itemType":"author","itemId":2172,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/4311544fbce0787dbfeb9ac6166195ea.png?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/4311544fbce0787dbfeb9ac6166195ea.png?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/f581b4010f628e6d8fb02b3908e5190c.png?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/4311544fbce0787dbfeb9ac6166195ea.png?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92528&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":418,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=92528","forWeibo":"http://www.eyepetizer.net/detail.html?vid=92528"},"releaseTime":1522458005000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92528&editionType=normal&source=aliyun","size":23285693},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92528&editionType=normal&source=qcloud","size":23285693},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92528&editionType=normal&source=ucloud","size":23285693}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92528&editionType=normal&source=aliyun"},{"height":544,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92528&editionType=high&source=aliyun","size":36691679},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92528&editionType=high&source=qcloud","size":36691679},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92528&editionType=high&source=ucloud","size":36691679}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=92528&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":null,"descriptionPgc":null,"remark":"爱情是一个光明的字，被一支光明的手，写在一张光明的纸上。爱情是情人之间的一层面纱。","ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522458000000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"是病了吗，为什么会有心悸和奇怪的感觉？像蝴蝶在心中煽动翅膀，像生病，像书里写的那样：「我想和你一起生活，在某个小镇，共享无尽的黄昏，和绵绵不绝的钟声。」爱是情人之间的一层面纱，等你掀开，然后去尽情拥抱 TA~From Les Parasites","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":"1","id":0,"adIndex":-1},{"type":"videoCollectionOfFollow","data":{"dataType":"ItemCollection","header":{"id":0,"title":"热门作者 / 精选分类关注推荐","font":"bold","subTitle":null,"subTitleFont":null,"textAlign":"left","cover":"http://img.kaiyanapp.com/2d5b6990c04ec7a21d77779eabed7b3f.png","label":null,"actionUrl":"eyepetizer://pgcs/all","labelList":null,"iconList":["http://img.kaiyanapp.com/01291539a223ef71de573929b6b50b11.jpeg?imageMogr2/quality/60/format/jpg","http://img.kaiyanapp.com/2ac78c8b3a9ef4ac2f3afcfbfc8977e8.jpeg?imageMogr2/quality/60/format/jpg","http://img.kaiyanapp.com/c44da9ebaa308564a790d9b6590b2290.jpeg?imageMogr2/quality/60/format/jpg"],"description":"VamosART / まつだ 马自达 55 / FilmIsNow 电影花絮与特辑"},"itemList":[{"type":"video","data":{"dataType":"VideoBeanForClient","id":94851,"title":"3D 绘画：字母","description":"如何在纸上画出 3D 的字母？","library":"NOT_RECOMMEND","tags":[{"id":666,"name":"生活","actionUrl":"eyepetizer://tag/666/?title=%E7%94%9F%E6%B4%BB","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/be945b24182e6a268bdd66f054148f47.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/be945b24182e6a268bdd66f054148f47.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":600,"name":"绘画","actionUrl":"eyepetizer://tag/600/?title=%E7%BB%98%E7%94%BB","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/9693d072141ab4842191f6eece705a33.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/9693d072141ab4842191f6eece705a33.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":72,"name":"手绘","actionUrl":"eyepetizer://tag/72/?title=%E6%89%8B%E7%BB%98","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/87b23581e50ed8a5d25345a59bbefbec.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/d0f6c8ba8246c93d6fbb0b1cf7bca952.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":0,"shareCount":0,"replyCount":0},"resourceType":"video","slogan":null,"provider":{"name":"定制来源","alias":"CustomSrc","icon":""},"category":"生活","author":{"id":1258,"icon":"http://img.kaiyanapp.com/01291539a223ef71de573929b6b50b11.jpeg?imageMogr2/quality/60/format/jpg","name":"VamosART","description":"这是绘画技巧超高的频道，专门绘画裸眼 3D。","link":"","latestReleaseTime":1522568527000,"videoNum":213,"adTrack":null,"follow":{"itemType":"author","itemId":1258,"followed":false},"shield":{"itemType":"author","itemId":1258,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/395e9bf4a9ab3ee923301d2dd73d6db8.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/395e9bf4a9ab3ee923301d2dd73d6db8.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/695c5108f9cf314617665cbb9cb281e5.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94851&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":200,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94851","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94851"},"releaseTime":1522568326000,"playInfo":[{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94851&editionType=high&source=aliyun","size":17096034},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94851&editionType=high&source=qcloud","size":17096034},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94851&editionType=high&source=ucloud","size":17096034}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94851&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"3D 绘画：字母","descriptionPgc":"如何在纸上画出 3D 的字母？","remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522568326000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94848,"title":"定格动画：如何饲养鲸鱼？","description":"你有没有想过在鱼缸里养一只鲸鱼？","library":"DEFAULT","tags":[{"id":82,"name":"定格","actionUrl":"eyepetizer://tag/82/?title=%E5%AE%9A%E6%A0%BC","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/e5c1340f5bae646976ed44714ac1dad7.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/e5c1340f5bae646976ed44714ac1dad7.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":14,"name":"动画","actionUrl":"eyepetizer://tag/14/?title=%E5%8A%A8%E7%94%BB","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/c4e5c0f76d21abbd23c9626af3c9f481.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/88da8548d31005032c37df4889d2104c.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null,"desc":"","bgPicture":"http://img.kaiyanapp.com/e6eee049dd13fe8ce0712a6f2648d7e2.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/fdefdb34cbe3d2ac9964d306febe9025.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":0,"shareCount":0,"replyCount":0},"resourceType":"video","slogan":null,"provider":{"name":"定制来源","alias":"CustomSrc","icon":""},"category":"动画","author":{"id":1736,"icon":"http://img.kaiyanapp.com/2ac78c8b3a9ef4ac2f3afcfbfc8977e8.jpeg?imageMogr2/quality/60/format/jpg","name":"まつだ 马自达 55","description":"大家好，这里是喜欢做可爱的定格动画的马自达 55。","link":"","latestReleaseTime":1522567262000,"videoNum":28,"adTrack":null,"follow":{"itemType":"author","itemId":1736,"followed":false},"shield":{"itemType":"author","itemId":1736,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/5a7a9e6229e30a1460fac4ae38297d8b.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/5a7a9e6229e30a1460fac4ae38297d8b.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/41c054583c80902665c784e1d63c098a.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94848&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":72,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94848","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94848"},"releaseTime":1522567262000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94848&editionType=normal&source=aliyun","size":3042007},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94848&editionType=normal&source=qcloud","size":3042007},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94848&editionType=normal&source=ucloud","size":3042007}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94848&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94848&editionType=high&source=aliyun","size":4547391},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94848&editionType=high&source=qcloud","size":4547391},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94848&editionType=high&source=ucloud","size":4547391}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94848&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"定格动画：如何饲养鲸鱼？","descriptionPgc":"你有没有想过在鱼缸里养一只鲸鱼？","remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522567262000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94843,"title":"「异形：契约」电影特效特辑","description":"「异形：契约」是 20 世纪福克斯于 2017 年出品的美国科幻电影，该片是 2012 年电影「普罗米修斯」的续篇，「异形」系列前传三部曲的第二部。该片讲述一群宇航员乘坐「契约号」飞船驶向银河系远端一颗未被探索的星球，本欲发现美好天堂结果陷入黑暗地狱的危险之旅的故事。","library":"DEFAULT","tags":[{"id":749,"name":"影视周边","actionUrl":"eyepetizer://tag/749/?title=%E5%BD%B1%E8%A7%86%E5%91%A8%E8%BE%B9","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/787bc5416e2a985520834eafa9d132af.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/787bc5416e2a985520834eafa9d132af.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"IMPORTANT"},{"id":582,"name":"动效","actionUrl":"eyepetizer://tag/582/?title=%E5%8A%A8%E6%95%88","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/fcdb27a6b68157effbce364a9c68632f.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/fcdb27a6b68157effbce364a9c68632f.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null,"desc":"","bgPicture":"http://img.kaiyanapp.com/e6eee049dd13fe8ce0712a6f2648d7e2.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/fdefdb34cbe3d2ac9964d306febe9025.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":4,"shareCount":0,"replyCount":0},"resourceType":"video","slogan":null,"provider":{"name":"定制来源","alias":"CustomSrc","icon":""},"category":"创意","author":{"id":984,"icon":"http://img.kaiyanapp.com/c44da9ebaa308564a790d9b6590b2290.jpeg?imageMogr2/quality/60/format/jpg","name":"FilmIsNow 电影花絮与特辑","description":"The FilmIsNow 是 Youtube 上排名在 TOP 30 的电影与动画频道。感谢大家的关注与观看。","link":"","latestReleaseTime":1522565679000,"videoNum":106,"adTrack":null,"follow":{"itemType":"author","itemId":984,"followed":false},"shield":{"itemType":"author","itemId":984,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/518f36b760b6c69e0d09a1c7eb4332d7.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/518f36b760b6c69e0d09a1c7eb4332d7.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/a582a6b01c42fb704663ad628cc4b4ea.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94843&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":166,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94843","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94843"},"releaseTime":1522565679000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94843&editionType=normal&source=aliyun","size":15166304},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94843&editionType=normal&source=qcloud","size":15166304},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94843&editionType=normal&source=ucloud","size":15166304}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94843&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94843&editionType=high&source=aliyun","size":23934317},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94843&editionType=high&source=qcloud","size":23934317},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94843&editionType=high&source=ucloud","size":23934317}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94843&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"「异形：契约」电影特效特辑","descriptionPgc":"「异形：契约」是 20 世纪福克斯于 2017 年出品的美国科幻电影，该片是 2012 年电影「普罗米修斯」的续篇，「异形」系列前传三部曲的第二部。该片讲述一群宇航员乘坐「契约号」飞船驶向银河系远端一颗未被探索的星球，本欲发现美好天堂结果陷入黑暗地狱的危险之旅的故事。","remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522565679000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":94838,"title":"「魔女与百骑兵 2」官方游戏预告","description":"「魔女与百骑兵 2」是一款 PS4 平台上的 ARPG 游戏，游戏讲述了一种只有少女会染上的不治之症「魔女病」。患者就像要证明自己染病一样，在额头上会出现一只拥有强大力量的眼睛。而在那只眼睛睁开时，少女就会失去自我，成为为全依存自己欲望而不断破坏的「魔女」。","library":"DEFAULT","tags":[{"id":752,"name":"游戏预告","actionUrl":"eyepetizer://tag/752/?title=%E6%B8%B8%E6%88%8F%E9%A2%84%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/8c4b35d9e5d30464f7f530d185117c2c.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/8c4b35d9e5d30464f7f530d185117c2c.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"IMPORTANT"},{"id":624,"name":"主机","actionUrl":"eyepetizer://tag/624/?title=%E4%B8%BB%E6%9C%BA","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/143eca3aa386335efe39d4018660c9e2.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/143eca3aa386335efe39d4018660c9e2.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":30,"name":"游戏","actionUrl":"eyepetizer://tag/30/?title=%E6%B8%B8%E6%88%8F","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/5f76097ee5192327b15330618df94ffd.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/5f76097ee5192327b15330618df94ffd.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"}],"consumption":{"collectionCount":0,"shareCount":0,"replyCount":0},"resourceType":"video","slogan":null,"provider":{"name":"定制来源","alias":"CustomSrc","icon":""},"category":"游戏","author":{"id":583,"icon":"http://img.kaiyanapp.com/c2cf31e03da320f3e6bfe162b1fde498.jpeg?imageMogr2/quality/60/format/jpg","name":"游戏预告 GameTrailers","description":"最新游戏预告片！","link":"","latestReleaseTime":1522564855000,"videoNum":662,"adTrack":null,"follow":{"itemType":"author","itemId":583,"followed":false},"shield":{"itemType":"author","itemId":583,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/840f80260e409636ebc75fb8c980d9da.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/840f80260e409636ebc75fb8c980d9da.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/96e07d97abd10eddbe5f3fff4bea643a.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94838&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":74,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=94838","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94838"},"releaseTime":1522564855000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94838&editionType=normal&source=aliyun","size":8405172},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94838&editionType=normal&source=qcloud","size":8405172},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94838&editionType=normal&source=ucloud","size":8405172}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94838&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94838&editionType=high&source=aliyun","size":13424893},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94838&editionType=high&source=qcloud","size":13424893},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94838&editionType=high&source=ucloud","size":13424893}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94838&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"「魔女与百骑兵 2」官方游戏预告","descriptionPgc":"「魔女与百骑兵 2」是一款 PS4 平台上的 ARPG 游戏，游戏讲述了一种只有少女会染上的不治之症「魔女病」。患者就像要证明自己染病一样，在额头上会出现一只拥有强大力量的眼睛。而在那只眼睛睁开时，少女就会失去自我，成为为全依存自己欲望而不断破坏的「魔女」。","remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522564855000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1},{"type":"video","data":{"dataType":"VideoBeanForClient","id":93749,"title":"柯南和乔丹去挑房子","description":"柯南和乔丹去挑房子","library":"DEFAULT","tags":[{"id":140,"name":"搞笑","actionUrl":"eyepetizer://tag/140/?title=%E6%90%9E%E7%AC%91","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/f787d5053443499e8d787911cd8b3876.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/f2b803d3c383bba5a3888b2709160b6e.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":50,"name":"脱口秀","actionUrl":"eyepetizer://tag/50/?title=%E8%84%B1%E5%8F%A3%E7%A7%80","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/a99318890da2d383eae0388e06071b41.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/a99318890da2d383eae0388e06071b41.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"NORMAL"},{"id":28,"name":"综艺","actionUrl":"eyepetizer://tag/28/?title=%E7%BB%BC%E8%89%BA","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/d67f739fba330099b515c3b92fccfd91.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/d67f739fba330099b515c3b92fccfd91.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}],"consumption":{"collectionCount":2,"shareCount":0,"replyCount":0},"resourceType":"video","slogan":null,"provider":{"name":"定制来源","alias":"CustomSrc","icon":""},"category":"综艺","author":{"id":1771,"icon":"http://img.kaiyanapp.com/4f48672363ff636554d782ca79f16a21.jpeg?imageMogr2/quality/60/format/jpg","name":"美国综艺搞笑集锦","description":"美国搞笑综艺的BIG FAN，关注我！","link":"","latestReleaseTime":1522563484000,"videoNum":137,"adTrack":null,"follow":{"itemType":"author","itemId":1771,"followed":false},"shield":{"itemType":"author","itemId":1771,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true},"cover":{"feed":"http://img.kaiyanapp.com/629bfd9d8b39b79bb5aa2bd8e71b8f48.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/629bfd9d8b39b79bb5aa2bd8e71b8f48.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/19e45d83af8adef29270ed3377e6870e.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=93749&editionType=default&source=aliyun","thumbPlayUrl":null,"duration":397,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=93749","forWeibo":"http://www.eyepetizer.net/detail.html?vid=93749"},"releaseTime":1522563484000,"playInfo":[{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=93749&editionType=normal&source=aliyun","size":19891339},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=93749&editionType=normal&source=qcloud","size":19891339},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=93749&editionType=normal&source=ucloud","size":19891339}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=93749&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=93749&editionType=high&source=aliyun","size":31466704},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=93749&editionType=high&source=qcloud","size":31466704},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=93749&editionType=high&source=ucloud","size":31466704}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=93749&editionType=high&source=aliyun"}],"campaign":null,"waterMarks":null,"adTrack":null,"type":"NORMAL","titlePgc":"柯南和乔丹去挑房子","descriptionPgc":"柯南和乔丹去挑房子","remark":null,"ifLimitVideo":false,"idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1522563484000,"promotion":null,"label":null,"labelList":[],"descriptionEditor":"","collected":false,"played":false,"subtitles":[],"lastViewTime":null,"playlists":null,"src":null},"tag":null,"id":0,"adIndex":-1}],"count":5,"adTrack":null},"tag":null,"id":0,"adIndex":-1}]
-     * count : 15
-     * total : 0
-     * nextPageUrl : http://baobab.kaiyanapp.com/api/v4/tabs/selected?date=1522371600000&num=2&page=2
-     * adExist : false
-     * date : 1522544400000
-     * nextPublishTime : 1522630800000
-     * dialog : null
-     * topIssue : null
-     * refreshCount : 0
-     * lastStartId : 0
-     */
-
     private int count;
     private int total;
     private String nextPageUrl;
@@ -38,7 +24,8 @@ public class VideoList extends BaseBO {
     private Object topIssue;
     private int refreshCount;
     private int lastStartId;
-    private List<ItemListBeanX> itemList;
+
+    private List<ItemList> itemList;
 
     public int getCount() {
         return count;
@@ -120,25 +107,62 @@ public class VideoList extends BaseBO {
         this.lastStartId = lastStartId;
     }
 
-    public List<ItemListBeanX> getItemList() {
+    public List<ItemList> getItemList() {
         return itemList;
     }
 
-    public void setItemList(List<ItemListBeanX> itemList) {
+    public void setItemList(List<ItemList> itemList) {
         this.itemList = itemList;
     }
 
-    public static class ItemListBeanX {
+    public static class ItemList {
+        private String type;
         /**
-         * type : horizontalScrollCard
-         * data : {"dataType":"HorizontalScrollCard","itemList":[{"type":"banner2","data":{"dataType":"Banner","id":791,"title":"","description":"","image":"http://img.kaiyanapp.com/4bed8a5bdc2ece387b72bb1bfe37b6dc.jpeg?imageMogr2/quality/60/format/jpg","actionUrl":"eyepetizer://webview/?title=%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E6%84%9A%E4%BA%BA%E8%8A%82%E9%81%BF%E5%9D%91%E6%8C%87%E6%95%B0&url=http%3A%2F%2Fwww.kaiyanapp.com%2Fcampaign%2Fapril_fools_day%2Fapril_fools_day.html%3Futm_source%3Dinapp%26shareable%3Dtrue","adTrack":null,"shade":false,"label":{"text":"","card":"","detail":null},"labelList":[],"header":{"id":0,"title":null,"font":null,"subTitle":null,"subTitleFont":null,"textAlign":"left","cover":null,"label":null,"actionUrl":null,"labelList":null,"icon":null,"description":null}},"tag":null,"id":0,"adIndex":-1}],"count":1}
-         * tag : 0
-         * id : 0
-         * adIndex : -1
+         * dataType : VideoBeanForClient
+         * id : 94059
+         * title : 如何解除「加班」魔咒？
+         * description : 以按时回家为目的的「回家改革部」今日建成，各式招数帮你解除加班魔咒！手段是另一回事，最重要的是要有一个回家的理由啊～让你还未上班就想下班的动力又是什么呢？From KDDI株式会社
+         * library : DAILY
+         * tags : [{"id":748,"name":"广告精选","actionUrl":"eyepetizer://tag/748/?title=%E5%B9%BF%E5%91%8A%E7%B2%BE%E9%80%89","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/431177a6b2177788aa4d8eff8073d9a7.jpeg?imageMogr2/quality/60/format/jpg","headerImage":"http://img.kaiyanapp.com/431177a6b2177788aa4d8eff8073d9a7.jpeg?imageMogr2/quality/60/format/jpg","tagRecType":"IMPORTANT"},{"id":384,"name":"日本广告","actionUrl":"eyepetizer://tag/384/?title=%E6%97%A5%E6%9C%AC%E5%B9%BF%E5%91%8A","adTrack":null,"desc":null,"bgPicture":"http://img.kaiyanapp.com/1bff9414303805e74affe1954f95d4af.jpeg?imageMogr2/quality/100","headerImage":"http://img.kaiyanapp.com/40036ba884aed65c07a5ed1525e6cb2a.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"},{"id":146,"name":"666","actionUrl":"eyepetizer://tag/146/?title=666","adTrack":null,"desc":null,"bgPicture":"https://i.ytimg.com/vi/MKWWhf8RAV8/maxresdefault.jpg","headerImage":"http://img.kaiyanapp.com/522f7e51abb07a4a4438b82ee54174a4.jpeg?imageMogr2/quality/100","tagRecType":"NORMAL"}]
+         * consumption : {"collectionCount":96,"shareCount":66,"replyCount":2}
+         * resourceType : video
+         * slogan : 是什么让你还没上班就想下班？
+         * provider : {"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"}
+         * category : 广告
+         * author : {"id":2162,"icon":"http://img.kaiyanapp.com/98beab66d3885a139b54f21e91817c4f.jpeg","name":"开眼广告精选","description":"为广告人的精彩创意点赞","link":"","latestReleaseTime":1522630800000,"videoNum":902,"adTrack":null,"follow":{"itemType":"author","itemId":2162,"followed":false},"shield":{"itemType":"author","itemId":2162,"shielded":false},"approvedNotReadyVideoCount":0,"ifPgc":true}
+         * cover : {"feed":"http://img.kaiyanapp.com/d628bcf2315af0fb6dac0ec063f1dac2.jpeg?imageMogr2/quality/60/format/jpg","detail":"http://img.kaiyanapp.com/d628bcf2315af0fb6dac0ec063f1dac2.jpeg?imageMogr2/quality/60/format/jpg","blurred":"http://img.kaiyanapp.com/2f18bf5aaa276c713c2d6d54e6fab536.jpeg?imageMogr2/quality/60/format/jpg","sharing":null,"homepage":"http://img.kaiyanapp.com/d628bcf2315af0fb6dac0ec063f1dac2.jpeg?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim"}
+         * playUrl : http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=default&source=aliyun
+         * thumbPlayUrl : null
+         * duration : 132
+         * webUrl : {"raw":"http://www.eyepetizer.net/detail.html?vid=94059","forWeibo":"http://www.eyepetizer.net/detail.html?vid=94059"}
+         * releaseTime : 1522630800000
+         * playInfo : [{"height":480,"width":854,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=normal&source=aliyun","size":7391877},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=normal&source=qcloud","size":7391877},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=normal&source=ucloud","size":7391877}],"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=normal&source=aliyun"},{"height":720,"width":1280,"urlList":[{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=high&source=aliyun","size":13630627},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=high&source=qcloud","size":13630627},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=high&source=ucloud","size":13630627}],"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=high&source=aliyun"}]
+         * campaign : null
+         * waterMarks : null
+         * adTrack : null
+         * type : NORMAL
+         * titlePgc : null
+         * descriptionPgc : null
+         * remark : ビジネス帰宅部｜帰宅スキルを駆使して定時で帰る 「帰り方改革」推進中！
+         * ifLimitVideo : false
+         * idx : 0
+         * shareAdTrack : null
+         * favoriteAdTrack : null
+         * webAdTrack : null
+         * date : 1522630800000
+         * promotion : null
+         * label : null
+         * labelList : []
+         * descriptionEditor : 以按时回家为目的的「回家改革部」今日建成，各式招数帮你解除加班魔咒！手段是另一回事，最重要的是要有一个回家的理由啊～让你还未上班就想下班的动力又是什么呢？From KDDI株式会社
+         * collected : false
+         * played : false
+         * subtitles : []
+         * lastViewTime : null
+         * playlists : null
+         * src : null
          */
 
-        private String type;
-        private DataBeanX data;
+        private Data data;
         private String tag;
         private int id;
         private int adIndex;
@@ -151,11 +175,11 @@ public class VideoList extends BaseBO {
             this.type = type;
         }
 
-        public DataBeanX getData() {
+        public Data getData() {
             return data;
         }
 
-        public void setData(DataBeanX data) {
+        public void setData(Data data) {
             this.data = data;
         }
 
@@ -183,16 +207,109 @@ public class VideoList extends BaseBO {
             this.adIndex = adIndex;
         }
 
-        public static class DataBeanX {
+        public static class Data {
+            private String dataType;
+            private int id;
+            private String title;
+            private String description;
+            private String library;
             /**
-             * dataType : HorizontalScrollCard
-             * itemList : [{"type":"banner2","data":{"dataType":"Banner","id":791,"title":"","description":"","image":"http://img.kaiyanapp.com/4bed8a5bdc2ece387b72bb1bfe37b6dc.jpeg?imageMogr2/quality/60/format/jpg","actionUrl":"eyepetizer://webview/?title=%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E6%84%9A%E4%BA%BA%E8%8A%82%E9%81%BF%E5%9D%91%E6%8C%87%E6%95%B0&url=http%3A%2F%2Fwww.kaiyanapp.com%2Fcampaign%2Fapril_fools_day%2Fapril_fools_day.html%3Futm_source%3Dinapp%26shareable%3Dtrue","adTrack":null,"shade":false,"label":{"text":"","card":"","detail":null},"labelList":[],"header":{"id":0,"title":null,"font":null,"subTitle":null,"subTitleFont":null,"textAlign":"left","cover":null,"label":null,"actionUrl":null,"labelList":null,"icon":null,"description":null}},"tag":null,"id":0,"adIndex":-1}]
-             * count : 1
+             * collectionCount : 96
+             * shareCount : 66
+             * replyCount : 2
              */
 
-            private String dataType;
-            private int count;
-            private List<ItemListBean> itemList;
+            private Consumption consumption;
+            private String resourceType;
+            private String slogan;
+            /**
+             * name : YouTube
+             * alias : youtube
+             * icon : http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png
+             */
+
+            private Provider provider;
+            private String category;
+            /**
+             * id : 2162
+             * icon : http://img.kaiyanapp.com/98beab66d3885a139b54f21e91817c4f.jpeg
+             * name : 开眼广告精选
+             * description : 为广告人的精彩创意点赞
+             * link :
+             * latestReleaseTime : 1522630800000
+             * videoNum : 902
+             * adTrack : null
+             * follow : {"itemType":"author","itemId":2162,"followed":false}
+             * shield : {"itemType":"author","itemId":2162,"shielded":false}
+             * approvedNotReadyVideoCount : 0
+             * ifPgc : true
+             */
+
+            private Author author;
+            /**
+             * feed : http://img.kaiyanapp.com/d628bcf2315af0fb6dac0ec063f1dac2.jpeg?imageMogr2/quality/60/format/jpg
+             * detail : http://img.kaiyanapp.com/d628bcf2315af0fb6dac0ec063f1dac2.jpeg?imageMogr2/quality/60/format/jpg
+             * blurred : http://img.kaiyanapp.com/2f18bf5aaa276c713c2d6d54e6fab536.jpeg?imageMogr2/quality/60/format/jpg
+             * sharing : null
+             * homepage : http://img.kaiyanapp.com/d628bcf2315af0fb6dac0ec063f1dac2.jpeg?imageView2/1/w/720/h/560/format/jpg/q/75|watermark/1/image/aHR0cDovL2ltZy5rYWl5YW5hcHAuY29tL2JsYWNrXzMwLnBuZw==/dissolve/100/gravity/Center/dx/0/dy/0|imageslim
+             */
+
+            private Cover cover;
+            private String playUrl;
+            private Object thumbPlayUrl;
+            private int duration;
+            /**
+             * raw : http://www.eyepetizer.net/detail.html?vid=94059
+             * forWeibo : http://www.eyepetizer.net/detail.html?vid=94059
+             */
+
+            private WebUrl webUrl;
+            private long releaseTime;
+            private Object campaign;
+            private Object waterMarks;
+            private Object adTrack;
+            private String type;
+            private Object titlePgc;
+            private Object descriptionPgc;
+            private String remark;
+            private boolean ifLimitVideo;
+            private int idx;
+            private Object shareAdTrack;
+            private Object favoriteAdTrack;
+            private Object webAdTrack;
+            private long date;
+            private Object promotion;
+            private Object label;
+            private String descriptionEditor;
+            private boolean collected;
+            private boolean played;
+            private Object lastViewTime;
+            private Object playlists;
+            private Object src;
+            /**
+             * id : 748
+             * name : 广告精选
+             * actionUrl : eyepetizer://tag/748/?title=%E5%B9%BF%E5%91%8A%E7%B2%BE%E9%80%89
+             * adTrack : null
+             * desc : null
+             * bgPicture : http://img.kaiyanapp.com/431177a6b2177788aa4d8eff8073d9a7.jpeg?imageMogr2/quality/60/format/jpg
+             * headerImage : http://img.kaiyanapp.com/431177a6b2177788aa4d8eff8073d9a7.jpeg?imageMogr2/quality/60/format/jpg
+             * tagRecType : IMPORTANT
+             */
+
+            private List<Tags> tags;
+            /**
+             * height : 480
+             * width : 854
+             * urlList : [{"name":"aliyun","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=normal&source=aliyun","size":7391877},{"name":"qcloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=normal&source=qcloud","size":7391877},{"name":"ucloud","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=normal&source=ucloud","size":7391877}]
+             * name : 标清
+             * type : normal
+             * url : http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=normal&source=aliyun
+             */
+
+            private List<PlayInfo> playInfo;
+            private List<?> labelList;
+            private List<?> subtitles;
 
             public String getDataType() {
                 return dataType;
@@ -202,60 +319,419 @@ public class VideoList extends BaseBO {
                 this.dataType = dataType;
             }
 
-            public int getCount() {
-                return count;
+            public int getId() {
+                return id;
             }
 
-            public void setCount(int count) {
-                this.count = count;
+            public void setId(int id) {
+                this.id = id;
             }
 
-            public List<ItemListBean> getItemList() {
-                return itemList;
+            public String getTitle() {
+                return title;
             }
 
-            public void setItemList(List<ItemListBean> itemList) {
-                this.itemList = itemList;
+            public void setTitle(String title) {
+                this.title = title;
             }
 
-            public static class ItemListBean {
+            public String getDescription() {
+                return description;
+            }
+
+            public void setDescription(String description) {
+                this.description = description;
+            }
+
+            public String getLibrary() {
+                return library;
+            }
+
+            public void setLibrary(String library) {
+                this.library = library;
+            }
+
+            public Consumption getConsumption() {
+                return consumption;
+            }
+
+            public void setConsumption(Consumption consumption) {
+                this.consumption = consumption;
+            }
+
+            public String getResourceType() {
+                return resourceType;
+            }
+
+            public void setResourceType(String resourceType) {
+                this.resourceType = resourceType;
+            }
+
+            public String getSlogan() {
+                return slogan;
+            }
+
+            public void setSlogan(String slogan) {
+                this.slogan = slogan;
+            }
+
+            public Provider getProvider() {
+                return provider;
+            }
+
+            public void setProvider(Provider provider) {
+                this.provider = provider;
+            }
+
+            public String getCategory() {
+                return category;
+            }
+
+            public void setCategory(String category) {
+                this.category = category;
+            }
+
+            public Author getAuthor() {
+                return author;
+            }
+
+            public void setAuthor(Author author) {
+                this.author = author;
+            }
+
+            public Cover getCover() {
+                return cover;
+            }
+
+            public void setCover(Cover cover) {
+                this.cover = cover;
+            }
+
+            public String getPlayUrl() {
+                return playUrl;
+            }
+
+            public void setPlayUrl(String playUrl) {
+                this.playUrl = playUrl;
+            }
+
+            public Object getThumbPlayUrl() {
+                return thumbPlayUrl;
+            }
+
+            public void setThumbPlayUrl(Object thumbPlayUrl) {
+                this.thumbPlayUrl = thumbPlayUrl;
+            }
+
+            public int getDuration() {
+                return duration;
+            }
+
+            public void setDuration(int duration) {
+                this.duration = duration;
+            }
+
+            public WebUrl getWebUrl() {
+                return webUrl;
+            }
+
+            public void setWebUrl(WebUrl webUrl) {
+                this.webUrl = webUrl;
+            }
+
+            public long getReleaseTime() {
+                return releaseTime;
+            }
+
+            public void setReleaseTime(long releaseTime) {
+                this.releaseTime = releaseTime;
+            }
+
+            public Object getCampaign() {
+                return campaign;
+            }
+
+            public void setCampaign(Object campaign) {
+                this.campaign = campaign;
+            }
+
+            public Object getWaterMarks() {
+                return waterMarks;
+            }
+
+            public void setWaterMarks(Object waterMarks) {
+                this.waterMarks = waterMarks;
+            }
+
+            public Object getAdTrack() {
+                return adTrack;
+            }
+
+            public void setAdTrack(Object adTrack) {
+                this.adTrack = adTrack;
+            }
+
+            public String getType() {
+                return type;
+            }
+
+            public void setType(String type) {
+                this.type = type;
+            }
+
+            public Object getTitlePgc() {
+                return titlePgc;
+            }
+
+            public void setTitlePgc(Object titlePgc) {
+                this.titlePgc = titlePgc;
+            }
+
+            public Object getDescriptionPgc() {
+                return descriptionPgc;
+            }
+
+            public void setDescriptionPgc(Object descriptionPgc) {
+                this.descriptionPgc = descriptionPgc;
+            }
+
+            public String getRemark() {
+                return remark;
+            }
+
+            public void setRemark(String remark) {
+                this.remark = remark;
+            }
+
+            public boolean isIfLimitVideo() {
+                return ifLimitVideo;
+            }
+
+            public void setIfLimitVideo(boolean ifLimitVideo) {
+                this.ifLimitVideo = ifLimitVideo;
+            }
+
+            public int getIdx() {
+                return idx;
+            }
+
+            public void setIdx(int idx) {
+                this.idx = idx;
+            }
+
+            public Object getShareAdTrack() {
+                return shareAdTrack;
+            }
+
+            public void setShareAdTrack(Object shareAdTrack) {
+                this.shareAdTrack = shareAdTrack;
+            }
+
+            public Object getFavoriteAdTrack() {
+                return favoriteAdTrack;
+            }
+
+            public void setFavoriteAdTrack(Object favoriteAdTrack) {
+                this.favoriteAdTrack = favoriteAdTrack;
+            }
+
+            public Object getWebAdTrack() {
+                return webAdTrack;
+            }
+
+            public void setWebAdTrack(Object webAdTrack) {
+                this.webAdTrack = webAdTrack;
+            }
+
+            public long getDate() {
+                return date;
+            }
+
+            public void setDate(long date) {
+                this.date = date;
+            }
+
+            public Object getPromotion() {
+                return promotion;
+            }
+
+            public void setPromotion(Object promotion) {
+                this.promotion = promotion;
+            }
+
+            public Object getLabel() {
+                return label;
+            }
+
+            public void setLabel(Object label) {
+                this.label = label;
+            }
+
+            public String getDescriptionEditor() {
+                return descriptionEditor;
+            }
+
+            public void setDescriptionEditor(String descriptionEditor) {
+                this.descriptionEditor = descriptionEditor;
+            }
+
+            public boolean isCollected() {
+                return collected;
+            }
+
+            public void setCollected(boolean collected) {
+                this.collected = collected;
+            }
+
+            public boolean isPlayed() {
+                return played;
+            }
+
+            public void setPlayed(boolean played) {
+                this.played = played;
+            }
+
+            public Object getLastViewTime() {
+                return lastViewTime;
+            }
+
+            public void setLastViewTime(Object lastViewTime) {
+                this.lastViewTime = lastViewTime;
+            }
+
+            public Object getPlaylists() {
+                return playlists;
+            }
+
+            public void setPlaylists(Object playlists) {
+                this.playlists = playlists;
+            }
+
+            public Object getSrc() {
+                return src;
+            }
+
+            public void setSrc(Object src) {
+                this.src = src;
+            }
+
+            public List<Tags> getTags() {
+                return tags;
+            }
+
+            public void setTags(List<Tags> tags) {
+                this.tags = tags;
+            }
+
+            public List<PlayInfo> getPlayInfo() {
+                return playInfo;
+            }
+
+            public void setPlayInfo(List<PlayInfo> playInfo) {
+                this.playInfo = playInfo;
+            }
+
+            public List<?> getLabelList() {
+                return labelList;
+            }
+
+            public void setLabelList(List<?> labelList) {
+                this.labelList = labelList;
+            }
+
+            public List<?> getSubtitles() {
+                return subtitles;
+            }
+
+            public void setSubtitles(List<?> subtitles) {
+                this.subtitles = subtitles;
+            }
+
+            public static class Consumption {
+                private int collectionCount;
+                private int shareCount;
+                private int replyCount;
+
+                public int getCollectionCount() {
+                    return collectionCount;
+                }
+
+                public void setCollectionCount(int collectionCount) {
+                    this.collectionCount = collectionCount;
+                }
+
+                public int getShareCount() {
+                    return shareCount;
+                }
+
+                public void setShareCount(int shareCount) {
+                    this.shareCount = shareCount;
+                }
+
+                public int getReplyCount() {
+                    return replyCount;
+                }
+
+                public void setReplyCount(int replyCount) {
+                    this.replyCount = replyCount;
+                }
+            }
+
+            public static class Provider {
+                private String name;
+                private String alias;
+                private String icon;
+
+                public String getName() {
+                    return name;
+                }
+
+                public void setName(String name) {
+                    this.name = name;
+                }
+
+                public String getAlias() {
+                    return alias;
+                }
+
+                public void setAlias(String alias) {
+                    this.alias = alias;
+                }
+
+                public String getIcon() {
+                    return icon;
+                }
+
+                public void setIcon(String icon) {
+                    this.icon = icon;
+                }
+            }
+
+            public static class Author {
+                private int id;
+                private String icon;
+                private String name;
+                private String description;
+                private String link;
+                private long latestReleaseTime;
+                private int videoNum;
+                private Object adTrack;
                 /**
-                 * type : banner2
-                 * data : {"dataType":"Banner","id":791,"title":"","description":"","image":"http://img.kaiyanapp.com/4bed8a5bdc2ece387b72bb1bfe37b6dc.jpeg?imageMogr2/quality/60/format/jpg","actionUrl":"eyepetizer://webview/?title=%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E6%84%9A%E4%BA%BA%E8%8A%82%E9%81%BF%E5%9D%91%E6%8C%87%E6%95%B0&url=http%3A%2F%2Fwww.kaiyanapp.com%2Fcampaign%2Fapril_fools_day%2Fapril_fools_day.html%3Futm_source%3Dinapp%26shareable%3Dtrue","adTrack":null,"shade":false,"label":{"text":"","card":"","detail":null},"labelList":[],"header":{"id":0,"title":null,"font":null,"subTitle":null,"subTitleFont":null,"textAlign":"left","cover":null,"label":null,"actionUrl":null,"labelList":null,"icon":null,"description":null}}
-                 * tag : null
-                 * id : 0
-                 * adIndex : -1
+                 * itemType : author
+                 * itemId : 2162
+                 * followed : false
                  */
 
-                private String type;
-                private DataBean data;
-                private Object tag;
-                private int id;
-                private int adIndex;
+                private Follow follow;
+                /**
+                 * itemType : author
+                 * itemId : 2162
+                 * shielded : false
+                 */
 
-                public String getType() {
-                    return type;
-                }
-
-                public void setType(String type) {
-                    this.type = type;
-                }
-
-                public DataBean getData() {
-                    return data;
-                }
-
-                public void setData(DataBean data) {
-                    this.data = data;
-                }
-
-                public Object getTag() {
-                    return tag;
-                }
-
-                public void setTag(Object tag) {
-                    this.tag = tag;
-                }
+                private Shield shield;
+                private int approvedNotReadyVideoCount;
+                private boolean ifPgc;
 
                 public int getId() {
                     return id;
@@ -265,289 +741,388 @@ public class VideoList extends BaseBO {
                     this.id = id;
                 }
 
-                public int getAdIndex() {
-                    return adIndex;
+                public String getIcon() {
+                    return icon;
                 }
 
-                public void setAdIndex(int adIndex) {
-                    this.adIndex = adIndex;
+                public void setIcon(String icon) {
+                    this.icon = icon;
                 }
 
-                public static class DataBean {
-                    /**
-                     * dataType : Banner
-                     * id : 791
-                     * title :
-                     * description :
-                     * image : http://img.kaiyanapp.com/4bed8a5bdc2ece387b72bb1bfe37b6dc.jpeg?imageMogr2/quality/60/format/jpg
-                     * actionUrl : eyepetizer://webview/?title=%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E6%84%9A%E4%BA%BA%E8%8A%82%E9%81%BF%E5%9D%91%E6%8C%87%E6%95%B0&url=http%3A%2F%2Fwww.kaiyanapp.com%2Fcampaign%2Fapril_fools_day%2Fapril_fools_day.html%3Futm_source%3Dinapp%26shareable%3Dtrue
-                     * adTrack : null
-                     * shade : false
-                     * label : {"text":"","card":"","detail":null}
-                     * labelList : []
-                     * header : {"id":0,"title":null,"font":null,"subTitle":null,"subTitleFont":null,"textAlign":"left","cover":null,"label":null,"actionUrl":null,"labelList":null,"icon":null,"description":null}
-                     */
+                public String getName() {
+                    return name;
+                }
 
-                    private String dataType;
-                    private int id;
-                    private String title;
-                    private String description;
-                    private String image;
-                    private String actionUrl;
-                    private Object adTrack;
-                    private boolean shade;
-                    private LabelBean label;
-                    private HeaderBean header;
-                    private List<?> labelList;
+                public void setName(String name) {
+                    this.name = name;
+                }
 
-                    public String getDataType() {
-                        return dataType;
+                public String getDescription() {
+                    return description;
+                }
+
+                public void setDescription(String description) {
+                    this.description = description;
+                }
+
+                public String getLink() {
+                    return link;
+                }
+
+                public void setLink(String link) {
+                    this.link = link;
+                }
+
+                public long getLatestReleaseTime() {
+                    return latestReleaseTime;
+                }
+
+                public void setLatestReleaseTime(long latestReleaseTime) {
+                    this.latestReleaseTime = latestReleaseTime;
+                }
+
+                public int getVideoNum() {
+                    return videoNum;
+                }
+
+                public void setVideoNum(int videoNum) {
+                    this.videoNum = videoNum;
+                }
+
+                public Object getAdTrack() {
+                    return adTrack;
+                }
+
+                public void setAdTrack(Object adTrack) {
+                    this.adTrack = adTrack;
+                }
+
+                public Follow getFollow() {
+                    return follow;
+                }
+
+                public void setFollow(Follow follow) {
+                    this.follow = follow;
+                }
+
+                public Shield getShield() {
+                    return shield;
+                }
+
+                public void setShield(Shield shield) {
+                    this.shield = shield;
+                }
+
+                public int getApprovedNotReadyVideoCount() {
+                    return approvedNotReadyVideoCount;
+                }
+
+                public void setApprovedNotReadyVideoCount(int approvedNotReadyVideoCount) {
+                    this.approvedNotReadyVideoCount = approvedNotReadyVideoCount;
+                }
+
+                public boolean isIfPgc() {
+                    return ifPgc;
+                }
+
+                public void setIfPgc(boolean ifPgc) {
+                    this.ifPgc = ifPgc;
+                }
+
+                public static class Follow {
+                    private String itemType;
+                    private int itemId;
+                    private boolean followed;
+
+                    public String getItemType() {
+                        return itemType;
                     }
 
-                    public void setDataType(String dataType) {
-                        this.dataType = dataType;
+                    public void setItemType(String itemType) {
+                        this.itemType = itemType;
                     }
 
-                    public int getId() {
-                        return id;
+                    public int getItemId() {
+                        return itemId;
                     }
 
-                    public void setId(int id) {
-                        this.id = id;
+                    public void setItemId(int itemId) {
+                        this.itemId = itemId;
                     }
 
-                    public String getTitle() {
-                        return title;
+                    public boolean isFollowed() {
+                        return followed;
                     }
 
-                    public void setTitle(String title) {
-                        this.title = title;
+                    public void setFollowed(boolean followed) {
+                        this.followed = followed;
+                    }
+                }
+
+                public static class Shield {
+                    private String itemType;
+                    private int itemId;
+                    private boolean shielded;
+
+                    public String getItemType() {
+                        return itemType;
                     }
 
-                    public String getDescription() {
-                        return description;
+                    public void setItemType(String itemType) {
+                        this.itemType = itemType;
                     }
 
-                    public void setDescription(String description) {
-                        this.description = description;
+                    public int getItemId() {
+                        return itemId;
                     }
 
-                    public String getImage() {
-                        return image;
+                    public void setItemId(int itemId) {
+                        this.itemId = itemId;
                     }
 
-                    public void setImage(String image) {
-                        this.image = image;
+                    public boolean isShielded() {
+                        return shielded;
                     }
 
-                    public String getActionUrl() {
-                        return actionUrl;
+                    public void setShielded(boolean shielded) {
+                        this.shielded = shielded;
+                    }
+                }
+            }
+
+            public static class Cover {
+                private String feed;
+                private String detail;
+                private String blurred;
+                private Object sharing;
+                private String homepage;
+
+                public String getFeed() {
+                    return feed;
+                }
+
+                public void setFeed(String feed) {
+                    this.feed = feed;
+                }
+
+                public String getDetail() {
+                    return detail;
+                }
+
+                public void setDetail(String detail) {
+                    this.detail = detail;
+                }
+
+                public String getBlurred() {
+                    return blurred;
+                }
+
+                public void setBlurred(String blurred) {
+                    this.blurred = blurred;
+                }
+
+                public Object getSharing() {
+                    return sharing;
+                }
+
+                public void setSharing(Object sharing) {
+                    this.sharing = sharing;
+                }
+
+                public String getHomepage() {
+                    return homepage;
+                }
+
+                public void setHomepage(String homepage) {
+                    this.homepage = homepage;
+                }
+            }
+
+            public static class WebUrl {
+                private String raw;
+                private String forWeibo;
+
+                public String getRaw() {
+                    return raw;
+                }
+
+                public void setRaw(String raw) {
+                    this.raw = raw;
+                }
+
+                public String getForWeibo() {
+                    return forWeibo;
+                }
+
+                public void setForWeibo(String forWeibo) {
+                    this.forWeibo = forWeibo;
+                }
+            }
+
+            public static class Tags {
+                private int id;
+                private String name;
+                private String actionUrl;
+                private Object adTrack;
+                private Object desc;
+                private String bgPicture;
+                private String headerImage;
+                private String tagRecType;
+
+                public int getId() {
+                    return id;
+                }
+
+                public void setId(int id) {
+                    this.id = id;
+                }
+
+                public String getName() {
+                    return name;
+                }
+
+                public void setName(String name) {
+                    this.name = name;
+                }
+
+                public String getActionUrl() {
+                    return actionUrl;
+                }
+
+                public void setActionUrl(String actionUrl) {
+                    this.actionUrl = actionUrl;
+                }
+
+                public Object getAdTrack() {
+                    return adTrack;
+                }
+
+                public void setAdTrack(Object adTrack) {
+                    this.adTrack = adTrack;
+                }
+
+                public Object getDesc() {
+                    return desc;
+                }
+
+                public void setDesc(Object desc) {
+                    this.desc = desc;
+                }
+
+                public String getBgPicture() {
+                    return bgPicture;
+                }
+
+                public void setBgPicture(String bgPicture) {
+                    this.bgPicture = bgPicture;
+                }
+
+                public String getHeaderImage() {
+                    return headerImage;
+                }
+
+                public void setHeaderImage(String headerImage) {
+                    this.headerImage = headerImage;
+                }
+
+                public String getTagRecType() {
+                    return tagRecType;
+                }
+
+                public void setTagRecType(String tagRecType) {
+                    this.tagRecType = tagRecType;
+                }
+            }
+
+            public static class PlayInfo {
+                private int height;
+                private int width;
+                private String name;
+                private String type;
+                private String url;
+                /**
+                 * name : aliyun
+                 * url : http://baobab.kaiyanapp.com/api/v1/playUrl?vid=94059&editionType=normal&source=aliyun
+                 * size : 7391877
+                 */
+
+                private List<UrlList> urlList;
+
+                public int getHeight() {
+                    return height;
+                }
+
+                public void setHeight(int height) {
+                    this.height = height;
+                }
+
+                public int getWidth() {
+                    return width;
+                }
+
+                public void setWidth(int width) {
+                    this.width = width;
+                }
+
+                public String getName() {
+                    return name;
+                }
+
+                public void setName(String name) {
+                    this.name = name;
+                }
+
+                public String getType() {
+                    return type;
+                }
+
+                public void setType(String type) {
+                    this.type = type;
+                }
+
+                public String getUrl() {
+                    return url;
+                }
+
+                public void setUrl(String url) {
+                    this.url = url;
+                }
+
+                public List<UrlList> getUrlList() {
+                    return urlList;
+                }
+
+                public void setUrlList(List<UrlList> urlList) {
+                    this.urlList = urlList;
+                }
+
+                public static class UrlList {
+                    private String name;
+                    private String url;
+                    private int size;
+
+                    public String getName() {
+                        return name;
                     }
 
-                    public void setActionUrl(String actionUrl) {
-                        this.actionUrl = actionUrl;
+                    public void setName(String name) {
+                        this.name = name;
                     }
 
-                    public Object getAdTrack() {
-                        return adTrack;
+                    public String getUrl() {
+                        return url;
                     }
 
-                    public void setAdTrack(Object adTrack) {
-                        this.adTrack = adTrack;
+                    public void setUrl(String url) {
+                        this.url = url;
                     }
 
-                    public boolean isShade() {
-                        return shade;
+                    public int getSize() {
+                        return size;
                     }
 
-                    public void setShade(boolean shade) {
-                        this.shade = shade;
-                    }
-
-                    public LabelBean getLabel() {
-                        return label;
-                    }
-
-                    public void setLabel(LabelBean label) {
-                        this.label = label;
-                    }
-
-                    public HeaderBean getHeader() {
-                        return header;
-                    }
-
-                    public void setHeader(HeaderBean header) {
-                        this.header = header;
-                    }
-
-                    public List<?> getLabelList() {
-                        return labelList;
-                    }
-
-                    public void setLabelList(List<?> labelList) {
-                        this.labelList = labelList;
-                    }
-
-                    public static class LabelBean {
-                        /**
-                         * text :
-                         * card :
-                         * detail : null
-                         */
-
-                        private String text;
-                        private String card;
-                        private Object detail;
-
-                        public String getText() {
-                            return text;
-                        }
-
-                        public void setText(String text) {
-                            this.text = text;
-                        }
-
-                        public String getCard() {
-                            return card;
-                        }
-
-                        public void setCard(String card) {
-                            this.card = card;
-                        }
-
-                        public Object getDetail() {
-                            return detail;
-                        }
-
-                        public void setDetail(Object detail) {
-                            this.detail = detail;
-                        }
-                    }
-
-                    public static class HeaderBean {
-                        /**
-                         * id : 0
-                         * title : null
-                         * font : null
-                         * subTitle : null
-                         * subTitleFont : null
-                         * textAlign : left
-                         * cover : null
-                         * label : null
-                         * actionUrl : null
-                         * labelList : null
-                         * icon : null
-                         * description : null
-                         */
-
-                        private int id;
-                        private Object title;
-                        private Object font;
-                        private Object subTitle;
-                        private Object subTitleFont;
-                        private String textAlign;
-                        private Object cover;
-                        private Object label;
-                        private Object actionUrl;
-                        private Object labelList;
-                        private Object icon;
-                        private Object description;
-
-                        public int getId() {
-                            return id;
-                        }
-
-                        public void setId(int id) {
-                            this.id = id;
-                        }
-
-                        public Object getTitle() {
-                            return title;
-                        }
-
-                        public void setTitle(Object title) {
-                            this.title = title;
-                        }
-
-                        public Object getFont() {
-                            return font;
-                        }
-
-                        public void setFont(Object font) {
-                            this.font = font;
-                        }
-
-                        public Object getSubTitle() {
-                            return subTitle;
-                        }
-
-                        public void setSubTitle(Object subTitle) {
-                            this.subTitle = subTitle;
-                        }
-
-                        public Object getSubTitleFont() {
-                            return subTitleFont;
-                        }
-
-                        public void setSubTitleFont(Object subTitleFont) {
-                            this.subTitleFont = subTitleFont;
-                        }
-
-                        public String getTextAlign() {
-                            return textAlign;
-                        }
-
-                        public void setTextAlign(String textAlign) {
-                            this.textAlign = textAlign;
-                        }
-
-                        public Object getCover() {
-                            return cover;
-                        }
-
-                        public void setCover(Object cover) {
-                            this.cover = cover;
-                        }
-
-                        public Object getLabel() {
-                            return label;
-                        }
-
-                        public void setLabel(Object label) {
-                            this.label = label;
-                        }
-
-                        public Object getActionUrl() {
-                            return actionUrl;
-                        }
-
-                        public void setActionUrl(Object actionUrl) {
-                            this.actionUrl = actionUrl;
-                        }
-
-                        public Object getLabelList() {
-                            return labelList;
-                        }
-
-                        public void setLabelList(Object labelList) {
-                            this.labelList = labelList;
-                        }
-
-                        public Object getIcon() {
-                            return icon;
-                        }
-
-                        public void setIcon(Object icon) {
-                            this.icon = icon;
-                        }
-
-                        public Object getDescription() {
-                            return description;
-                        }
-
-                        public void setDescription(Object description) {
-                            this.description = description;
-                        }
+                    public void setSize(int size) {
+                        this.size = size;
                     }
                 }
             }
