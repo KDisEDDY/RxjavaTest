@@ -1,6 +1,10 @@
 package project.ljy.rxjavatest.presenter;
 
+import android.content.Context;
+
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.Call;
 import project.ljy.rxjavatest.data.BaseBO;
@@ -24,8 +28,8 @@ public class VideoListPresenter implements IVideoList.Presenter {
     }
 
     @Override
-    public void requestData(int num, int page) {
-        new VideoListModel().getVideoListRequest(new Callable<VideoList>(VideoList.class) {
+    public void requestData(Context context, int num, int page) {
+        new VideoListModel(context).getVideoListRequest(new Callable<VideoList>(VideoList.class) {
             @Override
             public void onFailure(Call call, IOException e) {
 
@@ -34,10 +38,22 @@ public class VideoListPresenter implements IVideoList.Presenter {
             @Override
             public void onResponse(Call call, VideoList data) throws IOException {
                 if(data != null && data.getItemList() != null){
-                    mView.loadCurItemList(data.getItemList());
+                    mView.loadCurItemList(filterData(data));
                 }
             }
 
         });
     }
+
+    /**用于过滤数据*/
+    private List<VideoList.ItemList> filterData(VideoList data){
+        List<VideoList.ItemList> itemList = new ArrayList<>();
+        for(VideoList.ItemList item : data.getItemList()){
+            if(item.getData().getDataType().equals("VideoBeanForClient")){
+                itemList.add(item);
+            }
+        }
+        return itemList;
+    }
+
 }

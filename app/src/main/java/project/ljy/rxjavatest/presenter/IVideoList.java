@@ -1,5 +1,7 @@
 package project.ljy.rxjavatest.presenter;
 
+import android.content.Context;
+
 import java.util.List;
 
 import project.ljy.rxjavatest.base.BasePresenter;
@@ -19,6 +21,6 @@ public interface IVideoList {
     }
 
     interface Presenter extends BasePresenter {
-        public void requestData(int num , int page);
+        public void requestData(Context context , int num , int page);
     }
 }

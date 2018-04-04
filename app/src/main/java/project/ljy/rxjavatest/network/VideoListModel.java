@@ -1,5 +1,7 @@
 package project.ljy.rxjavatest.network;
 
+import android.content.Context;
+
 /**
  * Title: VideoListModel
  * Description: 视频模块Model
@@ -11,6 +13,10 @@ package project.ljy.rxjavatest.network;
  */
 
 public class VideoListModel extends BaseRequest{
+
+    public VideoListModel(Context context) {
+        super(context);
+    }
 
     public void getVideoListRequest(Callable callable){
         request(UrlConstant.GET_MOVIE_LIST, null, callable);

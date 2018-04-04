@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -33,8 +34,15 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        initDir();
         initDataBase();
+    }
+
+    private void initDir(){
+        File file = new File(BaseConstant.DIR_HTTP_CACHE);
+        if(!file.exists()){
+            file.mkdirs();
+        }
     }
 
     /** 初始化数据库 */

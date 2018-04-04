@@ -1,5 +1,7 @@
 package project.ljy.rxjavatest.base;
 
+import java.io.File;
+
 /**
  * Title: BaseConstant
  * Description:静态常量类
@@ -14,4 +16,6 @@ public class BaseConstant {
     /*toolbar样式*/
     public final static int STYLE_DRAWERLAYOUT = 1;
     public final static int STYLE_RETURN_BACK = 2;
+
+    public final static String DIR_HTTP_CACHE = File.pathSeparator + "Cache";
 }

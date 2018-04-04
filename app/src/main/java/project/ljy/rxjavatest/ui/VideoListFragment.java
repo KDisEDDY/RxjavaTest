@@ -3,17 +3,23 @@ package project.ljy.rxjavatest.ui;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.marshalchen.ultimaterecyclerview.UltimateRecyclerView;
+
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import okhttp3.Call;
 import project.ljy.rxjavatest.R;
+import project.ljy.rxjavatest.adapter.VideoListAdapter;
 import project.ljy.rxjavatest.data.VideoList;
 import project.ljy.rxjavatest.network.Callable;
 import project.ljy.rxjavatest.network.VideoListModel;
@@ -30,8 +36,11 @@ public class VideoListFragment extends Fragment implements IVideoList.View{
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    IVideoList.Presenter mPresenter;
+    private UltimateRecyclerView mListView;
 
+    private VideoListAdapter mAdapter;
+
+    IVideoList.Presenter mPresenter;
 
 
     private Action mAction;
@@ -59,6 +68,7 @@ public class VideoListFragment extends Fragment implements IVideoList.View{
             getArguments().getString(ARG_PARAM2);
         }
         mPresenter = new VideoListPresenter(this);
+        mAdapter = new VideoListAdapter(getActivity() , new ArrayList<VideoList.ItemList>());
     }
 
     @Override
@@ -72,7 +82,18 @@ public class VideoListFragment extends Fragment implements IVideoList.View{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-       return inflater.inflate(R.layout.fragment_record_list,container,false);
+        View layout = inflater.inflate(R.layout.fragment_record_list,container,false);
+        mListView = (UltimateRecyclerView) layout.findViewById(R.id.ulrv_recycler_list);
+        mListView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        mListView.setAdapter(mAdapter);
+
+       return layout;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        mPresenter.requestData(getActivity() , 1,1);
     }
 
     @Override
@@ -82,7 +103,7 @@ public class VideoListFragment extends Fragment implements IVideoList.View{
 
     @Override
     public void loadCurItemList(List<VideoList.ItemList> itemList) {
-
+        mAdapter.addBottomList(itemList);
     }
 
     public interface Action {
