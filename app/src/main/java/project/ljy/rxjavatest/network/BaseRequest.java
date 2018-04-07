@@ -21,6 +21,7 @@ import okhttp3.Response;
 import okhttp3.logging.HttpLoggingInterceptor;
 import project.ljy.rxjavatest.base.BaseConstant;
 import project.ljy.rxjavatest.data.BaseBO;
+import utils.HttpClientUtil;
 
 /**
  * Title: BaseRequest
@@ -49,7 +50,7 @@ public class BaseRequest {
         if(mClient == null){
             synchronized (BaseRequest.class) {
                 if(mClient == null){
-                    mClient = getDefaultClient();
+                    mClient = HttpClientUtil.getDefaultClient(true);
                 }
             }
         }
@@ -61,21 +62,6 @@ public class BaseRequest {
                 }
             }
         }
-    }
-
-    private static synchronized  OkHttpClient getDefaultClient(){
-        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-        OkHttpClient client = new OkHttpClient.Builder()
-                .addInterceptor(interceptor)
-                .cache(getHttpCache())
-                .connectTimeout(15, TimeUnit.SECONDS)
-                .build();
-        return client;
-    }
-
-    private static Cache getHttpCache(){
-        return new Cache(new File(BaseConstant.DIR_HTTP_CACHE) , (long)(10 * 1024));
     }
 
     <T extends BaseBO> void request(String url, RequestBody requestBody, final Callable<T> callable){
