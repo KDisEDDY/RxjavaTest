@@ -6,17 +6,17 @@ import okhttp3.Interceptor;
 import okhttp3.Response;
 
 /**
- * ClassName: CacheIntercepter
- * function:
+ * ClassName: CacheInterceptor
+ * function: 缓存拦截器
  * Created by EDDY
  * CreateTime:2018/4/5
  */
-public class CacheIntercepter implements Interceptor {
+public class CacheInterceptor implements Interceptor {
     @Override
     public Response intercept(Chain chain) throws IOException {
         Response originalResponse = chain.proceed(chain.request());
         return originalResponse.newBuilder()
-                .header("Cache-Control", "max-age=60")
+                .addHeader("Cache-Control", "max-age=60")
                 .build();
     }
 }

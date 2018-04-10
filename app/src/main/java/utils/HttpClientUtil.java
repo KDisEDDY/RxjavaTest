@@ -35,6 +35,6 @@ public class HttpClientUtil {
     }
 
     private static Interceptor getCacheIntercepter(){
-        return new CacheIntercepter();
+        return new CacheInterceptor();
     }
 }
