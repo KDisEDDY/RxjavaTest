@@ -11,12 +11,48 @@ android {
         versionCode 1
         versionName "1.0"
     }
-    buildTypes {
+
+    signingConfigs {
+        debug {
+            //设置release的签名信息
+            storeFile file("debug.key")
+            storePassword "ljy68835441"
+            keyAlias "ALook"
+            keyPassword "ljy68835441"
+        }
+
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //设置release的签名信息
+            storeFile file("debug.key")
+            storePassword "ljy68835441"
+            keyAlias "ALook"
+            keyPassword "ljy68835441"
         }
     }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources true//移除无用资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+//            applicationVariants.all {
+//                variant ->    variant.outputs.each { output ->
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        // 输出apk名称为XXX20160328_v1.0.0_vc10_XXXX_test.apk
+//                        if (project.hasProperty('ENVIRONMENT_PARA'))
+//                            def fileName=" XXX${releaseTime()}_v${defaultConfig.versionName}_vc${defaultConfig.versionCode}_${variant.productFlavors[0].name}_${ENVIRONMENT_PARA}.apk";
+//                        output.outputFile = new File(output_dir1, fileName)
+//                    }
+//                }
+//            }
+        }
     packagingOptions {
         exclude 'META-INF/services/javax.annotation.processing.Processor'
         exclude 'META-INF/rxjava.properties'
@@ -44,5 +80,10 @@ dependencies {
     compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.marshalchen.ultimaterecyclerview:library:0.7.0'
+    //流媒体播放器
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+
     testCompile 'junit:junit:4.12'
+}
 }

@@ -1,7 +1,10 @@
 package project.ljy.rxjavatest.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +31,7 @@ public class VideoListAdapter extends UltimateViewAdapter<VideoListAdapter.ViewH
     private List<VideoList.ItemList> mItemList;
     private Context mContext;
 
+    private static final String TAG = "Logcat_info";
 
     public VideoListAdapter(Context context , List<VideoList.ItemList> itemList){
         mContext = context;
@@ -68,7 +72,7 @@ public class VideoListAdapter extends UltimateViewAdapter<VideoListAdapter.ViewH
         VideoList.ItemList item  = mItemList.get(position);
         holder.mTitleTxt.setText(item.getData().getTitle());
         if(item.getData().getCover() != null && !item.getData().getCover().getFeed().isEmpty()){
-            Glide.with(mContext).load(item.getData().getCover().getFeed()).asBitmap().placeholder(R.drawable.pic_none_or_preholder).into( holder.mPrePhotoImg);
+            Glide.with(mContext).load(item.getData().getCover().getFeed()).placeholder(R.drawable.pic_none_or_preholder).into(holder.mPrePhotoImg);
         } else {
             Glide.with(mContext).load(R.drawable.pic_none_or_preholder);
         }
@@ -85,7 +89,9 @@ public class VideoListAdapter extends UltimateViewAdapter<VideoListAdapter.ViewH
     }
 
     public void setItemList(List<VideoList.ItemList> mItemList) {
-        this.mItemList = mItemList;
+        if(this.mItemList != null){
+            this.mItemList = mItemList;
+        }
     }
 
     /**添加到顶部list*/

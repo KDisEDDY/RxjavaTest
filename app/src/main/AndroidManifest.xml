@@ -25,6 +25,11 @@
         </activity>
         <activity android:name=".ui.LoginActivity">
         </activity>
+        <activity
+            android:name=".ui.PlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            />
     </application>
 
 </manifest>
