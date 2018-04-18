@@ -118,7 +118,7 @@ public class MainActivity extends BaseActivity
                 transaction.hide(mTabFragments[i]);
             }
         }
-        transaction.commit();
+        transaction.commitAllowingStateLoss();
     }
 
     private void registerRxbus(){

@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.marshalchen.ultimaterecyclerview.ItemTouchListenerAdapter;
+import com.marshalchen.ultimaterecyclerview.RecyclerItemClickListener;
 import com.marshalchen.ultimaterecyclerview.UltimateRecyclerviewViewHolder;
 import com.marshalchen.ultimaterecyclerview.UltimateViewAdapter;
 
@@ -92,6 +94,10 @@ public class VideoListAdapter extends UltimateViewAdapter<VideoListAdapter.ViewH
         if(this.mItemList != null){
             this.mItemList = mItemList;
         }
+    }
+
+    public List<VideoList.ItemList> getItemList(){
+        return mItemList;
     }
 
     /**添加到顶部list*/

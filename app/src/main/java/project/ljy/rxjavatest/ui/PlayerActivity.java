@@ -1,7 +1,9 @@
 package project.ljy.rxjavatest.ui;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 
 import project.ljy.rxjavatest.R;
 import project.ljy.rxjavatest.VideoPlayerListener;
@@ -22,8 +24,10 @@ import tv.danmaku.ijk.media.player.IMediaPlayer;
 
 public class PlayerActivity extends BaseActivity{
 
-    private IJKVideoPlayer mPlayer;
+    public static final String INTENT_VIDEOURL = "videoUrl";
 
+    private IJKVideoPlayer mPlayer;
+    private String mVideoUrl = null;
 
     @Override
     public int setSubContentView() {
@@ -31,9 +35,13 @@ public class PlayerActivity extends BaseActivity{
     }
 
     @Override
+    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+    }
+
+    @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initTitle("登录", BaseConstant.STYLE_RETURN_BACK);
         mPlayer = (IJKVideoPlayer) findViewById(R.id.view_ijk_player);
         mPlayer.setListener(new VideoPlayerListener() {
             @Override
@@ -71,5 +79,8 @@ public class PlayerActivity extends BaseActivity{
 
             }
         });
+
+        mVideoUrl = getIntent().getStringExtra(INTENT_VIDEOURL);
+        mPlayer.setVideoPath(mVideoUrl);
     }
 }

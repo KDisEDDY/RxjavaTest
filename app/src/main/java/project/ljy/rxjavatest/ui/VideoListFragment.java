@@ -2,15 +2,20 @@ package project.ljy.rxjavatest.ui;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.marshalchen.ultimaterecyclerview.ItemTouchListenerAdapter;
+import com.marshalchen.ultimaterecyclerview.RecyclerItemClickListener;
 import com.marshalchen.ultimaterecyclerview.UltimateRecyclerView;
 
 import java.io.IOException;
@@ -80,13 +85,28 @@ public class VideoListFragment extends Fragment implements IVideoList.View{
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.fragment_record_list,container,false);
         mListView = (UltimateRecyclerView) layout.findViewById(R.id.ulrv_recycler_list);
         mListView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mListView.setAdapter(mAdapter);
+        mListView.addOnItemTouchListener(new ItemTouchListenerAdapter(mListView.mRecyclerView , new ItemTouchListenerAdapter.RecyclerViewOnItemClickListener() {
+            @Override
+            public void onItemClick(RecyclerView parent, View clickedView, int position) {
+                VideoList.ItemList item = mAdapter.getItemList().get(position);
+                if(item.getData() != null && !item.getData().getPlayUrl().isEmpty()){
+                    Intent intent = new Intent(getActivity() ,PlayerActivity.class);
+                    intent.putExtra(PlayerActivity.INTENT_VIDEOURL , item.getData().getPlayUrl());
+                    startActivity(intent);
+                }
+            }
 
+            @Override
+            public void onItemLongClick(RecyclerView parent, View clickedView, int position) {
+
+            }
+        }));
        return layout;
     }
 
